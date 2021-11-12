@@ -61,9 +61,10 @@ namespace REA2300
             this.endBtn.Location = new System.Drawing.Point(304, 179);
             this.endBtn.Name = "endBtn";
             this.endBtn.Size = new System.Drawing.Size(100, 43);
-            this.endBtn.TabIndex = 3;
+            this.endBtn.TabIndex = 5;
             this.endBtn.Text = "終了";
             this.endBtn.UseVisualStyleBackColor = true;
+            this.endBtn.Click += new System.EventHandler(this.endBtn_Click);
             // 
             // printBtn
             // 
@@ -71,15 +72,16 @@ namespace REA2300
             this.printBtn.Location = new System.Drawing.Point(116, 179);
             this.printBtn.Name = "printBtn";
             this.printBtn.Size = new System.Drawing.Size(100, 43);
-            this.printBtn.TabIndex = 4;
+            this.printBtn.TabIndex = 3;
             this.printBtn.Text = "印刷";
             this.printBtn.UseVisualStyleBackColor = true;
+            this.printBtn.Click += new System.EventHandler(this.printBtn_Click);
             // 
             // MainForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 12F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(569, 340);
+            this.ClientSize = new System.Drawing.Size(540, 322);
             this.Controls.Add(this.printBtn);
             this.Controls.Add(this.endBtn);
             this.Controls.Add(this.dateLabel);
