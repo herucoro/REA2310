@@ -1,0 +1,387 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <metadata name="textBox28.GenerateMember" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>False</value>
+  </metadata>
+  <data name="textBox28.OutputFormat" xml:space="preserve">
+    <value>#,##0</value>
+  </data>
+  <metadata name="textBox29.GenerateMember" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>False</value>
+  </metadata>
+  <data name="textBox29.OutputFormat" xml:space="preserve">
+    <value>#,##0</value>
+  </data>
+  <metadata name="textBox30.GenerateMember" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>False</value>
+  </metadata>
+  <data name="textBox30.OutputFormat" xml:space="preserve">
+    <value>#,##0</value>
+  </data>
+  <metadata name="textBox31.GenerateMember" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>False</value>
+  </metadata>
+  <data name="textBox31.OutputFormat" xml:space="preserve">
+    <value>#,##0</value>
+  </data>
+  <metadata name="textBox32.GenerateMember" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>False</value>
+  </metadata>
+  <data name="textBox32.OutputFormat" xml:space="preserve">
+    <value>#,##0</value>
+  </data>
+  <metadata name="textBox33.GenerateMember" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>False</value>
+  </metadata>
+  <data name="textBox33.OutputFormat" xml:space="preserve">
+    <value>#,##0</value>
+  </data>
+  <metadata name="textBox34.GenerateMember" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>False</value>
+  </metadata>
+  <data name="textBox34.OutputFormat" xml:space="preserve">
+    <value>#,##0</value>
+  </data>
+  <metadata name="textBox21.GenerateMember" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>False</value>
+  </metadata>
+  <data name="textBox21.OutputFormat" xml:space="preserve">
+    <value>#,##0</value>
+  </data>
+  <metadata name="textBox22.GenerateMember" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>False</value>
+  </metadata>
+  <data name="textBox22.OutputFormat" xml:space="preserve">
+    <value>#,##0</value>
+  </data>
+  <metadata name="textBox23.GenerateMember" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>False</value>
+  </metadata>
+  <data name="textBox23.OutputFormat" xml:space="preserve">
+    <value>#,##0</value>
+  </data>
+  <metadata name="textBox24.GenerateMember" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>False</value>
+  </metadata>
+  <data name="textBox24.OutputFormat" xml:space="preserve">
+    <value>#,##0</value>
+  </data>
+  <metadata name="textBox25.GenerateMember" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>False</value>
+  </metadata>
+  <data name="textBox25.OutputFormat" xml:space="preserve">
+    <value>#,##0</value>
+  </data>
+  <metadata name="textBox26.GenerateMember" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>False</value>
+  </metadata>
+  <data name="textBox26.OutputFormat" xml:space="preserve">
+    <value>#,##0</value>
+  </data>
+  <metadata name="textBox27.GenerateMember" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>False</value>
+  </metadata>
+  <data name="textBox27.OutputFormat" xml:space="preserve">
+    <value>#,##0</value>
+  </data>
+  <data name="textBox4.OutputFormat" xml:space="preserve">
+    <value>#,##0</value>
+  </data>
+  <data name="textBox15.OutputFormat" xml:space="preserve">
+    <value>#,##0</value>
+  </data>
+  <data name="textBox17.OutputFormat" xml:space="preserve">
+    <value>#,##0</value>
+  </data>
+  <data name="textBox18.OutputFormat" xml:space="preserve">
+    <value>#,##0</value>
+  </data>
+  <data name="textBox19.OutputFormat" xml:space="preserve">
+    <value>#,##0</value>
+  </data>
+  <data name="textBox20.OutputFormat" xml:space="preserve">
+    <value>#,##0</value>
+  </data>
+  <data name="textBox16.OutputFormat" xml:space="preserve">
+    <value>#,##0</value>
+  </data>
+  <data name="textBox2.OutputFormat" xml:space="preserve">
+    <value>#,##0</value>
+  </data>
+  <data name="textBox38.OutputFormat" xml:space="preserve">
+    <value>#,##0</value>
+  </data>
+  <data name="textBox37.OutputFormat" xml:space="preserve">
+    <value>#,##0</value>
+  </data>
+  <data name="amount00.OutputFormat" xml:space="preserve">
+    <value>#,##0</value>
+  </data>
+  <data name="amount01.OutputFormat" xml:space="preserve">
+    <value>#,##0</value>
+  </data>
+  <data name="amount02.OutputFormat" xml:space="preserve">
+    <value>#,##0</value>
+  </data>
+  <data name="amount03.OutputFormat" xml:space="preserve">
+    <value>#,##0</value>
+  </data>
+  <data name="amount04.OutputFormat" xml:space="preserve">
+    <value>#,##0</value>
+  </data>
+  <data name="amount05.OutputFormat" xml:space="preserve">
+    <value>#,##0</value>
+  </data>
+  <data name="amount06.OutputFormat" xml:space="preserve">
+    <value>#,##0</value>
+  </data>
+  <data name="rowSum0.OutputFormat" xml:space="preserve">
+    <value>#,##0</value>
+  </data>
+  <data name="amount10.OutputFormat" xml:space="preserve">
+    <value>#,##0</value>
+  </data>
+  <data name="amount11.OutputFormat" xml:space="preserve">
+    <value>#,##0</value>
+  </data>
+  <data name="amount12.OutputFormat" xml:space="preserve">
+    <value>#,##0</value>
+  </data>
+  <data name="amount13.OutputFormat" xml:space="preserve">
+    <value>#,##0</value>
+  </data>
+  <data name="amount14.OutputFormat" xml:space="preserve">
+    <value>#,##0</value>
+  </data>
+  <data name="amount15.OutputFormat" xml:space="preserve">
+    <value>#,##0</value>
+  </data>
+  <data name="amount16.OutputFormat" xml:space="preserve">
+    <value>#,##0</value>
+  </data>
+  <data name="rowSum1.OutputFormat" xml:space="preserve">
+    <value>#,##0</value>
+  </data>
+  <data name="amount20.OutputFormat" xml:space="preserve">
+    <value>#,##0</value>
+  </data>
+  <data name="amount21.OutputFormat" xml:space="preserve">
+    <value>#,##0</value>
+  </data>
+  <data name="amount22.OutputFormat" xml:space="preserve">
+    <value>#,##0</value>
+  </data>
+  <data name="amount23.OutputFormat" xml:space="preserve">
+    <value>#,##0</value>
+  </data>
+  <data name="amount24.OutputFormat" xml:space="preserve">
+    <value>#,##0</value>
+  </data>
+  <data name="amount25.OutputFormat" xml:space="preserve">
+    <value>#,##0</value>
+  </data>
+  <data name="amount26.OutputFormat" xml:space="preserve">
+    <value>#,##0</value>
+  </data>
+  <data name="rowSum2.OutputFormat" xml:space="preserve">
+    <value>#,##0</value>
+  </data>
+  <data name="amount30.OutputFormat" xml:space="preserve">
+    <value>#,##0</value>
+  </data>
+  <data name="amount31.OutputFormat" xml:space="preserve">
+    <value>#,##0</value>
+  </data>
+  <data name="amount32.OutputFormat" xml:space="preserve">
+    <value>#,##0</value>
+  </data>
+  <data name="amount33.OutputFormat" xml:space="preserve">
+    <value>#,##0</value>
+  </data>
+  <data name="amount34.OutputFormat" xml:space="preserve">
+    <value>#,##0</value>
+  </data>
+  <data name="amount35.OutputFormat" xml:space="preserve">
+    <value>#,##0</value>
+  </data>
+  <data name="amount36.OutputFormat" xml:space="preserve">
+    <value>#,##0</value>
+  </data>
+  <data name="rowSum3.OutputFormat" xml:space="preserve">
+    <value>#,##0</value>
+  </data>
+  <data name="colSum0.OutputFormat" xml:space="preserve">
+    <value>#,##0</value>
+  </data>
+  <data name="colSum1.OutputFormat" xml:space="preserve">
+    <value>#,##0</value>
+  </data>
+  <data name="colSum2.OutputFormat" xml:space="preserve">
+    <value>#,##0</value>
+  </data>
+  <data name="colSum3.OutputFormat" xml:space="preserve">
+    <value>#,##0</value>
+  </data>
+  <data name="colSum4.OutputFormat" xml:space="preserve">
+    <value>#,##0</value>
+  </data>
+  <data name="colSum5.OutputFormat" xml:space="preserve">
+    <value>#,##0</value>
+  </data>
+  <data name="colSum6.OutputFormat" xml:space="preserve">
+    <value>#,##0</value>
+  </data>
+  <data name="colSum7.OutputFormat" xml:space="preserve">
+    <value>#,##0</value>
+  </data>
+  <data name="amount40.OutputFormat" xml:space="preserve">
+    <value>#,##0</value>
+  </data>
+  <data name="amount41.OutputFormat" xml:space="preserve">
+    <value>#,##0</value>
+  </data>
+  <data name="amount42.OutputFormat" xml:space="preserve">
+    <value>#,##0</value>
+  </data>
+  <data name="amount43.OutputFormat" xml:space="preserve">
+    <value>#,##0</value>
+  </data>
+  <data name="amount44.OutputFormat" xml:space="preserve">
+    <value>#,##0</value>
+  </data>
+  <data name="amount45.OutputFormat" xml:space="preserve">
+    <value>#,##0</value>
+  </data>
+  <data name="amount46.OutputFormat" xml:space="preserve">
+    <value>#,##0</value>
+  </data>
+  <data name="rowSum4.OutputFormat" xml:space="preserve">
+    <value>#,##0</value>
+  </data>
+  <metadata name="$this.ScriptEditorPositionForUndo" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+    <value>0, 0</value>
+  </metadata>
+  <metadata name="$this.ScriptEditorPositionForRedo" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+    <value>0, 0</value>
+  </metadata>
+  <data name="csvDataSource1.ConnectionString" xml:space="preserve">
+    <value>Path=C:\\ryoei\\REA2300.csv;Locale=ja-JP;TextQualifier=";ColumnsSeparator=,;RowsSeparator=\r\n;Columns=supplier,kinds,0(Integer),1(Integer),2(Integer),3(Integer),4(Integer),5(Integer),6(Integer),7(Integer);HasHeaders=False</value>
+  </data>
+</root>
