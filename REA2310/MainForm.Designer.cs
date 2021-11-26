@@ -87,7 +87,7 @@ namespace REA2300
             this.Controls.Add(this.dateLabel);
             this.Controls.Add(this.dateMtb);
             this.Name = "MainForm";
-            this.Text = "REA2300";
+            this.Text = "入金予定表(REA2300 Ver1.0)";
             this.ResumeLayout(false);
             this.PerformLayout();
 
