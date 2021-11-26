@@ -11,7 +11,7 @@ namespace RyoeiSystem.Database.Models
         public int TECSEICOD;
         public string TECMEISYO;
         public string TECNYUSYU;
-        public long TECKEIDAT;
+        public long TECTEGDAT;
         public double TECKINGAK;
         public int TECBANKCD;
 
@@ -20,7 +20,7 @@ namespace RyoeiSystem.Database.Models
             TECSEICOD = 0;
             TECMEISYO = "";
             TECNYUSYU = "";
-            TECKEIDAT = 0;
+            TECTEGDAT = 0;
             TECKINGAK = 0.0;
             TECBANKCD = 0;
         }

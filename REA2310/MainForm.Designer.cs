@@ -29,6 +29,7 @@ namespace REA2300
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(MainForm));
             this.dateMtb = new System.Windows.Forms.MaskedTextBox();
             this.dateLabel = new System.Windows.Forms.Label();
             this.endBtn = new System.Windows.Forms.Button();
@@ -42,8 +43,9 @@ namespace REA2300
             this.dateMtb.Mask = "##/##";
             this.dateMtb.Name = "dateMtb";
             this.dateMtb.Size = new System.Drawing.Size(100, 26);
-            this.dateMtb.TabIndex = 0;
+            this.dateMtb.TabIndex = 1;
             this.dateMtb.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.dateMtb.KeyDown += new System.Windows.Forms.KeyEventHandler(this.dateMtb_KeyDown);
             // 
             // dateLabel
             // 
@@ -86,8 +88,8 @@ namespace REA2300
             this.Controls.Add(this.endBtn);
             this.Controls.Add(this.dateLabel);
             this.Controls.Add(this.dateMtb);
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "MainForm";
-            this.Text = "入金予定表(REA2300 Ver1.0)";
             this.ResumeLayout(false);
             this.PerformLayout();
 

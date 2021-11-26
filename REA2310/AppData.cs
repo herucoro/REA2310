@@ -15,7 +15,6 @@ namespace REA2300
 
         public AppData()
         {
-            //rootPath = System.Environment.GetFolderPath(Environment.SpecialFolder.ApplicationData) + @"\RyoeiSystem\REA2300";
             rootPath = @"C:\ryoei";
 
             if (!Directory.Exists(rootPath))

@@ -69,7 +69,7 @@ namespace REA2300
             this.viewer1.Sidebar.TocPanel.Text = "見出しマップラベル";
             this.viewer1.Sidebar.TocPanel.Width = 200;
             this.viewer1.Sidebar.Width = 200;
-            this.viewer1.Size = new System.Drawing.Size(800, 450);
+            this.viewer1.Size = new System.Drawing.Size(1264, 681);
             this.viewer1.TabIndex = 0;
             this.viewer1.Load += new System.EventHandler(this.viewer1_Load);
             // 
@@ -77,7 +77,7 @@ namespace REA2300
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 12F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(800, 450);
+            this.ClientSize = new System.Drawing.Size(1264, 681);
             this.Controls.Add(this.viewer1);
             this.Name = "PrintForm";
             this.Text = "PrintForm";
