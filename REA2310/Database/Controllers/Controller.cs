@@ -86,6 +86,10 @@ namespace RyoeiSystem.Database.Controllers
                 sql = @"SELECT TECSEICOD, TECMEISYO, TECNYUSYU, TECKEIDAT, SUM(TECKINGAK) AS summary, TECBANKCD 
                         FROM TEC
                         WHERE TECKEIDAT >= @Date
+                        AND (TECNYUSYU = 3
+                        OR TECNYUSYU = 5
+                        OR TECNYUSYU = 6
+                        OR TECNYUSYU = 7)
                         GROUP BY TECSEICOD, TECMEISYO, TECNYUSYU, TECKEIDAT, TECBANKCD
                         ;";
 
@@ -239,8 +243,6 @@ namespace RyoeiSystem.Database.Controllers
                         });
                     }
                 }
-
-
 
                 connection.Close();
             }
