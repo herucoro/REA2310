@@ -17,6 +17,13 @@ namespace REA2300
         public MainForm()
         {
             InitializeComponent();
+            
+            this.Text = AssemblyInformation.assemblyTitle 
+                        + "(" 
+                        + AssemblyInformation.assemblyProduct 
+                        + " Ver." 
+                        + AssemblyInformation.fileVersion 
+                        + ")";
         }
 
         private void printBtn_Click(object sender, EventArgs e)
@@ -43,6 +50,21 @@ namespace REA2300
         private void endBtn_Click(object sender, EventArgs e)
         {
             this.Close();
-        }        
+        }
+
+        private void dateMtb_KeyDown(object sender, KeyEventArgs e)
+        {
+            if (e.KeyCode == Keys.Enter)
+            {
+                if (e.Shift)
+                {
+                    ProcessTabKey(false);
+                }
+                else
+                {
+                    ProcessTabKey(true);
+                }
+            }
+        }
     }
 }
