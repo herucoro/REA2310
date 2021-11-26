@@ -144,15 +144,6 @@ namespace REA2300
             this.line5 = new GrapeCity.ActiveReports.SectionReportModel.Line();
             this.line6 = new GrapeCity.ActiveReports.SectionReportModel.Line();
             this.textBox1 = new GrapeCity.ActiveReports.SectionReportModel.TextBox();
-            this.bankName4 = new GrapeCity.ActiveReports.SectionReportModel.TextBox();
-            this.amount40 = new GrapeCity.ActiveReports.SectionReportModel.TextBox();
-            this.amount41 = new GrapeCity.ActiveReports.SectionReportModel.TextBox();
-            this.amount42 = new GrapeCity.ActiveReports.SectionReportModel.TextBox();
-            this.amount43 = new GrapeCity.ActiveReports.SectionReportModel.TextBox();
-            this.amount44 = new GrapeCity.ActiveReports.SectionReportModel.TextBox();
-            this.amount45 = new GrapeCity.ActiveReports.SectionReportModel.TextBox();
-            this.amount46 = new GrapeCity.ActiveReports.SectionReportModel.TextBox();
-            this.rowSum4 = new GrapeCity.ActiveReports.SectionReportModel.TextBox();
             ((System.ComponentModel.ISupportInitialize)(textBox28)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(textBox29)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(textBox30)).BeginInit();
@@ -240,15 +231,6 @@ namespace REA2300
             ((System.ComponentModel.ISupportInitialize)(this.colSum6)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.colSum7)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.textBox1)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.bankName4)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.amount40)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.amount41)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.amount42)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.amount43)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.amount44)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.amount45)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.amount46)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.rowSum4)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this)).BeginInit();
             // 
             // textBox28
@@ -778,7 +760,7 @@ namespace REA2300
             // 
             // line1
             // 
-            this.line1.Height = 2.980232E-08F;
+            this.line1.Height = 0F;
             this.line1.Left = 1.927F;
             this.line1.LineStyle = GrapeCity.ActiveReports.SectionReportModel.LineStyle.Dot;
             this.line1.LineWeight = 1F;
@@ -970,16 +952,7 @@ namespace REA2300
             this.colSum7,
             this.line5,
             this.line6,
-            this.textBox1,
-            this.bankName4,
-            this.amount40,
-            this.amount41,
-            this.amount42,
-            this.amount43,
-            this.amount44,
-            this.amount45,
-            this.amount46,
-            this.rowSum4});
+            this.textBox1});
             this.reportFooter1.Height = 2.145833F;
             this.reportFooter1.Name = "reportFooter1";
             // 
@@ -1408,7 +1381,7 @@ namespace REA2300
             this.colSum0.Style = "color: Black; font-family: ＭＳ Ｐ明朝; font-size: 11.25pt; text-align: right; ddo-cha" +
     "r-set: 1";
             this.colSum0.Text = "YY/MM";
-            this.colSum0.Top = 1.838F;
+            this.colSum0.Top = 1.628F;
             this.colSum0.Width = 0.897F;
             // 
             // colSum1
@@ -1420,7 +1393,7 @@ namespace REA2300
             this.colSum1.Style = "color: Black; font-family: ＭＳ Ｐ明朝; font-size: 11.25pt; text-align: right; ddo-cha" +
     "r-set: 1";
             this.colSum1.Text = "YY/MM";
-            this.colSum1.Top = 1.838F;
+            this.colSum1.Top = 1.628F;
             this.colSum1.Width = 0.8760007F;
             // 
             // colSum2
@@ -1432,7 +1405,7 @@ namespace REA2300
             this.colSum2.Style = "color: Black; font-family: ＭＳ Ｐ明朝; font-size: 11.25pt; text-align: right; ddo-cha" +
     "r-set: 1";
             this.colSum2.Text = "YY/MM";
-            this.colSum2.Top = 1.838F;
+            this.colSum2.Top = 1.628F;
             this.colSum2.Width = 0.897F;
             // 
             // colSum3
@@ -1444,7 +1417,7 @@ namespace REA2300
             this.colSum3.Style = "color: Black; font-family: ＭＳ Ｐ明朝; font-size: 11.25pt; text-align: right; ddo-cha" +
     "r-set: 1";
             this.colSum3.Text = "YY/MM";
-            this.colSum3.Top = 1.838F;
+            this.colSum3.Top = 1.628F;
             this.colSum3.Width = 0.897F;
             // 
             // colSum4
@@ -1456,7 +1429,7 @@ namespace REA2300
             this.colSum4.Style = "color: Black; font-family: ＭＳ Ｐ明朝; font-size: 11.25pt; text-align: right; ddo-cha" +
     "r-set: 1";
             this.colSum4.Text = "YY/MM";
-            this.colSum4.Top = 1.838F;
+            this.colSum4.Top = 1.628F;
             this.colSum4.Width = 0.897F;
             // 
             // colSum5
@@ -1468,7 +1441,7 @@ namespace REA2300
             this.colSum5.Style = "color: Black; font-family: ＭＳ Ｐ明朝; font-size: 11.25pt; text-align: right; ddo-cha" +
     "r-set: 1";
             this.colSum5.Text = "YY/MM";
-            this.colSum5.Top = 1.838F;
+            this.colSum5.Top = 1.628F;
             this.colSum5.Width = 0.897F;
             // 
             // colSum6
@@ -1482,7 +1455,7 @@ namespace REA2300
     "r-set: 1";
             this.colSum6.SummaryGroup = "";
             this.colSum6.Text = "YY/MM";
-            this.colSum6.Top = 1.838F;
+            this.colSum6.Top = 1.628F;
             this.colSum6.Width = 0.897F;
             // 
             // colSum7
@@ -1496,22 +1469,22 @@ namespace REA2300
     "r-set: 1";
             this.colSum7.SummaryGroup = "";
             this.colSum7.Text = "計";
-            this.colSum7.Top = 1.838F;
+            this.colSum7.Top = 1.628F;
             this.colSum7.Width = 1.073F;
             // 
             // line5
             // 
             this.line5.Height = 0F;
-            this.line5.Left = 0.1639995F;
+            this.line5.Left = 0.1639996F;
             this.line5.LineStyle = GrapeCity.ActiveReports.SectionReportModel.LineStyle.Dash;
             this.line5.LineWeight = 1F;
             this.line5.Name = "line5";
-            this.line5.Top = 1.677F;
+            this.line5.Top = 1.467F;
             this.line5.Width = 10.428F;
-            this.line5.X1 = 0.1639995F;
+            this.line5.X1 = 0.1639996F;
             this.line5.X2 = 10.592F;
-            this.line5.Y1 = 1.677F;
-            this.line5.Y2 = 1.677F;
+            this.line5.Y1 = 1.467F;
+            this.line5.Y2 = 1.467F;
             // 
             // line6
             // 
@@ -1532,112 +1505,8 @@ namespace REA2300
             this.textBox1.Left = 1.897F;
             this.textBox1.Name = "textBox1";
             this.textBox1.Text = "合計";
-            this.textBox1.Top = 1.838F;
+            this.textBox1.Top = 1.628F;
             this.textBox1.Width = 0.792F;
-            // 
-            // bankName4
-            // 
-            this.bankName4.DistinctField = "";
-            this.bankName4.Height = 0.2F;
-            this.bankName4.Left = 0.1660018F;
-            this.bankName4.Name = "bankName4";
-            this.bankName4.Style = "color: Black; text-align: left";
-            this.bankName4.SummaryGroup = "";
-            this.bankName4.Text = "取引先";
-            this.bankName4.Top = 1.395F;
-            this.bankName4.Width = 1.691998F;
-            // 
-            // amount40
-            // 
-            this.amount40.Height = 0.2F;
-            this.amount40.Left = 2.719F;
-            this.amount40.Name = "amount40";
-            this.amount40.OutputFormat = resources.GetString("amount40.OutputFormat");
-            this.amount40.Style = "color: Black; font-family: ＭＳ Ｐ明朝; text-align: right; ddo-char-set: 1";
-            this.amount40.Text = "YY/MM";
-            this.amount40.Top = 1.395F;
-            this.amount40.Width = 0.897F;
-            // 
-            // amount41
-            // 
-            this.amount41.Height = 0.2F;
-            this.amount41.Left = 3.688001F;
-            this.amount41.Name = "amount41";
-            this.amount41.OutputFormat = resources.GetString("amount41.OutputFormat");
-            this.amount41.Style = "color: Black; font-family: ＭＳ Ｐ明朝; text-align: right; ddo-char-set: 1";
-            this.amount41.Text = "YY/MM";
-            this.amount41.Top = 1.395F;
-            this.amount41.Width = 0.8760007F;
-            // 
-            // amount42
-            // 
-            this.amount42.Height = 0.2F;
-            this.amount42.Left = 4.651001F;
-            this.amount42.Name = "amount42";
-            this.amount42.OutputFormat = resources.GetString("amount42.OutputFormat");
-            this.amount42.Style = "color: Black; font-family: ＭＳ Ｐ明朝; text-align: right; ddo-char-set: 1";
-            this.amount42.Text = "YY/MM";
-            this.amount42.Top = 1.395F;
-            this.amount42.Width = 0.897F;
-            // 
-            // amount43
-            // 
-            this.amount43.Height = 0.2F;
-            this.amount43.Left = 5.636002F;
-            this.amount43.Name = "amount43";
-            this.amount43.OutputFormat = resources.GetString("amount43.OutputFormat");
-            this.amount43.Style = "color: Black; font-family: ＭＳ Ｐ明朝; text-align: right; ddo-char-set: 1";
-            this.amount43.Text = "YY/MM";
-            this.amount43.Top = 1.395F;
-            this.amount43.Width = 0.897F;
-            // 
-            // amount44
-            // 
-            this.amount44.Height = 0.2F;
-            this.amount44.Left = 6.583001F;
-            this.amount44.Name = "amount44";
-            this.amount44.OutputFormat = resources.GetString("amount44.OutputFormat");
-            this.amount44.Style = "color: Black; font-family: ＭＳ Ｐ明朝; text-align: right; ddo-char-set: 1";
-            this.amount44.Text = "YY/MM";
-            this.amount44.Top = 1.395F;
-            this.amount44.Width = 0.897F;
-            // 
-            // amount45
-            // 
-            this.amount45.Height = 0.2F;
-            this.amount45.Left = 7.563001F;
-            this.amount45.Name = "amount45";
-            this.amount45.OutputFormat = resources.GetString("amount45.OutputFormat");
-            this.amount45.Style = "color: Black; font-family: ＭＳ Ｐ明朝; text-align: right; ddo-char-set: 1";
-            this.amount45.Text = "YY/MM";
-            this.amount45.Top = 1.395F;
-            this.amount45.Width = 0.897F;
-            // 
-            // amount46
-            // 
-            this.amount46.DistinctField = "";
-            this.amount46.Height = 0.2F;
-            this.amount46.Left = 8.552002F;
-            this.amount46.Name = "amount46";
-            this.amount46.OutputFormat = resources.GetString("amount46.OutputFormat");
-            this.amount46.Style = "color: Black; font-family: ＭＳ Ｐ明朝; text-align: right; ddo-char-set: 1";
-            this.amount46.SummaryGroup = "";
-            this.amount46.Text = "YY/MM";
-            this.amount46.Top = 1.395F;
-            this.amount46.Width = 0.897F;
-            // 
-            // rowSum4
-            // 
-            this.rowSum4.DistinctField = "";
-            this.rowSum4.Height = 0.2F;
-            this.rowSum4.Left = 9.541002F;
-            this.rowSum4.Name = "rowSum4";
-            this.rowSum4.OutputFormat = resources.GetString("rowSum4.OutputFormat");
-            this.rowSum4.Style = "color: Black; font-family: ＭＳ Ｐ明朝; text-align: right; ddo-char-set: 1";
-            this.rowSum4.SummaryGroup = "";
-            this.rowSum4.Text = "計";
-            this.rowSum4.Top = 1.395F;
-            this.rowSum4.Width = 1.095F;
             // 
             // SectionReport
             // 
@@ -1751,15 +1620,6 @@ namespace REA2300
             ((System.ComponentModel.ISupportInitialize)(this.colSum6)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.colSum7)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.textBox1)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.bankName4)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.amount40)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.amount41)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.amount42)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.amount43)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.amount44)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.amount45)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.amount46)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.rowSum4)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this)).EndInit();
 
         }
@@ -1848,14 +1708,5 @@ namespace REA2300
         private GrapeCity.ActiveReports.SectionReportModel.Line line5;
         private GrapeCity.ActiveReports.SectionReportModel.Line line6;
         private GrapeCity.ActiveReports.SectionReportModel.TextBox textBox1;
-        private GrapeCity.ActiveReports.SectionReportModel.TextBox bankName4;
-        private GrapeCity.ActiveReports.SectionReportModel.TextBox amount40;
-        private GrapeCity.ActiveReports.SectionReportModel.TextBox amount41;
-        private GrapeCity.ActiveReports.SectionReportModel.TextBox amount42;
-        private GrapeCity.ActiveReports.SectionReportModel.TextBox amount43;
-        private GrapeCity.ActiveReports.SectionReportModel.TextBox amount44;
-        private GrapeCity.ActiveReports.SectionReportModel.TextBox amount45;
-        private GrapeCity.ActiveReports.SectionReportModel.TextBox amount46;
-        private GrapeCity.ActiveReports.SectionReportModel.TextBox rowSum4;
     }
 }

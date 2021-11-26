@@ -281,6 +281,7 @@
     <Compile Include="AppData.cs" />
     <Compile Include="Common\IData.cs" />
     <Compile Include="Database\Common\DatabaseCommon.cs" />
+    <Compile Include="Database\Common\MZZAction.cs" />
     <Compile Include="Database\Controllers\Controller.cs" />
     <Compile Include="Database\Models\BankModel.cs" />
     <Compile Include="Database\Models\MALModel.cs" />
