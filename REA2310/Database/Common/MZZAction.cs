@@ -36,8 +36,7 @@ namespace RyoeiSystem.Database.Common
                 {
                     command.Parameters.Clear();
                     DatabaseCommon.AddSqlParameter(command, "@machineName", System.Data.SqlDbType.NChar, Environment.MachineName);
-                    //DatabaseCommon.AddSqlParameter(command, "@assemblyName", System.Data.SqlDbType.NChar, assemblyName + "%");
-                    DatabaseCommon.AddSqlParameter(command, "@assemblyName", System.Data.SqlDbType.NChar, "RMB5101%");
+                    DatabaseCommon.AddSqlParameter(command, "@assemblyName", System.Data.SqlDbType.NChar, assemblyName + "%");
 
                     using (var dataReader = command.ExecuteReader())
                     {
