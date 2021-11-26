@@ -282,6 +282,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="AppData.cs" />
+    <Compile Include="Common\AssemblyInformation.cs" />
     <Compile Include="Common\IData.cs" />
     <Compile Include="Database\Common\DatabaseCommon.cs" />
     <Compile Include="Database\Common\MZZAction.cs" />
