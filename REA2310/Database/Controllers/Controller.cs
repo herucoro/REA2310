@@ -83,14 +83,14 @@ namespace RyoeiSystem.Database.Controllers
                 }
 
                 // 入金データをTECから取得する
-                sql = @"SELECT TECSEICOD, TECMEISYO, TECNYUSYU, TECKEIDAT, SUM(TECKINGAK) AS summary, TECBANKCD 
+                sql = @"SELECT TECSEICOD, TECMEISYO, TECNYUSYU, TECTEGDAT, SUM(TECKINGAK) AS summary, TECBANKCD 
                         FROM TEC
-                        WHERE TECKEIDAT >= @Date
+                        WHERE TECTEGDAT >= @Date
                         AND (TECNYUSYU = 3
                         OR TECNYUSYU = 5
                         OR TECNYUSYU = 6
                         OR TECNYUSYU = 7)
-                        GROUP BY TECSEICOD, TECMEISYO, TECNYUSYU, TECKEIDAT, TECBANKCD
+                        GROUP BY TECSEICOD, TECMEISYO, TECNYUSYU, TECTEGDAT, TECBANKCD
                         ;";
 
                 using (var command = new SqlCommand(sql, connection))
@@ -105,7 +105,7 @@ namespace RyoeiSystem.Database.Controllers
                         while (dataReader.Read())
                         {
                             TEC.Add(new TECModel() { TECSEICOD = (Int16)dataReader["TECSEICOD"], TECMEISYO = (string)dataReader["TECMEISYO"],
-                                TECNYUSYU = (string)dataReader["TECNYUSYU"], TECKEIDAT = (Int32)dataReader["TECKEIDAT"],
+                                TECNYUSYU = (string)dataReader["TECNYUSYU"], TECTEGDAT = (Int32)dataReader["TECTEGDAT"],
                                 TECKINGAK = (double)dataReader["summary"], TECBANKCD = (Int16)dataReader["TECBANKCD"] });
                         }
                     }
@@ -114,12 +114,12 @@ namespace RyoeiSystem.Database.Controllers
                 foreach (var value in TEC)
                 {
                     // 計上日のデータをyyyyMMに変換
-                    value.TECKEIDAT = (int)(value.TECKEIDAT / 100) > int.Parse(date.Last()) ? 
-                                            int.Parse(date.Last()): (int)(value.TECKEIDAT / 100);
+                    value.TECTEGDAT = (int)(value.TECTEGDAT / 100) > int.Parse(date.Last()) ? 
+                                            int.Parse(date.Last()): (int)(value.TECTEGDAT / 100);
                 }
 
                 var query = TEC.OrderBy(x => x.TECSEICOD).ThenBy(x => x.TECNYUSYU)
-                            .GroupBy(x => new { TECSEICOD = x.TECSEICOD, TECMEISYO = x.TECMEISYO, TECNYUSYU = x.TECNYUSYU, TECKEIDAT = x.TECKEIDAT })
+                            .GroupBy(x => new { TECSEICOD = x.TECSEICOD, TECMEISYO = x.TECMEISYO, TECNYUSYU = x.TECNYUSYU, TECTEGDAT = x.TECTEGDAT })
                             .Select(x => new { Key = x.Key, Sum = x.Sum(y => y.TECKINGAK) });
 
                 int seicod = 0;
@@ -148,7 +148,7 @@ namespace RyoeiSystem.Database.Controllers
                     }
 
                     var data = query
-                                .OrderBy(x => x.Key.TECKEIDAT)
+                                .OrderBy(x => x.Key.TECTEGDAT)
                                 .Where(x => x.Key.TECSEICOD == seicod && x.Key.TECNYUSYU == nyusyu)
                                 .ToList();
 
@@ -159,8 +159,8 @@ namespace RyoeiSystem.Database.Controllers
                     foreach (var d in date)
                     {
                         // csvファイルに金額を書き込む
-                        file.Write("{0},", data.Any(x => x.Key.TECKEIDAT == long.Parse(d)) ? 
-                                        data.First(x => x.Key.TECKEIDAT == long.Parse(d)).Sum : 0);
+                        file.Write("{0},", data.Any(x => x.Key.TECTEGDAT == long.Parse(d)) ? 
+                                        data.First(x => x.Key.TECTEGDAT == long.Parse(d)).Sum : 0);
                     }
 
 
@@ -196,8 +196,8 @@ namespace RyoeiSystem.Database.Controllers
                     }
                 }
 
-                var bankQuery = TEC.OrderByDescending(x => x.TECBANKCD).ThenBy(x => x.TECKEIDAT)
-                            .GroupBy(x => new { TECBANKCD = x.TECBANKCD, TECKEIDAT = x.TECKEIDAT })
+                var bankQuery = TEC.OrderByDescending(x => x.TECBANKCD).ThenBy(x => x.TECTEGDAT)
+                            .GroupBy(x => new { TECBANKCD = x.TECBANKCD, TECTEGDAT = x.TECTEGDAT })
                             .Select(x => new { Key = x.Key, Sum = x.Sum(y => y.TECKINGAK) })
                             .ToList();
 
@@ -209,7 +209,7 @@ namespace RyoeiSystem.Database.Controllers
                     if (!bank.Any(x => x.bankCode == bankData.Key.TECBANKCD))
                     {
                         var data = bankQuery
-                                    .OrderBy(x => x.Key.TECKEIDAT)
+                                    .OrderBy(x => x.Key.TECTEGDAT)
                                     .Where(x => x.Key.TECBANKCD == bankData.Key.TECBANKCD)
                                     .ToList();
 
@@ -217,10 +217,10 @@ namespace RyoeiSystem.Database.Controllers
                         payment = new List<MoneyDateModel>();
                         foreach (var d in date)
                         {
-                            if (data.Any(x => x.Key.TECKEIDAT == long.Parse(d))) {
+                            if (data.Any(x => x.Key.TECTEGDAT == long.Parse(d))) {
                                 payment.Add(new MoneyDateModel()
                                 {
-                                    amount = data.First(x => x.Key.TECKEIDAT == long.Parse(d)).Sum,
+                                    amount = data.First(x => x.Key.TECTEGDAT == long.Parse(d)).Sum,
                                     paymentDay = d
                                 });
                             }
