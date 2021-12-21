@@ -1513,8 +1513,10 @@ namespace REA2300
             this.MasterReport = false;
             csvDataSource1.ConnectionString = resources.GetString("csvDataSource1.ConnectionString");
             this.DataSource = csvDataSource1;
+            this.PageSettings.Margins.Bottom = 0.4F;
             this.PageSettings.Margins.Left = 0.5F;
             this.PageSettings.Margins.Right = 0.5F;
+            this.PageSettings.Margins.Top = 0.5F;
             this.PageSettings.Orientation = GrapeCity.ActiveReports.Document.Section.PageOrientation.Landscape;
             this.PageSettings.PaperHeight = 11F;
             this.PageSettings.PaperWidth = 8.5F;
