@@ -335,7 +335,7 @@ namespace REA2300
             // 
             textBox21.DataField = "0";
             textBox21.Height = 0.2F;
-            textBox21.Left = 2.719001F;
+            textBox21.Left = 2.719F;
             textBox21.Name = "textBox21";
             textBox21.OutputFormat = resources.GetString("textBox21.OutputFormat");
             textBox21.Style = "color: Black; font-family: ＭＳ Ｐ明朝; font-size: 11.25pt; font-weight: normal; text-" +
@@ -344,14 +344,14 @@ namespace REA2300
             textBox21.SummaryRunning = GrapeCity.ActiveReports.SectionReportModel.SummaryRunning.Group;
             textBox21.SummaryType = GrapeCity.ActiveReports.SectionReportModel.SummaryType.SubTotal;
             textBox21.Text = "YY/MM";
-            textBox21.Top = 0.03F;
+            textBox21.Top = 0F;
             textBox21.Width = 0.8970003F;
             // 
             // textBox22
             // 
             textBox22.DataField = "1";
             textBox22.Height = 0.2F;
-            textBox22.Left = 3.688001F;
+            textBox22.Left = 3.688F;
             textBox22.Name = "textBox22";
             textBox22.OutputFormat = resources.GetString("textBox22.OutputFormat");
             textBox22.Style = "color: Black; font-family: ＭＳ Ｐ明朝; font-size: 11.25pt; font-weight: normal; text-" +
@@ -360,14 +360,14 @@ namespace REA2300
             textBox22.SummaryRunning = GrapeCity.ActiveReports.SectionReportModel.SummaryRunning.Group;
             textBox22.SummaryType = GrapeCity.ActiveReports.SectionReportModel.SummaryType.SubTotal;
             textBox22.Text = "YY/MM";
-            textBox22.Top = 0.03F;
+            textBox22.Top = 0F;
             textBox22.Width = 0.8760004F;
             // 
             // textBox23
             // 
             textBox23.DataField = "3";
             textBox23.Height = 0.2F;
-            textBox23.Left = 5.636003F;
+            textBox23.Left = 5.636002F;
             textBox23.Name = "textBox23";
             textBox23.OutputFormat = resources.GetString("textBox23.OutputFormat");
             textBox23.Style = "color: Black; font-family: ＭＳ Ｐ明朝; font-size: 11.25pt; font-weight: normal; text-" +
@@ -376,14 +376,14 @@ namespace REA2300
             textBox23.SummaryRunning = GrapeCity.ActiveReports.SectionReportModel.SummaryRunning.Group;
             textBox23.SummaryType = GrapeCity.ActiveReports.SectionReportModel.SummaryType.SubTotal;
             textBox23.Text = "YY/MM";
-            textBox23.Top = 0.03F;
+            textBox23.Top = 0F;
             textBox23.Width = 0.8970003F;
             // 
             // textBox24
             // 
             textBox24.DataField = "4";
             textBox24.Height = 0.2F;
-            textBox24.Left = 6.583001F;
+            textBox24.Left = 6.583F;
             textBox24.Name = "textBox24";
             textBox24.OutputFormat = resources.GetString("textBox24.OutputFormat");
             textBox24.Style = "color: Black; font-family: ＭＳ Ｐ明朝; font-size: 11.25pt; font-weight: normal; text-" +
@@ -392,14 +392,14 @@ namespace REA2300
             textBox24.SummaryRunning = GrapeCity.ActiveReports.SectionReportModel.SummaryRunning.Group;
             textBox24.SummaryType = GrapeCity.ActiveReports.SectionReportModel.SummaryType.SubTotal;
             textBox24.Text = "YY/MM";
-            textBox24.Top = 0.03F;
+            textBox24.Top = 0F;
             textBox24.Width = 0.8970003F;
             // 
             // textBox25
             // 
             textBox25.DataField = "5";
             textBox25.Height = 0.2F;
-            textBox25.Left = 7.563F;
+            textBox25.Left = 7.562999F;
             textBox25.Name = "textBox25";
             textBox25.OutputFormat = resources.GetString("textBox25.OutputFormat");
             textBox25.Style = "color: Black; font-family: ＭＳ Ｐ明朝; font-size: 11.25pt; font-weight: normal; text-" +
@@ -408,7 +408,7 @@ namespace REA2300
             textBox25.SummaryRunning = GrapeCity.ActiveReports.SectionReportModel.SummaryRunning.Group;
             textBox25.SummaryType = GrapeCity.ActiveReports.SectionReportModel.SummaryType.SubTotal;
             textBox25.Text = "YY/MM";
-            textBox25.Top = 0.03F;
+            textBox25.Top = 0F;
             textBox25.Width = 0.8970003F;
             // 
             // textBox26
@@ -416,7 +416,7 @@ namespace REA2300
             textBox26.DataField = "6";
             textBox26.DistinctField = "";
             textBox26.Height = 0.2F;
-            textBox26.Left = 8.552F;
+            textBox26.Left = 8.551999F;
             textBox26.Name = "textBox26";
             textBox26.OutputFormat = resources.GetString("textBox26.OutputFormat");
             textBox26.Style = "color: Black; font-family: ＭＳ Ｐ明朝; font-size: 11.25pt; font-weight: normal; text-" +
@@ -425,14 +425,14 @@ namespace REA2300
             textBox26.SummaryRunning = GrapeCity.ActiveReports.SectionReportModel.SummaryRunning.Group;
             textBox26.SummaryType = GrapeCity.ActiveReports.SectionReportModel.SummaryType.SubTotal;
             textBox26.Text = "YY/MM";
-            textBox26.Top = 0.03F;
+            textBox26.Top = 1.862645E-09F;
             textBox26.Width = 0.8970003F;
             // 
             // textBox27
             // 
             textBox27.DataField = "2";
             textBox27.Height = 0.2F;
-            textBox27.Left = 4.651F;
+            textBox27.Left = 4.650999F;
             textBox27.Name = "textBox27";
             textBox27.OutputFormat = resources.GetString("textBox27.OutputFormat");
             textBox27.Style = "color: Black; font-family: ＭＳ Ｐ明朝; font-size: 11.25pt; font-weight: normal; text-" +
@@ -441,7 +441,7 @@ namespace REA2300
             textBox27.SummaryRunning = GrapeCity.ActiveReports.SectionReportModel.SummaryRunning.Group;
             textBox27.SummaryType = GrapeCity.ActiveReports.SectionReportModel.SummaryType.SubTotal;
             textBox27.Text = "YY/MM";
-            textBox27.Top = 0.03F;
+            textBox27.Top = 0F;
             textBox27.Width = 0.8970003F;
             // 
             // pageHeader
@@ -654,108 +654,108 @@ namespace REA2300
             this.textBox16,
             this.line1,
             this.textBox2});
-            this.detail.Height = 0.385417F;
+            this.detail.Height = 0.260417F;
             this.detail.Name = "detail";
             // 
             // textBox14
             // 
             this.textBox14.DataField = "kinds";
-            this.textBox14.Height = 0.2F;
-            this.textBox14.Left = 1.927001F;
+            this.textBox14.Height = 0.169F;
+            this.textBox14.Left = 1.927F;
             this.textBox14.Name = "textBox14";
             this.textBox14.Style = "font-family: ＭＳ Ｐ明朝";
             this.textBox14.Text = "種別";
-            this.textBox14.Top = 0.07300001F;
+            this.textBox14.Top = 0F;
             this.textBox14.Width = 0.7619998F;
             // 
             // textBox4
             // 
             this.textBox4.DataField = "0";
-            this.textBox4.Height = 0.2F;
-            this.textBox4.Left = 2.719001F;
+            this.textBox4.Height = 0.169F;
+            this.textBox4.Left = 2.719F;
             this.textBox4.Name = "textBox4";
             this.textBox4.OutputFormat = resources.GetString("textBox4.OutputFormat");
             this.textBox4.Style = "color: Black; font-family: ＭＳ Ｐ明朝; text-align: right; vertical-align: top";
             this.textBox4.Text = "YY/MM";
-            this.textBox4.Top = 0.07300001F;
+            this.textBox4.Top = 0F;
             this.textBox4.Width = 0.8970003F;
             // 
             // textBox15
             // 
             this.textBox15.DataField = "1";
-            this.textBox15.Height = 0.2F;
-            this.textBox15.Left = 3.688001F;
+            this.textBox15.Height = 0.169F;
+            this.textBox15.Left = 3.688F;
             this.textBox15.Name = "textBox15";
             this.textBox15.OutputFormat = resources.GetString("textBox15.OutputFormat");
             this.textBox15.Style = "color: Black; font-family: ＭＳ Ｐ明朝; text-align: right; vertical-align: top";
             this.textBox15.Text = "YY/MM";
-            this.textBox15.Top = 0.07300001F;
+            this.textBox15.Top = 0F;
             this.textBox15.Width = 0.8760004F;
             // 
             // textBox17
             // 
             this.textBox17.DataField = "3";
-            this.textBox17.Height = 0.2F;
-            this.textBox17.Left = 5.636003F;
+            this.textBox17.Height = 0.169F;
+            this.textBox17.Left = 5.636002F;
             this.textBox17.Name = "textBox17";
             this.textBox17.OutputFormat = resources.GetString("textBox17.OutputFormat");
             this.textBox17.Style = "color: Black; font-family: ＭＳ Ｐ明朝; text-align: right; vertical-align: top";
             this.textBox17.Text = "YY/MM";
-            this.textBox17.Top = 0.07300001F;
+            this.textBox17.Top = 0F;
             this.textBox17.Width = 0.8970003F;
             // 
             // textBox18
             // 
             this.textBox18.DataField = "4";
             this.textBox18.DistinctField = "";
-            this.textBox18.Height = 0.2F;
-            this.textBox18.Left = 6.583001F;
+            this.textBox18.Height = 0.169F;
+            this.textBox18.Left = 6.583F;
             this.textBox18.Name = "textBox18";
             this.textBox18.OutputFormat = resources.GetString("textBox18.OutputFormat");
             this.textBox18.Style = "color: Black; font-family: ＭＳ Ｐ明朝; text-align: right; vertical-align: top";
             this.textBox18.SummaryGroup = "";
             this.textBox18.Text = "YY/MM";
-            this.textBox18.Top = 0.07300001F;
+            this.textBox18.Top = 0F;
             this.textBox18.Width = 0.8970003F;
             // 
             // textBox19
             // 
             this.textBox19.DataField = "5";
             this.textBox19.DistinctField = "";
-            this.textBox19.Height = 0.2F;
-            this.textBox19.Left = 7.563F;
+            this.textBox19.Height = 0.169F;
+            this.textBox19.Left = 7.562999F;
             this.textBox19.Name = "textBox19";
             this.textBox19.OutputFormat = resources.GetString("textBox19.OutputFormat");
             this.textBox19.Style = "color: Black; font-family: ＭＳ Ｐ明朝; text-align: right; vertical-align: top";
             this.textBox19.SummaryGroup = "";
             this.textBox19.Text = "YY/MM";
-            this.textBox19.Top = 0.07300001F;
+            this.textBox19.Top = 0F;
             this.textBox19.Width = 0.8970003F;
             // 
             // textBox20
             // 
             this.textBox20.DataField = "6";
             this.textBox20.DistinctField = "";
-            this.textBox20.Height = 0.2F;
-            this.textBox20.Left = 8.552F;
+            this.textBox20.Height = 0.169F;
+            this.textBox20.Left = 8.551999F;
             this.textBox20.Name = "textBox20";
             this.textBox20.OutputFormat = resources.GetString("textBox20.OutputFormat");
             this.textBox20.Style = "color: Black; font-family: ＭＳ Ｐ明朝; text-align: right; vertical-align: top";
             this.textBox20.SummaryGroup = "";
             this.textBox20.Text = "YY/MM";
-            this.textBox20.Top = 0.07300001F;
+            this.textBox20.Top = 0F;
             this.textBox20.Width = 0.8970003F;
             // 
             // textBox16
             // 
             this.textBox16.DataField = "2";
-            this.textBox16.Height = 0.2F;
-            this.textBox16.Left = 4.651F;
+            this.textBox16.Height = 0.169F;
+            this.textBox16.Left = 4.650999F;
             this.textBox16.Name = "textBox16";
             this.textBox16.OutputFormat = resources.GetString("textBox16.OutputFormat");
             this.textBox16.Style = "color: Black; font-family: ＭＳ Ｐ明朝; text-align: right; vertical-align: top";
             this.textBox16.Text = "YY/MM";
-            this.textBox16.Top = 0.07300001F;
+            this.textBox16.Top = 0F;
             this.textBox16.Width = 0.8970003F;
             // 
             // line1
@@ -765,25 +765,25 @@ namespace REA2300
             this.line1.LineStyle = GrapeCity.ActiveReports.SectionReportModel.LineStyle.Dot;
             this.line1.LineWeight = 1F;
             this.line1.Name = "line1";
-            this.line1.Top = 0.325F;
+            this.line1.Top = 0.221F;
             this.line1.Width = 8.667F;
             this.line1.X1 = 1.927F;
             this.line1.X2 = 10.594F;
-            this.line1.Y1 = 0.325F;
-            this.line1.Y2 = 0.325F;
+            this.line1.Y1 = 0.221F;
+            this.line1.Y2 = 0.221F;
             // 
             // textBox2
             // 
             this.textBox2.DataField = "7";
             this.textBox2.DistinctField = "";
-            this.textBox2.Height = 0.2F;
-            this.textBox2.Left = 9.541F;
+            this.textBox2.Height = 0.169F;
+            this.textBox2.Left = 9.540999F;
             this.textBox2.Name = "textBox2";
             this.textBox2.OutputFormat = resources.GetString("textBox2.OutputFormat");
             this.textBox2.Style = "color: Black; font-family: ＭＳ Ｐ明朝; text-align: right; vertical-align: top";
             this.textBox2.SummaryGroup = "";
             this.textBox2.Text = "YY/MM";
-            this.textBox2.Top = 0.07300001F;
+            this.textBox2.Top = 0F;
             this.textBox2.Width = 1.053001F;
             // 
             // pageFooter
@@ -846,38 +846,38 @@ namespace REA2300
             this.textBox35,
             this.line2,
             this.textBox37});
-            this.groupFooter1.Height = 0.3854167F;
+            this.groupFooter1.Height = 0.2916667F;
             this.groupFooter1.Name = "groupFooter1";
             // 
             // textBox35
             // 
             this.textBox35.Height = 0.2F;
-            this.textBox35.Left = 1.927001F;
+            this.textBox35.Left = 1.927F;
             this.textBox35.Name = "textBox35";
             this.textBox35.Text = "計";
-            this.textBox35.Top = 0.03F;
+            this.textBox35.Top = 0F;
             this.textBox35.Width = 0.7619998F;
             // 
             // line2
             // 
             this.line2.Height = 0F;
-            this.line2.Left = 0.166F;
+            this.line2.Left = 0.186F;
             this.line2.LineStyle = GrapeCity.ActiveReports.SectionReportModel.LineStyle.Dash;
             this.line2.LineWeight = 1F;
             this.line2.Name = "line2";
-            this.line2.Top = 0.26F;
+            this.line2.Top = 0.24F;
             this.line2.Width = 10.428F;
-            this.line2.X1 = 0.166F;
-            this.line2.X2 = 10.594F;
-            this.line2.Y1 = 0.26F;
-            this.line2.Y2 = 0.26F;
+            this.line2.X1 = 0.186F;
+            this.line2.X2 = 10.614F;
+            this.line2.Y1 = 0.24F;
+            this.line2.Y2 = 0.24F;
             // 
             // textBox37
             // 
             this.textBox37.DataField = "7";
             this.textBox37.DistinctField = "";
             this.textBox37.Height = 0.2F;
-            this.textBox37.Left = 9.541F;
+            this.textBox37.Left = 9.540999F;
             this.textBox37.Name = "textBox37";
             this.textBox37.OutputFormat = resources.GetString("textBox37.OutputFormat");
             this.textBox37.Style = "color: Black; font-family: ＭＳ Ｐ明朝; font-size: 11.25pt; font-weight: normal; text-" +
@@ -886,7 +886,7 @@ namespace REA2300
             this.textBox37.SummaryRunning = GrapeCity.ActiveReports.SectionReportModel.SummaryRunning.Group;
             this.textBox37.SummaryType = GrapeCity.ActiveReports.SectionReportModel.SummaryType.SubTotal;
             this.textBox37.Text = "YY/MM";
-            this.textBox37.Top = 0F;
+            this.textBox37.Top = 1.862645E-09F;
             this.textBox37.Width = 1.053001F;
             // 
             // reportHeader1
@@ -953,7 +953,7 @@ namespace REA2300
             this.line5,
             this.line6,
             this.textBox1});
-            this.reportFooter1.Height = 2.145833F;
+            this.reportFooter1.Height = 1.822916F;
             this.reportFooter1.Name = "reportFooter1";
             // 
             // bankName0
@@ -1381,7 +1381,7 @@ namespace REA2300
             this.colSum0.Style = "color: Black; font-family: ＭＳ Ｐ明朝; font-size: 11.25pt; text-align: right; ddo-cha" +
     "r-set: 1";
             this.colSum0.Text = "YY/MM";
-            this.colSum0.Top = 1.628F;
+            this.colSum0.Top = 1.513F;
             this.colSum0.Width = 0.897F;
             // 
             // colSum1
@@ -1393,7 +1393,7 @@ namespace REA2300
             this.colSum1.Style = "color: Black; font-family: ＭＳ Ｐ明朝; font-size: 11.25pt; text-align: right; ddo-cha" +
     "r-set: 1";
             this.colSum1.Text = "YY/MM";
-            this.colSum1.Top = 1.628F;
+            this.colSum1.Top = 1.513F;
             this.colSum1.Width = 0.8760007F;
             // 
             // colSum2
@@ -1405,7 +1405,7 @@ namespace REA2300
             this.colSum2.Style = "color: Black; font-family: ＭＳ Ｐ明朝; font-size: 11.25pt; text-align: right; ddo-cha" +
     "r-set: 1";
             this.colSum2.Text = "YY/MM";
-            this.colSum2.Top = 1.628F;
+            this.colSum2.Top = 1.513F;
             this.colSum2.Width = 0.897F;
             // 
             // colSum3
@@ -1417,7 +1417,7 @@ namespace REA2300
             this.colSum3.Style = "color: Black; font-family: ＭＳ Ｐ明朝; font-size: 11.25pt; text-align: right; ddo-cha" +
     "r-set: 1";
             this.colSum3.Text = "YY/MM";
-            this.colSum3.Top = 1.628F;
+            this.colSum3.Top = 1.513F;
             this.colSum3.Width = 0.897F;
             // 
             // colSum4
@@ -1429,7 +1429,7 @@ namespace REA2300
             this.colSum4.Style = "color: Black; font-family: ＭＳ Ｐ明朝; font-size: 11.25pt; text-align: right; ddo-cha" +
     "r-set: 1";
             this.colSum4.Text = "YY/MM";
-            this.colSum4.Top = 1.628F;
+            this.colSum4.Top = 1.513F;
             this.colSum4.Width = 0.897F;
             // 
             // colSum5
@@ -1441,7 +1441,7 @@ namespace REA2300
             this.colSum5.Style = "color: Black; font-family: ＭＳ Ｐ明朝; font-size: 11.25pt; text-align: right; ddo-cha" +
     "r-set: 1";
             this.colSum5.Text = "YY/MM";
-            this.colSum5.Top = 1.628F;
+            this.colSum5.Top = 1.513F;
             this.colSum5.Width = 0.897F;
             // 
             // colSum6
@@ -1455,7 +1455,7 @@ namespace REA2300
     "r-set: 1";
             this.colSum6.SummaryGroup = "";
             this.colSum6.Text = "YY/MM";
-            this.colSum6.Top = 1.628F;
+            this.colSum6.Top = 1.513F;
             this.colSum6.Width = 0.897F;
             // 
             // colSum7
@@ -1469,22 +1469,22 @@ namespace REA2300
     "r-set: 1";
             this.colSum7.SummaryGroup = "";
             this.colSum7.Text = "計";
-            this.colSum7.Top = 1.628F;
+            this.colSum7.Top = 1.513F;
             this.colSum7.Width = 1.073F;
             // 
             // line5
             // 
             this.line5.Height = 0F;
-            this.line5.Left = 0.1639996F;
+            this.line5.Left = 0.144F;
             this.line5.LineStyle = GrapeCity.ActiveReports.SectionReportModel.LineStyle.Dash;
             this.line5.LineWeight = 1F;
             this.line5.Name = "line5";
-            this.line5.Top = 1.467F;
+            this.line5.Top = 1.425F;
             this.line5.Width = 10.428F;
-            this.line5.X1 = 0.1639996F;
-            this.line5.X2 = 10.592F;
-            this.line5.Y1 = 1.467F;
-            this.line5.Y2 = 1.467F;
+            this.line5.X1 = 0.144F;
+            this.line5.X2 = 10.572F;
+            this.line5.Y1 = 1.425F;
+            this.line5.Y2 = 1.425F;
             // 
             // line6
             // 
@@ -1492,12 +1492,12 @@ namespace REA2300
             this.line6.Left = 0.186F;
             this.line6.LineWeight = 2F;
             this.line6.Name = "line6";
-            this.line6.Top = 0.269F;
+            this.line6.Top = 0.259F;
             this.line6.Width = 10.45F;
             this.line6.X1 = 0.186F;
             this.line6.X2 = 10.636F;
-            this.line6.Y1 = 0.269F;
-            this.line6.Y2 = 0.272F;
+            this.line6.Y1 = 0.259F;
+            this.line6.Y2 = 0.262F;
             // 
             // textBox1
             // 
@@ -1505,7 +1505,7 @@ namespace REA2300
             this.textBox1.Left = 1.897F;
             this.textBox1.Name = "textBox1";
             this.textBox1.Text = "合計";
-            this.textBox1.Top = 1.628F;
+            this.textBox1.Top = 1.513F;
             this.textBox1.Width = 0.792F;
             // 
             // SectionReport
@@ -1513,8 +1513,10 @@ namespace REA2300
             this.MasterReport = false;
             csvDataSource1.ConnectionString = resources.GetString("csvDataSource1.ConnectionString");
             this.DataSource = csvDataSource1;
+            this.PageSettings.Margins.Bottom = 0.4F;
             this.PageSettings.Margins.Left = 0.5F;
             this.PageSettings.Margins.Right = 0.5F;
+            this.PageSettings.Margins.Top = 0.5F;
             this.PageSettings.Orientation = GrapeCity.ActiveReports.Document.Section.PageOrientation.Landscape;
             this.PageSettings.PaperHeight = 11F;
             this.PageSettings.PaperWidth = 8.5F;
