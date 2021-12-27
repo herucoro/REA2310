@@ -66,5 +66,33 @@ namespace REA2300
                 }
             }
         }
+
+        private void allDepositRb_CheckedChanged(object sender, EventArgs e)
+        {
+            CheckBox_Checked(true, this.selectDepostiPanel.Controls);
+        }
+
+        private void someDepositRb_CheckedChanged(object sender, EventArgs e)
+        {
+            CheckBox_Checked(false, this.selectDepostiPanel.Controls);
+        }
+
+        private void allBankRb_CheckedChanged(object sender, EventArgs e)
+        {
+            CheckBox_Checked(true, this.selectBankPanel.Controls);
+        }
+
+        private void someBankRb_CheckedChanged(object sender, EventArgs e)
+        {
+            CheckBox_Checked(false, this.selectBankPanel.Controls);
+        }
+
+        private void CheckBox_Checked(bool check, Control.ControlCollection controlPanel)
+        {
+            foreach (CheckBox c in controlPanel)
+            {
+                c.Checked = check;
+            }
+        }
     }
 }
