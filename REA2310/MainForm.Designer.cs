@@ -39,8 +39,6 @@ namespace REA2300
             this.label1 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
-            this.someDepositRb = new System.Windows.Forms.RadioButton();
-            this.allDepositRb = new System.Windows.Forms.RadioButton();
             this.depositCbx0 = new System.Windows.Forms.CheckBox();
             this.depositCbx1 = new System.Windows.Forms.CheckBox();
             this.depositCbx2 = new System.Windows.Forms.CheckBox();
@@ -49,17 +47,13 @@ namespace REA2300
             this.bankCbx2 = new System.Windows.Forms.CheckBox();
             this.bankCbx1 = new System.Windows.Forms.CheckBox();
             this.bankCbx0 = new System.Windows.Forms.CheckBox();
-            this.someBankRb = new System.Windows.Forms.RadioButton();
-            this.allBankRb = new System.Windows.Forms.RadioButton();
-            this.depositPanel = new System.Windows.Forms.Panel();
             this.approvalPanel = new System.Windows.Forms.Panel();
             this.selectDepostiPanel = new System.Windows.Forms.Panel();
-            this.bankPanel = new System.Windows.Forms.Panel();
             this.selectBankPanel = new System.Windows.Forms.Panel();
-            this.depositPanel.SuspendLayout();
+            this.allDepositCbx = new System.Windows.Forms.CheckBox();
+            this.allBankCbx = new System.Windows.Forms.CheckBox();
             this.approvalPanel.SuspendLayout();
             this.selectDepostiPanel.SuspendLayout();
-            this.bankPanel.SuspendLayout();
             this.selectBankPanel.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -159,32 +153,6 @@ namespace REA2300
             this.label3.Size = new System.Drawing.Size(54, 22);
             this.label3.TabIndex = 10;
             this.label3.Text = "銀行";
-            // 
-            // someDepositRb
-            // 
-            this.someDepositRb.AutoSize = true;
-            this.someDepositRb.Font = new System.Drawing.Font("MS UI Gothic", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(128)));
-            this.someDepositRb.Location = new System.Drawing.Point(92, 10);
-            this.someDepositRb.Name = "someDepositRb";
-            this.someDepositRb.Size = new System.Drawing.Size(65, 23);
-            this.someDepositRb.TabIndex = 5;
-            this.someDepositRb.Text = "個別";
-            this.someDepositRb.UseVisualStyleBackColor = true;
-            this.someDepositRb.CheckedChanged += new System.EventHandler(this.someDepositRb_CheckedChanged);
-            // 
-            // allDepositRb
-            // 
-            this.allDepositRb.AutoSize = true;
-            this.allDepositRb.Checked = true;
-            this.allDepositRb.Font = new System.Drawing.Font("MS UI Gothic", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(128)));
-            this.allDepositRb.Location = new System.Drawing.Point(10, 10);
-            this.allDepositRb.Name = "allDepositRb";
-            this.allDepositRb.Size = new System.Drawing.Size(61, 23);
-            this.allDepositRb.TabIndex = 4;
-            this.allDepositRb.TabStop = true;
-            this.allDepositRb.Text = "全て";
-            this.allDepositRb.UseVisualStyleBackColor = true;
-            this.allDepositRb.CheckedChanged += new System.EventHandler(this.allDepositRb_CheckedChanged);
             // 
             // depositCbx0
             // 
@@ -290,41 +258,6 @@ namespace REA2300
             this.bankCbx0.Text = "豊信";
             this.bankCbx0.UseVisualStyleBackColor = true;
             // 
-            // someBankRb
-            // 
-            this.someBankRb.AutoSize = true;
-            this.someBankRb.Font = new System.Drawing.Font("MS UI Gothic", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(128)));
-            this.someBankRb.Location = new System.Drawing.Point(92, 14);
-            this.someBankRb.Name = "someBankRb";
-            this.someBankRb.Size = new System.Drawing.Size(65, 23);
-            this.someBankRb.TabIndex = 11;
-            this.someBankRb.Text = "個別";
-            this.someBankRb.UseVisualStyleBackColor = true;
-            this.someBankRb.CheckedChanged += new System.EventHandler(this.someBankRb_CheckedChanged);
-            // 
-            // allBankRb
-            // 
-            this.allBankRb.AutoSize = true;
-            this.allBankRb.Checked = true;
-            this.allBankRb.Font = new System.Drawing.Font("MS UI Gothic", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(128)));
-            this.allBankRb.Location = new System.Drawing.Point(10, 14);
-            this.allBankRb.Name = "allBankRb";
-            this.allBankRb.Size = new System.Drawing.Size(61, 23);
-            this.allBankRb.TabIndex = 10;
-            this.allBankRb.TabStop = true;
-            this.allBankRb.Text = "全て";
-            this.allBankRb.UseVisualStyleBackColor = true;
-            this.allBankRb.CheckedChanged += new System.EventHandler(this.allBankRb_CheckedChanged);
-            // 
-            // depositPanel
-            // 
-            this.depositPanel.Controls.Add(this.allDepositRb);
-            this.depositPanel.Controls.Add(this.someDepositRb);
-            this.depositPanel.Location = new System.Drawing.Point(207, 143);
-            this.depositPanel.Name = "depositPanel";
-            this.depositPanel.Size = new System.Drawing.Size(200, 41);
-            this.depositPanel.TabIndex = 4;
-            // 
             // approvalPanel
             // 
             this.approvalPanel.Controls.Add(this.approvalRb);
@@ -345,15 +278,6 @@ namespace REA2300
             this.selectDepostiPanel.Size = new System.Drawing.Size(364, 30);
             this.selectDepostiPanel.TabIndex = 6;
             // 
-            // bankPanel
-            // 
-            this.bankPanel.Controls.Add(this.allBankRb);
-            this.bankPanel.Controls.Add(this.someBankRb);
-            this.bankPanel.Location = new System.Drawing.Point(207, 231);
-            this.bankPanel.Name = "bankPanel";
-            this.bankPanel.Size = new System.Drawing.Size(200, 46);
-            this.bankPanel.TabIndex = 10;
-            // 
             // selectBankPanel
             // 
             this.selectBankPanel.Controls.Add(this.bankCbx0);
@@ -365,16 +289,42 @@ namespace REA2300
             this.selectBankPanel.Size = new System.Drawing.Size(364, 46);
             this.selectBankPanel.TabIndex = 12;
             // 
+            // allDepositCbx
+            // 
+            this.allDepositCbx.AutoSize = true;
+            this.allDepositCbx.Checked = true;
+            this.allDepositCbx.CheckState = System.Windows.Forms.CheckState.Checked;
+            this.allDepositCbx.Font = new System.Drawing.Font("MS UI Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(128)));
+            this.allDepositCbx.Location = new System.Drawing.Point(217, 156);
+            this.allDepositCbx.Name = "allDepositCbx";
+            this.allDepositCbx.Size = new System.Drawing.Size(56, 20);
+            this.allDepositCbx.TabIndex = 100;
+            this.allDepositCbx.Text = "全て";
+            this.allDepositCbx.UseVisualStyleBackColor = true;
+            // 
+            // allBankCbx
+            // 
+            this.allBankCbx.AutoSize = true;
+            this.allBankCbx.Checked = true;
+            this.allBankCbx.CheckState = System.Windows.Forms.CheckState.Checked;
+            this.allBankCbx.Font = new System.Drawing.Font("MS UI Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(128)));
+            this.allBankCbx.Location = new System.Drawing.Point(217, 248);
+            this.allBankCbx.Name = "allBankCbx";
+            this.allBankCbx.Size = new System.Drawing.Size(56, 20);
+            this.allBankCbx.TabIndex = 101;
+            this.allBankCbx.Text = "全て";
+            this.allBankCbx.UseVisualStyleBackColor = true;
+            // 
             // MainForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 12F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(616, 459);
+            this.Controls.Add(this.allBankCbx);
+            this.Controls.Add(this.allDepositCbx);
             this.Controls.Add(this.selectBankPanel);
-            this.Controls.Add(this.bankPanel);
             this.Controls.Add(this.selectDepostiPanel);
             this.Controls.Add(this.approvalPanel);
-            this.Controls.Add(this.depositPanel);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
@@ -384,14 +334,10 @@ namespace REA2300
             this.Controls.Add(this.dateMtb);
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "MainForm";
-            this.depositPanel.ResumeLayout(false);
-            this.depositPanel.PerformLayout();
             this.approvalPanel.ResumeLayout(false);
             this.approvalPanel.PerformLayout();
             this.selectDepostiPanel.ResumeLayout(false);
             this.selectDepostiPanel.PerformLayout();
-            this.bankPanel.ResumeLayout(false);
-            this.bankPanel.PerformLayout();
             this.selectBankPanel.ResumeLayout(false);
             this.selectBankPanel.PerformLayout();
             this.ResumeLayout(false);
@@ -410,8 +356,6 @@ namespace REA2300
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label3;
-        private System.Windows.Forms.RadioButton someDepositRb;
-        private System.Windows.Forms.RadioButton allDepositRb;
         private System.Windows.Forms.CheckBox depositCbx0;
         private System.Windows.Forms.CheckBox depositCbx1;
         private System.Windows.Forms.CheckBox depositCbx2;
@@ -420,13 +364,11 @@ namespace REA2300
         private System.Windows.Forms.CheckBox bankCbx2;
         private System.Windows.Forms.CheckBox bankCbx1;
         private System.Windows.Forms.CheckBox bankCbx0;
-        private System.Windows.Forms.RadioButton someBankRb;
-        private System.Windows.Forms.RadioButton allBankRb;
-        private System.Windows.Forms.Panel depositPanel;
         private System.Windows.Forms.Panel approvalPanel;
         private System.Windows.Forms.Panel selectDepostiPanel;
-        private System.Windows.Forms.Panel bankPanel;
         private System.Windows.Forms.Panel selectBankPanel;
+        private System.Windows.Forms.CheckBox allDepositCbx;
+        private System.Windows.Forms.CheckBox allBankCbx;
     }
 }
 

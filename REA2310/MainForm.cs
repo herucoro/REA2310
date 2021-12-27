@@ -17,7 +17,19 @@ namespace REA2300
         public MainForm()
         {
             InitializeComponent();
-            
+
+            this.allDepositCbx.Click += AllDepositClicked;
+            this.depositCbx0.Click += DepositStateCheck;
+            this.depositCbx1.Click += DepositStateCheck;
+            this.depositCbx2.Click += DepositStateCheck;
+            this.depositCbx3.Click += DepositStateCheck;
+
+            this.allBankCbx.Click += AllBankClicked;
+            this.bankCbx0.Click += BankStateCheck;
+            this.bankCbx1.Click += BankStateCheck;
+            this.bankCbx2.Click += BankStateCheck;
+            this.bankCbx3.Click += BankStateCheck;
+
             this.Text = AssemblyInformation.assemblyTitle 
                         + "(" 
                         + AssemblyInformation.assemblyProduct 
@@ -67,32 +79,61 @@ namespace REA2300
             }
         }
 
-        private void allDepositRb_CheckedChanged(object sender, EventArgs e)
-        {
-            CheckBox_Checked(true, this.selectDepostiPanel.Controls);
-        }
-
-        private void someDepositRb_CheckedChanged(object sender, EventArgs e)
-        {
-            CheckBox_Checked(false, this.selectDepostiPanel.Controls);
-        }
-
-        private void allBankRb_CheckedChanged(object sender, EventArgs e)
-        {
-            CheckBox_Checked(true, this.selectBankPanel.Controls);
-        }
-
-        private void someBankRb_CheckedChanged(object sender, EventArgs e)
-        {
-            CheckBox_Checked(false, this.selectBankPanel.Controls);
-        }
-
         private void CheckBox_Checked(bool check, Control.ControlCollection controlPanel)
         {
             foreach (CheckBox c in controlPanel)
             {
                 c.Checked = check;
             }
+        }
+
+        private void allDepositCbx_CheckedChanged(object sender, EventArgs e)
+        {
+            CheckBox_Checked(this.allDepositCbx.Checked, this.selectDepostiPanel.Controls);
+        }
+
+        private void allBankCbx_CheckedChanged(object sender, EventArgs e)
+        {
+            CheckBox_Checked(this.allBankCbx.Checked, this.selectBankPanel.Controls);
+        }
+
+        private void AllDepositClicked(object sender, EventArgs e)
+        {
+            foreach (CheckBox c in this.selectDepostiPanel.Controls)
+            {
+                c.Checked = this.allDepositCbx.Checked;
+            }
+        }
+
+        private void AllBankClicked(object sender, EventArgs e)
+        {
+            foreach(CheckBox c in this.selectBankPanel.Controls)
+            {
+                c.Checked = this.allBankCbx.Checked;
+            }
+        }
+
+        private void DepositStateCheck(object sender, EventArgs e)
+        {
+            bool check = true;
+
+            foreach(CheckBox c in this.selectDepostiPanel.Controls)
+            {
+                check = check && c.Checked;
+            }
+
+            this.allDepositCbx.Checked = check;
+        }
+
+        private void BankStateCheck(object sender, EventArgs e)
+        {
+            bool check = true;
+            foreach (CheckBox c in this.selectBankPanel.Controls)
+            {
+                check = check && c.Checked;
+            }
+
+            this.allBankCbx.Checked = check;
         }
     }
 }
