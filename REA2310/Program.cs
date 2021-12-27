@@ -21,8 +21,8 @@ namespace REA2300
                 var MZZ = new MZZAction();
                 if (MZZAction.userId == 0)
                 {
-                    //MessageBox.Show("MZZの読み込みに失敗しました。", "エラー", MessageBoxButtons.OK,MessageBoxIcon.Error);
-                    //return;
+                    MessageBox.Show("MZZの読み込みに失敗しました。", "エラー", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                    return;
                 }
 
                 // ミューテックス作成
