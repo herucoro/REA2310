@@ -8,7 +8,7 @@ using System.Linq;
 using GrapeCity.ActiveReports.SectionReportModel;
 using RyoeiSystem.Database.Models;
 
-namespace REA2300
+namespace REA2310
 {
 
     /// <summary>

@@ -6,7 +6,7 @@ using System.Windows.Forms;
 using System.Threading;
 using RyoeiSystem.Database.Common;
 
-namespace REA2300
+namespace REA2310
 {
     static class Program
     {
@@ -21,7 +21,7 @@ namespace REA2300
                 var MZZ = new MZZAction();
                 if (MZZAction.userId == 0)
                 {
-                    MessageBox.Show("MZZの読み込みに失敗しました。", "エラー", MessageBoxButtons.OK,MessageBoxIcon.Error);
+                    MessageBox.Show("MZZの読み込みに失敗しました。", "エラー", MessageBoxButtons.OK, MessageBoxIcon.Error);
                     return;
                 }
 

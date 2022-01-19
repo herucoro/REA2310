@@ -1,5 +1,5 @@
 ﻿
-namespace REA2300
+namespace REA2310
 {
     /// <summary>
     /// SectionReport の概要の説明です。
@@ -1515,6 +1515,7 @@ namespace REA2300
             this.DataSource = csvDataSource1;
             this.PageSettings.Margins.Left = 0.5F;
             this.PageSettings.Margins.Right = 0.5F;
+            this.PageSettings.Margins.Top = 1.5F;
             this.PageSettings.Orientation = GrapeCity.ActiveReports.Document.Section.PageOrientation.Landscape;
             this.PageSettings.PaperHeight = 11F;
             this.PageSettings.PaperWidth = 8.5F;
