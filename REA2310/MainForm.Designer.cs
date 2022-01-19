@@ -1,5 +1,5 @@
 ﻿
-namespace REA2300
+namespace REA2310
 {
     partial class MainForm
     {
@@ -35,24 +35,26 @@ namespace REA2300
             this.endBtn = new System.Windows.Forms.Button();
             this.printBtn = new System.Windows.Forms.Button();
             this.label1 = new System.Windows.Forms.Label();
-            this.radioButton1 = new System.Windows.Forms.RadioButton();
-            this.radioButton2 = new System.Windows.Forms.RadioButton();
+            this.approvalRb0 = new System.Windows.Forms.RadioButton();
+            this.approvalRb1 = new System.Windows.Forms.RadioButton();
             this.label2 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
-            this.checkBox1 = new System.Windows.Forms.CheckBox();
-            this.checkBox2 = new System.Windows.Forms.CheckBox();
-            this.checkBox3 = new System.Windows.Forms.CheckBox();
-            this.checkBox4 = new System.Windows.Forms.CheckBox();
-            this.checkBox5 = new System.Windows.Forms.CheckBox();
-            this.checkBox10 = new System.Windows.Forms.CheckBox();
-            this.panel1 = new System.Windows.Forms.Panel();
-            this.panel2 = new System.Windows.Forms.Panel();
-            this.checkBox6 = new System.Windows.Forms.CheckBox();
-            this.checkBox7 = new System.Windows.Forms.CheckBox();
-            this.checkBox8 = new System.Windows.Forms.CheckBox();
-            this.checkBox9 = new System.Windows.Forms.CheckBox();
-            this.panel1.SuspendLayout();
-            this.panel2.SuspendLayout();
+            this.paymentAllCbx = new System.Windows.Forms.CheckBox();
+            this.paymentCbx0 = new System.Windows.Forms.CheckBox();
+            this.paymentCbx1 = new System.Windows.Forms.CheckBox();
+            this.paymentCbx2 = new System.Windows.Forms.CheckBox();
+            this.paymentCbx3 = new System.Windows.Forms.CheckBox();
+            this.bankAllCbx = new System.Windows.Forms.CheckBox();
+            this.paymentPanel = new System.Windows.Forms.Panel();
+            this.bankPanel = new System.Windows.Forms.Panel();
+            this.bankCbx0 = new System.Windows.Forms.CheckBox();
+            this.bankCbx1 = new System.Windows.Forms.CheckBox();
+            this.bankCbx2 = new System.Windows.Forms.CheckBox();
+            this.bankCbx3 = new System.Windows.Forms.CheckBox();
+            this.approvalPanel = new System.Windows.Forms.Panel();
+            this.paymentPanel.SuspendLayout();
+            this.bankPanel.SuspendLayout();
+            this.approvalPanel.SuspendLayout();
             this.SuspendLayout();
             // 
             // dateMtb
@@ -108,29 +110,29 @@ namespace REA2300
             this.label1.TabIndex = 6;
             this.label1.Text = "決裁状態";
             // 
-            // radioButton1
+            // approvalRb0
             // 
-            this.radioButton1.AutoSize = true;
-            this.radioButton1.Font = new System.Drawing.Font("MS UI Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(128)));
-            this.radioButton1.Location = new System.Drawing.Point(202, 84);
-            this.radioButton1.Name = "radioButton1";
-            this.radioButton1.Size = new System.Drawing.Size(57, 20);
-            this.radioButton1.TabIndex = 7;
-            this.radioButton1.TabStop = true;
-            this.radioButton1.Text = "決裁";
-            this.radioButton1.UseVisualStyleBackColor = true;
+            this.approvalRb0.AutoSize = true;
+            this.approvalRb0.Checked = true;
+            this.approvalRb0.Font = new System.Drawing.Font("MS UI Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(128)));
+            this.approvalRb0.Location = new System.Drawing.Point(17, 6);
+            this.approvalRb0.Name = "approvalRb0";
+            this.approvalRb0.Size = new System.Drawing.Size(57, 20);
+            this.approvalRb0.TabIndex = 7;
+            this.approvalRb0.TabStop = true;
+            this.approvalRb0.Text = "決裁";
+            this.approvalRb0.UseVisualStyleBackColor = true;
             // 
-            // radioButton2
+            // approvalRb1
             // 
-            this.radioButton2.AutoSize = true;
-            this.radioButton2.Font = new System.Drawing.Font("MS UI Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(128)));
-            this.radioButton2.Location = new System.Drawing.Point(334, 84);
-            this.radioButton2.Name = "radioButton2";
-            this.radioButton2.Size = new System.Drawing.Size(73, 20);
-            this.radioButton2.TabIndex = 8;
-            this.radioButton2.TabStop = true;
-            this.radioButton2.Text = "未決裁";
-            this.radioButton2.UseVisualStyleBackColor = true;
+            this.approvalRb1.AutoSize = true;
+            this.approvalRb1.Font = new System.Drawing.Font("MS UI Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(128)));
+            this.approvalRb1.Location = new System.Drawing.Point(103, 6);
+            this.approvalRb1.Name = "approvalRb1";
+            this.approvalRb1.Size = new System.Drawing.Size(73, 20);
+            this.approvalRb1.TabIndex = 8;
+            this.approvalRb1.Text = "未決裁";
+            this.approvalRb1.UseVisualStyleBackColor = true;
             // 
             // label2
             // 
@@ -152,145 +154,157 @@ namespace REA2300
             this.label3.TabIndex = 10;
             this.label3.Text = "銀行";
             // 
-            // checkBox1
+            // paymentAllCbx
             // 
-            this.checkBox1.AutoSize = true;
-            this.checkBox1.Font = new System.Drawing.Font("MS UI Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(128)));
-            this.checkBox1.Location = new System.Drawing.Point(202, 125);
-            this.checkBox1.Name = "checkBox1";
-            this.checkBox1.Size = new System.Drawing.Size(55, 20);
-            this.checkBox1.TabIndex = 11;
-            this.checkBox1.Text = "全て";
-            this.checkBox1.UseVisualStyleBackColor = true;
+            this.paymentAllCbx.AutoSize = true;
+            this.paymentAllCbx.Checked = true;
+            this.paymentAllCbx.CheckState = System.Windows.Forms.CheckState.Checked;
+            this.paymentAllCbx.Font = new System.Drawing.Font("MS UI Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(128)));
+            this.paymentAllCbx.Location = new System.Drawing.Point(202, 122);
+            this.paymentAllCbx.Name = "paymentAllCbx";
+            this.paymentAllCbx.Size = new System.Drawing.Size(55, 20);
+            this.paymentAllCbx.TabIndex = 11;
+            this.paymentAllCbx.Text = "全て";
+            this.paymentAllCbx.UseVisualStyleBackColor = true;
             // 
-            // checkBox2
+            // paymentCbx0
             // 
-            this.checkBox2.AutoSize = true;
-            this.checkBox2.Location = new System.Drawing.Point(17, 4);
-            this.checkBox2.Name = "checkBox2";
-            this.checkBox2.Size = new System.Drawing.Size(58, 20);
-            this.checkBox2.TabIndex = 12;
-            this.checkBox2.Text = "手形";
-            this.checkBox2.UseVisualStyleBackColor = true;
+            this.paymentCbx0.AutoSize = true;
+            this.paymentCbx0.Location = new System.Drawing.Point(17, 4);
+            this.paymentCbx0.Name = "paymentCbx0";
+            this.paymentCbx0.Size = new System.Drawing.Size(58, 20);
+            this.paymentCbx0.TabIndex = 12;
+            this.paymentCbx0.Text = "手形";
+            this.paymentCbx0.UseVisualStyleBackColor = true;
             // 
-            // checkBox3
+            // paymentCbx1
             // 
-            this.checkBox3.AutoSize = true;
-            this.checkBox3.Location = new System.Drawing.Point(103, 3);
-            this.checkBox3.Name = "checkBox3";
-            this.checkBox3.Size = new System.Drawing.Size(58, 20);
-            this.checkBox3.TabIndex = 13;
-            this.checkBox3.Text = "電債";
-            this.checkBox3.UseVisualStyleBackColor = true;
+            this.paymentCbx1.AutoSize = true;
+            this.paymentCbx1.Location = new System.Drawing.Point(103, 3);
+            this.paymentCbx1.Name = "paymentCbx1";
+            this.paymentCbx1.Size = new System.Drawing.Size(58, 20);
+            this.paymentCbx1.TabIndex = 13;
+            this.paymentCbx1.Text = "電債";
+            this.paymentCbx1.UseVisualStyleBackColor = true;
             // 
-            // checkBox4
+            // paymentCbx2
             // 
-            this.checkBox4.AutoSize = true;
-            this.checkBox4.Location = new System.Drawing.Point(178, 3);
-            this.checkBox4.Name = "checkBox4";
-            this.checkBox4.Size = new System.Drawing.Size(90, 20);
-            this.checkBox4.TabIndex = 14;
-            this.checkBox4.Text = "期日指定";
-            this.checkBox4.UseVisualStyleBackColor = true;
+            this.paymentCbx2.AutoSize = true;
+            this.paymentCbx2.Location = new System.Drawing.Point(178, 3);
+            this.paymentCbx2.Name = "paymentCbx2";
+            this.paymentCbx2.Size = new System.Drawing.Size(90, 20);
+            this.paymentCbx2.TabIndex = 14;
+            this.paymentCbx2.Text = "期日指定";
+            this.paymentCbx2.UseVisualStyleBackColor = true;
             // 
-            // checkBox5
+            // paymentCbx3
             // 
-            this.checkBox5.AutoSize = true;
-            this.checkBox5.Location = new System.Drawing.Point(285, 4);
-            this.checkBox5.Name = "checkBox5";
-            this.checkBox5.Size = new System.Drawing.Size(101, 20);
-            this.checkBox5.TabIndex = 15;
-            this.checkBox5.Text = "ファクタリング";
-            this.checkBox5.UseVisualStyleBackColor = true;
+            this.paymentCbx3.AutoSize = true;
+            this.paymentCbx3.Location = new System.Drawing.Point(285, 4);
+            this.paymentCbx3.Name = "paymentCbx3";
+            this.paymentCbx3.Size = new System.Drawing.Size(101, 20);
+            this.paymentCbx3.TabIndex = 15;
+            this.paymentCbx3.Text = "ファクタリング";
+            this.paymentCbx3.UseVisualStyleBackColor = true;
             // 
-            // checkBox10
+            // bankAllCbx
             // 
-            this.checkBox10.AutoSize = true;
-            this.checkBox10.Font = new System.Drawing.Font("MS UI Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(128)));
-            this.checkBox10.Location = new System.Drawing.Point(202, 186);
-            this.checkBox10.Name = "checkBox10";
-            this.checkBox10.Size = new System.Drawing.Size(55, 20);
-            this.checkBox10.TabIndex = 16;
-            this.checkBox10.Text = "全て";
-            this.checkBox10.UseVisualStyleBackColor = true;
+            this.bankAllCbx.AutoSize = true;
+            this.bankAllCbx.Checked = true;
+            this.bankAllCbx.CheckState = System.Windows.Forms.CheckState.Checked;
+            this.bankAllCbx.Font = new System.Drawing.Font("MS UI Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(128)));
+            this.bankAllCbx.Location = new System.Drawing.Point(202, 186);
+            this.bankAllCbx.Name = "bankAllCbx";
+            this.bankAllCbx.Size = new System.Drawing.Size(55, 20);
+            this.bankAllCbx.TabIndex = 16;
+            this.bankAllCbx.Text = "全て";
+            this.bankAllCbx.UseVisualStyleBackColor = true;
             // 
-            // panel1
+            // paymentPanel
             // 
-            this.panel1.Controls.Add(this.checkBox2);
-            this.panel1.Controls.Add(this.checkBox3);
-            this.panel1.Controls.Add(this.checkBox4);
-            this.panel1.Controls.Add(this.checkBox5);
-            this.panel1.Font = new System.Drawing.Font("MS UI Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(128)));
-            this.panel1.Location = new System.Drawing.Point(185, 147);
-            this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(389, 33);
-            this.panel1.TabIndex = 21;
+            this.paymentPanel.Controls.Add(this.paymentCbx0);
+            this.paymentPanel.Controls.Add(this.paymentCbx1);
+            this.paymentPanel.Controls.Add(this.paymentCbx2);
+            this.paymentPanel.Controls.Add(this.paymentCbx3);
+            this.paymentPanel.Font = new System.Drawing.Font("MS UI Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(128)));
+            this.paymentPanel.Location = new System.Drawing.Point(185, 147);
+            this.paymentPanel.Name = "paymentPanel";
+            this.paymentPanel.Size = new System.Drawing.Size(389, 33);
+            this.paymentPanel.TabIndex = 21;
             // 
-            // panel2
+            // bankPanel
             // 
-            this.panel2.Controls.Add(this.checkBox6);
-            this.panel2.Controls.Add(this.checkBox7);
-            this.panel2.Controls.Add(this.checkBox8);
-            this.panel2.Controls.Add(this.checkBox9);
-            this.panel2.Font = new System.Drawing.Font("MS UI Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(128)));
-            this.panel2.Location = new System.Drawing.Point(185, 208);
-            this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(389, 30);
-            this.panel2.TabIndex = 22;
+            this.bankPanel.Controls.Add(this.bankCbx0);
+            this.bankPanel.Controls.Add(this.bankCbx1);
+            this.bankPanel.Controls.Add(this.bankCbx2);
+            this.bankPanel.Controls.Add(this.bankCbx3);
+            this.bankPanel.Font = new System.Drawing.Font("MS UI Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(128)));
+            this.bankPanel.Location = new System.Drawing.Point(185, 208);
+            this.bankPanel.Name = "bankPanel";
+            this.bankPanel.Size = new System.Drawing.Size(389, 30);
+            this.bankPanel.TabIndex = 22;
             // 
-            // checkBox6
+            // bankCbx0
             // 
-            this.checkBox6.AutoSize = true;
-            this.checkBox6.Location = new System.Drawing.Point(17, 4);
-            this.checkBox6.Name = "checkBox6";
-            this.checkBox6.Size = new System.Drawing.Size(58, 20);
-            this.checkBox6.TabIndex = 12;
-            this.checkBox6.Text = "豊信";
-            this.checkBox6.UseVisualStyleBackColor = true;
+            this.bankCbx0.AutoSize = true;
+            this.bankCbx0.Location = new System.Drawing.Point(17, 4);
+            this.bankCbx0.Name = "bankCbx0";
+            this.bankCbx0.Size = new System.Drawing.Size(58, 20);
+            this.bankCbx0.TabIndex = 12;
+            this.bankCbx0.Text = "豊信";
+            this.bankCbx0.UseVisualStyleBackColor = true;
             // 
-            // checkBox7
+            // bankCbx1
             // 
-            this.checkBox7.AutoSize = true;
-            this.checkBox7.Location = new System.Drawing.Point(103, 4);
-            this.checkBox7.Name = "checkBox7";
-            this.checkBox7.Size = new System.Drawing.Size(54, 20);
-            this.checkBox7.TabIndex = 13;
-            this.checkBox7.Text = "UFJ";
-            this.checkBox7.UseVisualStyleBackColor = true;
+            this.bankCbx1.AutoSize = true;
+            this.bankCbx1.Location = new System.Drawing.Point(103, 4);
+            this.bankCbx1.Name = "bankCbx1";
+            this.bankCbx1.Size = new System.Drawing.Size(54, 20);
+            this.bankCbx1.TabIndex = 13;
+            this.bankCbx1.Text = "UFJ";
+            this.bankCbx1.UseVisualStyleBackColor = true;
             // 
-            // checkBox8
+            // bankCbx2
             // 
-            this.checkBox8.AutoSize = true;
-            this.checkBox8.Location = new System.Drawing.Point(178, 4);
-            this.checkBox8.Name = "checkBox8";
-            this.checkBox8.Size = new System.Drawing.Size(58, 20);
-            this.checkBox8.TabIndex = 14;
-            this.checkBox8.Text = "碧信";
-            this.checkBox8.UseVisualStyleBackColor = true;
+            this.bankCbx2.AutoSize = true;
+            this.bankCbx2.Location = new System.Drawing.Point(178, 4);
+            this.bankCbx2.Name = "bankCbx2";
+            this.bankCbx2.Size = new System.Drawing.Size(58, 20);
+            this.bankCbx2.TabIndex = 14;
+            this.bankCbx2.Text = "碧信";
+            this.bankCbx2.UseVisualStyleBackColor = true;
             // 
-            // checkBox9
+            // bankCbx3
             // 
-            this.checkBox9.AutoSize = true;
-            this.checkBox9.Location = new System.Drawing.Point(259, 4);
-            this.checkBox9.Name = "checkBox9";
-            this.checkBox9.Size = new System.Drawing.Size(90, 20);
-            this.checkBox9.TabIndex = 15;
-            this.checkBox9.Text = "三井住友";
-            this.checkBox9.UseVisualStyleBackColor = true;
+            this.bankCbx3.AutoSize = true;
+            this.bankCbx3.Location = new System.Drawing.Point(259, 4);
+            this.bankCbx3.Name = "bankCbx3";
+            this.bankCbx3.Size = new System.Drawing.Size(90, 20);
+            this.bankCbx3.TabIndex = 15;
+            this.bankCbx3.Text = "三井住友";
+            this.bankCbx3.UseVisualStyleBackColor = true;
+            // 
+            // approvalPanel
+            // 
+            this.approvalPanel.Controls.Add(this.approvalRb0);
+            this.approvalPanel.Controls.Add(this.approvalRb1);
+            this.approvalPanel.Location = new System.Drawing.Point(185, 79);
+            this.approvalPanel.Name = "approvalPanel";
+            this.approvalPanel.Size = new System.Drawing.Size(389, 29);
+            this.approvalPanel.TabIndex = 23;
             // 
             // MainForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 12F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(611, 322);
-            this.Controls.Add(this.panel2);
-            this.Controls.Add(this.panel1);
-            this.Controls.Add(this.checkBox10);
-            this.Controls.Add(this.checkBox1);
+            this.Controls.Add(this.approvalPanel);
+            this.Controls.Add(this.bankPanel);
+            this.Controls.Add(this.paymentPanel);
+            this.Controls.Add(this.bankAllCbx);
+            this.Controls.Add(this.paymentAllCbx);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.label2);
-            this.Controls.Add(this.radioButton2);
-            this.Controls.Add(this.radioButton1);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.printBtn);
             this.Controls.Add(this.endBtn);
@@ -298,10 +312,12 @@ namespace REA2300
             this.Controls.Add(this.dateMtb);
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "MainForm";
-            this.panel1.ResumeLayout(false);
-            this.panel1.PerformLayout();
-            this.panel2.ResumeLayout(false);
-            this.panel2.PerformLayout();
+            this.paymentPanel.ResumeLayout(false);
+            this.paymentPanel.PerformLayout();
+            this.bankPanel.ResumeLayout(false);
+            this.bankPanel.PerformLayout();
+            this.approvalPanel.ResumeLayout(false);
+            this.approvalPanel.PerformLayout();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -314,22 +330,23 @@ namespace REA2300
         private System.Windows.Forms.Button endBtn;
         private System.Windows.Forms.Button printBtn;
         private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.RadioButton radioButton1;
-        private System.Windows.Forms.RadioButton radioButton2;
+        private System.Windows.Forms.RadioButton approvalRb0;
+        private System.Windows.Forms.RadioButton approvalRb1;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label3;
-        private System.Windows.Forms.CheckBox checkBox1;
-        private System.Windows.Forms.CheckBox checkBox2;
-        private System.Windows.Forms.CheckBox checkBox3;
-        private System.Windows.Forms.CheckBox checkBox4;
-        private System.Windows.Forms.CheckBox checkBox5;
-        private System.Windows.Forms.CheckBox checkBox10;
-        private System.Windows.Forms.Panel panel1;
-        private System.Windows.Forms.Panel panel2;
-        private System.Windows.Forms.CheckBox checkBox6;
-        private System.Windows.Forms.CheckBox checkBox7;
-        private System.Windows.Forms.CheckBox checkBox8;
-        private System.Windows.Forms.CheckBox checkBox9;
+        private System.Windows.Forms.CheckBox paymentAllCbx;
+        private System.Windows.Forms.CheckBox paymentCbx0;
+        private System.Windows.Forms.CheckBox paymentCbx1;
+        private System.Windows.Forms.CheckBox paymentCbx2;
+        private System.Windows.Forms.CheckBox paymentCbx3;
+        private System.Windows.Forms.CheckBox bankAllCbx;
+        private System.Windows.Forms.Panel paymentPanel;
+        private System.Windows.Forms.Panel bankPanel;
+        private System.Windows.Forms.CheckBox bankCbx0;
+        private System.Windows.Forms.CheckBox bankCbx1;
+        private System.Windows.Forms.CheckBox bankCbx2;
+        private System.Windows.Forms.CheckBox bankCbx3;
+        private System.Windows.Forms.Panel approvalPanel;
     }
 }
 

@@ -9,11 +9,12 @@ using System.Threading.Tasks;
 using System.Windows.Forms;
 using RyoeiSystem.Common;
 
-namespace REA2300
+using REA2310.Models;
+
+namespace REA2310
 {
     public partial class MainForm : Form
-    {
-        
+    {        
         public MainForm()
         {
             InitializeComponent();
@@ -31,6 +32,9 @@ namespace REA2300
             string date;
             DateTime dt;
 
+            // フォーム情報を保持
+            var formData = new MainFormModel();
+
             IData appData = new AppData();
 
             // 日付チェック
@@ -41,9 +45,35 @@ namespace REA2300
             {                
                 MessageBox.Show("日付の入力が不正です。", "エラー", MessageBoxButtons.OK, MessageBoxIcon.Error);
                 return;
-            }            
+            }
 
-            var printForm = new PrintForm(date, appData);
+            formData.date = date;
+            formData.approvalType = ((RadioButton) this.approvalPanel.Controls[0]).Checked == true ? true : false;
+            formData.paymentType[0] = this.paymentAllCbx.Checked;
+            if (this.paymentAllCbx.Checked)
+            {
+                for (int i = 0; i < 4; i++)
+                    formData.paymentType[i + 1] = true;
+            }
+            else
+            {
+                for (int i = 0; i < 4; i++)
+                    formData.paymentType[i + 1] = ((CheckBox)this.paymentPanel.Controls[i]).Checked;
+            }
+
+            formData.bankType[0] = this.bankAllCbx.Checked;
+            if (this.bankAllCbx.Checked)
+            {
+                for (int i = 0; i < 4; i++)
+                    formData.bankType[i + 1] = true;
+            }
+            else
+            {
+                for (int i = 0; i < 4; i++)
+                    formData.bankType[i + 1] = ((CheckBox)this.bankPanel.Controls[i]).Checked;
+            }
+
+            var printForm = new PrintForm(formData, appData);
             printForm.ShowDialog();
         }
        
