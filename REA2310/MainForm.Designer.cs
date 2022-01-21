@@ -39,21 +39,21 @@ namespace REA2310
             this.approvalRb1 = new System.Windows.Forms.RadioButton();
             this.label2 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
-            this.paymentAllCbx = new System.Windows.Forms.CheckBox();
-            this.paymentCbx0 = new System.Windows.Forms.CheckBox();
-            this.paymentCbx1 = new System.Windows.Forms.CheckBox();
-            this.paymentCbx2 = new System.Windows.Forms.CheckBox();
-            this.paymentCbx3 = new System.Windows.Forms.CheckBox();
-            this.bankAllCbx = new System.Windows.Forms.CheckBox();
-            this.paymentPanel = new System.Windows.Forms.Panel();
-            this.bankPanel = new System.Windows.Forms.Panel();
+            this.allDepositCbx = new System.Windows.Forms.CheckBox();
+            this.depositCbx0 = new System.Windows.Forms.CheckBox();
+            this.depositCbx1 = new System.Windows.Forms.CheckBox();
+            this.depositCbx2 = new System.Windows.Forms.CheckBox();
+            this.depositCbx3 = new System.Windows.Forms.CheckBox();
+            this.allBankCbx = new System.Windows.Forms.CheckBox();
+            this.selectDepositPanel = new System.Windows.Forms.Panel();
+            this.selectBankPanel = new System.Windows.Forms.Panel();
             this.bankCbx0 = new System.Windows.Forms.CheckBox();
             this.bankCbx1 = new System.Windows.Forms.CheckBox();
             this.bankCbx2 = new System.Windows.Forms.CheckBox();
             this.bankCbx3 = new System.Windows.Forms.CheckBox();
             this.approvalPanel = new System.Windows.Forms.Panel();
-            this.paymentPanel.SuspendLayout();
-            this.bankPanel.SuspendLayout();
+            this.selectDepositPanel.SuspendLayout();
+            this.selectBankPanel.SuspendLayout();
             this.approvalPanel.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -154,95 +154,91 @@ namespace REA2310
             this.label3.TabIndex = 10;
             this.label3.Text = "銀行";
             // 
-            // paymentAllCbx
+            // allDepositCbx
             // 
-            this.paymentAllCbx.AutoSize = true;
-            this.paymentAllCbx.Checked = true;
-            this.paymentAllCbx.CheckState = System.Windows.Forms.CheckState.Checked;
-            this.paymentAllCbx.Font = new System.Drawing.Font("MS UI Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(128)));
-            this.paymentAllCbx.Location = new System.Drawing.Point(202, 122);
-            this.paymentAllCbx.Name = "paymentAllCbx";
-            this.paymentAllCbx.Size = new System.Drawing.Size(55, 20);
-            this.paymentAllCbx.TabIndex = 11;
-            this.paymentAllCbx.Text = "全て";
-            this.paymentAllCbx.UseVisualStyleBackColor = true;
+            this.allDepositCbx.AutoSize = true;
+            this.allDepositCbx.Font = new System.Drawing.Font("MS UI Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(128)));
+            this.allDepositCbx.Location = new System.Drawing.Point(202, 122);
+            this.allDepositCbx.Name = "allDepositCbx";
+            this.allDepositCbx.Size = new System.Drawing.Size(55, 20);
+            this.allDepositCbx.TabIndex = 11;
+            this.allDepositCbx.Text = "全て";
+            this.allDepositCbx.UseVisualStyleBackColor = true;
             // 
-            // paymentCbx0
+            // depositCbx0
             // 
-            this.paymentCbx0.AutoSize = true;
-            this.paymentCbx0.Location = new System.Drawing.Point(17, 4);
-            this.paymentCbx0.Name = "paymentCbx0";
-            this.paymentCbx0.Size = new System.Drawing.Size(58, 20);
-            this.paymentCbx0.TabIndex = 12;
-            this.paymentCbx0.Text = "手形";
-            this.paymentCbx0.UseVisualStyleBackColor = true;
+            this.depositCbx0.AutoSize = true;
+            this.depositCbx0.Location = new System.Drawing.Point(17, 4);
+            this.depositCbx0.Name = "depositCbx0";
+            this.depositCbx0.Size = new System.Drawing.Size(58, 20);
+            this.depositCbx0.TabIndex = 12;
+            this.depositCbx0.Text = "手形";
+            this.depositCbx0.UseVisualStyleBackColor = true;
             // 
-            // paymentCbx1
+            // depositCbx1
             // 
-            this.paymentCbx1.AutoSize = true;
-            this.paymentCbx1.Location = new System.Drawing.Point(103, 3);
-            this.paymentCbx1.Name = "paymentCbx1";
-            this.paymentCbx1.Size = new System.Drawing.Size(58, 20);
-            this.paymentCbx1.TabIndex = 13;
-            this.paymentCbx1.Text = "電債";
-            this.paymentCbx1.UseVisualStyleBackColor = true;
+            this.depositCbx1.AutoSize = true;
+            this.depositCbx1.Location = new System.Drawing.Point(103, 3);
+            this.depositCbx1.Name = "depositCbx1";
+            this.depositCbx1.Size = new System.Drawing.Size(58, 20);
+            this.depositCbx1.TabIndex = 13;
+            this.depositCbx1.Text = "電債";
+            this.depositCbx1.UseVisualStyleBackColor = true;
             // 
-            // paymentCbx2
+            // depositCbx2
             // 
-            this.paymentCbx2.AutoSize = true;
-            this.paymentCbx2.Location = new System.Drawing.Point(178, 3);
-            this.paymentCbx2.Name = "paymentCbx2";
-            this.paymentCbx2.Size = new System.Drawing.Size(90, 20);
-            this.paymentCbx2.TabIndex = 14;
-            this.paymentCbx2.Text = "期日指定";
-            this.paymentCbx2.UseVisualStyleBackColor = true;
+            this.depositCbx2.AutoSize = true;
+            this.depositCbx2.Location = new System.Drawing.Point(178, 3);
+            this.depositCbx2.Name = "depositCbx2";
+            this.depositCbx2.Size = new System.Drawing.Size(90, 20);
+            this.depositCbx2.TabIndex = 14;
+            this.depositCbx2.Text = "期日指定";
+            this.depositCbx2.UseVisualStyleBackColor = true;
             // 
-            // paymentCbx3
+            // depositCbx3
             // 
-            this.paymentCbx3.AutoSize = true;
-            this.paymentCbx3.Location = new System.Drawing.Point(285, 4);
-            this.paymentCbx3.Name = "paymentCbx3";
-            this.paymentCbx3.Size = new System.Drawing.Size(101, 20);
-            this.paymentCbx3.TabIndex = 15;
-            this.paymentCbx3.Text = "ファクタリング";
-            this.paymentCbx3.UseVisualStyleBackColor = true;
+            this.depositCbx3.AutoSize = true;
+            this.depositCbx3.Location = new System.Drawing.Point(285, 4);
+            this.depositCbx3.Name = "depositCbx3";
+            this.depositCbx3.Size = new System.Drawing.Size(101, 20);
+            this.depositCbx3.TabIndex = 15;
+            this.depositCbx3.Text = "ファクタリング";
+            this.depositCbx3.UseVisualStyleBackColor = true;
             // 
-            // bankAllCbx
+            // allBankCbx
             // 
-            this.bankAllCbx.AutoSize = true;
-            this.bankAllCbx.Checked = true;
-            this.bankAllCbx.CheckState = System.Windows.Forms.CheckState.Checked;
-            this.bankAllCbx.Font = new System.Drawing.Font("MS UI Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(128)));
-            this.bankAllCbx.Location = new System.Drawing.Point(202, 186);
-            this.bankAllCbx.Name = "bankAllCbx";
-            this.bankAllCbx.Size = new System.Drawing.Size(55, 20);
-            this.bankAllCbx.TabIndex = 16;
-            this.bankAllCbx.Text = "全て";
-            this.bankAllCbx.UseVisualStyleBackColor = true;
+            this.allBankCbx.AutoSize = true;
+            this.allBankCbx.Font = new System.Drawing.Font("MS UI Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(128)));
+            this.allBankCbx.Location = new System.Drawing.Point(202, 186);
+            this.allBankCbx.Name = "allBankCbx";
+            this.allBankCbx.Size = new System.Drawing.Size(55, 20);
+            this.allBankCbx.TabIndex = 16;
+            this.allBankCbx.Text = "全て";
+            this.allBankCbx.UseVisualStyleBackColor = true;
             // 
-            // paymentPanel
+            // selectDepositPanel
             // 
-            this.paymentPanel.Controls.Add(this.paymentCbx0);
-            this.paymentPanel.Controls.Add(this.paymentCbx1);
-            this.paymentPanel.Controls.Add(this.paymentCbx2);
-            this.paymentPanel.Controls.Add(this.paymentCbx3);
-            this.paymentPanel.Font = new System.Drawing.Font("MS UI Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(128)));
-            this.paymentPanel.Location = new System.Drawing.Point(185, 147);
-            this.paymentPanel.Name = "paymentPanel";
-            this.paymentPanel.Size = new System.Drawing.Size(389, 33);
-            this.paymentPanel.TabIndex = 21;
+            this.selectDepositPanel.Controls.Add(this.depositCbx0);
+            this.selectDepositPanel.Controls.Add(this.depositCbx1);
+            this.selectDepositPanel.Controls.Add(this.depositCbx2);
+            this.selectDepositPanel.Controls.Add(this.depositCbx3);
+            this.selectDepositPanel.Font = new System.Drawing.Font("MS UI Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(128)));
+            this.selectDepositPanel.Location = new System.Drawing.Point(185, 147);
+            this.selectDepositPanel.Name = "selectDepositPanel";
+            this.selectDepositPanel.Size = new System.Drawing.Size(389, 33);
+            this.selectDepositPanel.TabIndex = 21;
             // 
-            // bankPanel
+            // selectBankPanel
             // 
-            this.bankPanel.Controls.Add(this.bankCbx0);
-            this.bankPanel.Controls.Add(this.bankCbx1);
-            this.bankPanel.Controls.Add(this.bankCbx2);
-            this.bankPanel.Controls.Add(this.bankCbx3);
-            this.bankPanel.Font = new System.Drawing.Font("MS UI Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(128)));
-            this.bankPanel.Location = new System.Drawing.Point(185, 208);
-            this.bankPanel.Name = "bankPanel";
-            this.bankPanel.Size = new System.Drawing.Size(389, 30);
-            this.bankPanel.TabIndex = 22;
+            this.selectBankPanel.Controls.Add(this.bankCbx0);
+            this.selectBankPanel.Controls.Add(this.bankCbx1);
+            this.selectBankPanel.Controls.Add(this.bankCbx2);
+            this.selectBankPanel.Controls.Add(this.bankCbx3);
+            this.selectBankPanel.Font = new System.Drawing.Font("MS UI Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(128)));
+            this.selectBankPanel.Location = new System.Drawing.Point(185, 208);
+            this.selectBankPanel.Name = "selectBankPanel";
+            this.selectBankPanel.Size = new System.Drawing.Size(389, 30);
+            this.selectBankPanel.TabIndex = 22;
             // 
             // bankCbx0
             // 
@@ -299,10 +295,10 @@ namespace REA2310
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(611, 322);
             this.Controls.Add(this.approvalPanel);
-            this.Controls.Add(this.bankPanel);
-            this.Controls.Add(this.paymentPanel);
-            this.Controls.Add(this.bankAllCbx);
-            this.Controls.Add(this.paymentAllCbx);
+            this.Controls.Add(this.selectBankPanel);
+            this.Controls.Add(this.selectDepositPanel);
+            this.Controls.Add(this.allBankCbx);
+            this.Controls.Add(this.allDepositCbx);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
@@ -312,10 +308,10 @@ namespace REA2310
             this.Controls.Add(this.dateMtb);
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "MainForm";
-            this.paymentPanel.ResumeLayout(false);
-            this.paymentPanel.PerformLayout();
-            this.bankPanel.ResumeLayout(false);
-            this.bankPanel.PerformLayout();
+            this.selectDepositPanel.ResumeLayout(false);
+            this.selectDepositPanel.PerformLayout();
+            this.selectBankPanel.ResumeLayout(false);
+            this.selectBankPanel.PerformLayout();
             this.approvalPanel.ResumeLayout(false);
             this.approvalPanel.PerformLayout();
             this.ResumeLayout(false);
@@ -334,14 +330,14 @@ namespace REA2310
         private System.Windows.Forms.RadioButton approvalRb1;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label3;
-        private System.Windows.Forms.CheckBox paymentAllCbx;
-        private System.Windows.Forms.CheckBox paymentCbx0;
-        private System.Windows.Forms.CheckBox paymentCbx1;
-        private System.Windows.Forms.CheckBox paymentCbx2;
-        private System.Windows.Forms.CheckBox paymentCbx3;
-        private System.Windows.Forms.CheckBox bankAllCbx;
-        private System.Windows.Forms.Panel paymentPanel;
-        private System.Windows.Forms.Panel bankPanel;
+        private System.Windows.Forms.CheckBox allDepositCbx;
+        private System.Windows.Forms.CheckBox depositCbx0;
+        private System.Windows.Forms.CheckBox depositCbx1;
+        private System.Windows.Forms.CheckBox depositCbx2;
+        private System.Windows.Forms.CheckBox depositCbx3;
+        private System.Windows.Forms.CheckBox allBankCbx;
+        private System.Windows.Forms.Panel selectDepositPanel;
+        private System.Windows.Forms.Panel selectBankPanel;
         private System.Windows.Forms.CheckBox bankCbx0;
         private System.Windows.Forms.CheckBox bankCbx1;
         private System.Windows.Forms.CheckBox bankCbx2;
