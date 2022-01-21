@@ -31,7 +31,7 @@ namespace REA2310
 
         private void viewer1_Load(object sender, EventArgs e)
         {
-            var control = new Controller(date, filePath);
+            var control = new Controller(formData, filePath);
             control.CreateData();
 
             SectionReport sectionReport = new SectionReport(control.GetDate(), control.GetBank());

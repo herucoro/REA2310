@@ -12,6 +12,8 @@ using RyoeiSystem.SecretData;
 using RyoeiSystem.Database.Common;
 using RyoeiSystem.Database.Models;
 
+using REA2310.Models;
+
 namespace RyoeiSystem.Database.Controllers
 {
     class Controller
@@ -25,19 +27,19 @@ namespace RyoeiSystem.Database.Controllers
         private List<MoneyDateModel> payment;
 
         private string filePath;
-        public Controller(string date, string filePath)
+        public Controller(MainFormModel date, string filePath)
         {
-            this.startDate = date.Replace("/", "");
-            DateTime dTime = DateTime.Parse(date);
+            //this.startDate = date.Replace("/", "");
+            //DateTime dTime = DateTime.Parse(date);
 
-            this.date = new List<string>();
+            //this.date = new List<string>();
 
-            for (int i = 0; i < 7; i++)
-            {
-                this.date.Add(dTime.AddMonths(i).ToString("yyyyMM"));
-            }
+            //for (int i = 0; i < 7; i++)
+            //{
+            //    this.date.Add(dTime.AddMonths(i).ToString("yyyyMM"));
+            //}
 
-            this.filePath = filePath;
+            //this.filePath = filePath;
         }
 
         public List<string> GetDate()
