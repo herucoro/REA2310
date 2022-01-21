@@ -9,21 +9,24 @@ using System.Threading.Tasks;
 using System.Windows.Forms;
 using RyoeiSystem.Common;
 
-namespace REA2300
+using REA2310.Models;
+
+namespace REA2310
 {
     public partial class MainForm : Form
-    {
-        
+    {        
         public MainForm()
         {
             InitializeComponent();
 
+            // 入金種別ControlsEventHandler
             this.allDepositCbx.Click += AllDepositClicked;
             this.depositCbx0.Click += DepositStateCheck;
             this.depositCbx1.Click += DepositStateCheck;
             this.depositCbx2.Click += DepositStateCheck;
             this.depositCbx3.Click += DepositStateCheck;
 
+            // 銀行ControlsEventHandler
             this.allBankCbx.Click += AllBankClicked;
             this.bankCbx0.Click += BankStateCheck;
             this.bankCbx1.Click += BankStateCheck;
@@ -43,6 +46,9 @@ namespace REA2300
             string date;
             DateTime dt;
 
+            // フォーム情報を保持
+            var formData = new MainFormModel();
+
             IData appData = new AppData();
 
             // 日付チェック
@@ -53,9 +59,35 @@ namespace REA2300
             {                
                 MessageBox.Show("日付の入力が不正です。", "エラー", MessageBoxButtons.OK, MessageBoxIcon.Error);
                 return;
-            }            
+            }
 
-            var printForm = new PrintForm(date, appData);
+            formData.date = date;
+            formData.approvalType = ((RadioButton) this.approvalPanel.Controls[0]).Checked == true ? true : false;
+            formData.paymentType[0] = this.allDepositCbx.Checked;
+            if (this.allDepositCbx.Checked)
+            {
+                for (int i = 0; i < 4; i++)
+                    formData.paymentType[i + 1] = true;
+            }
+            else
+            {
+                for (int i = 0; i < 4; i++)
+                    formData.paymentType[i + 1] = ((CheckBox)this.selectDepositPanel.Controls[i]).Checked;
+            }
+
+            formData.bankType[0] = this.allBankCbx.Checked;
+            if (this.allBankCbx.Checked)
+            {
+                for (int i = 0; i < 4; i++)
+                    formData.bankType[i + 1] = true;
+            }
+            else
+            {
+                for (int i = 0; i < 4; i++)
+                    formData.bankType[i + 1] = ((CheckBox)this.selectBankPanel.Controls[i]).Checked;
+            }
+
+            var printForm = new PrintForm(formData, appData);
             printForm.ShowDialog();
         }
        
@@ -89,7 +121,7 @@ namespace REA2300
 
         private void allDepositCbx_CheckedChanged(object sender, EventArgs e)
         {
-            CheckBox_Checked(this.allDepositCbx.Checked, this.selectDepostiPanel.Controls);
+            CheckBox_Checked(this.allDepositCbx.Checked, this.selectDepositPanel.Controls);
         }
 
         private void allBankCbx_CheckedChanged(object sender, EventArgs e)
@@ -99,7 +131,7 @@ namespace REA2300
 
         private void AllDepositClicked(object sender, EventArgs e)
         {
-            foreach (CheckBox c in this.selectDepostiPanel.Controls)
+            foreach (CheckBox c in this.selectDepositPanel.Controls)
             {
                 c.Checked = this.allDepositCbx.Checked;
             }
@@ -107,7 +139,7 @@ namespace REA2300
 
         private void AllBankClicked(object sender, EventArgs e)
         {
-            foreach(CheckBox c in this.selectBankPanel.Controls)
+            foreach (CheckBox c in this.selectBankPanel.Controls)
             {
                 c.Checked = this.allBankCbx.Checked;
             }
@@ -117,7 +149,7 @@ namespace REA2300
         {
             bool check = true;
 
-            foreach(CheckBox c in this.selectDepostiPanel.Controls)
+            foreach (CheckBox c in this.selectDepositPanel.Controls)
             {
                 check = check && c.Checked;
             }
@@ -135,5 +167,6 @@ namespace REA2300
 
             this.allBankCbx.Checked = check;
         }
+
     }
 }

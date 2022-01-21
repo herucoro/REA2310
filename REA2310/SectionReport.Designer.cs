@@ -1,5 +1,5 @@
 ﻿
-namespace REA2300
+namespace REA2310
 {
     /// <summary>
     /// SectionReport の概要の説明です。

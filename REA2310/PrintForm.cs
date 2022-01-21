@@ -1,29 +1,25 @@
-﻿using System;
-using System.Collections.Generic;
-using System.ComponentModel;
-using System.Data;
-using System.Drawing;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-using System.Windows.Forms;
-using System.Data.SqlClient;
-using System.IO;
-using RyoeiSystem.Common;
+﻿using RyoeiSystem.Common;
 using RyoeiSystem.Database.Controllers;
+using System;
+using System.IO;
+using System.Windows.Forms;
 
-namespace REA2300
+using REA2310.Models;
+
+namespace REA2310
 {
     public partial class PrintForm : Form
     {
-        private string date;
+        private MainFormModel formData;
         private IData appData;
         private string filePath;
 
-        public PrintForm(string date, IData appData)
+        public PrintForm(MainFormModel formData, IData appData)
         {
             InitializeComponent();
-            this.date = date;
+            //this.date = date;
+            this.formData = formData;
+
             this.appData = appData;
             filePath = this.appData.GetRootDirectoryPath() + @"\REA2300.csv";
 
@@ -31,11 +27,11 @@ namespace REA2300
             {
                 File.Delete(filePath);
             }
-        }        
+        }
 
         private void viewer1_Load(object sender, EventArgs e)
         {
-            var control = new Controller(date, filePath);
+            var control = new Controller(formData, filePath);
             control.CreateData();
 
             SectionReport sectionReport = new SectionReport(control.GetDate(), control.GetBank());
