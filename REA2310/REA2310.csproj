@@ -290,6 +290,7 @@
     <Compile Include="Database\Models\BankModel.cs" />
     <Compile Include="Database\Models\MALModel.cs" />
     <Compile Include="Models\MainFormModel.cs" />
+    <Compile Include="Models\PrintModel.cs" />
     <Compile Include="Secret\Secret.cs" />
     <Compile Include="Database\Models\MACModel.cs" />
     <Compile Include="Database\Models\TECModel.cs" />

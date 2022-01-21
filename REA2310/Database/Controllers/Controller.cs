@@ -25,21 +25,23 @@ namespace RyoeiSystem.Database.Controllers
         private List<TECModel> TEC;
         private List<BankModel> bank;
         private List<MoneyDateModel> payment;
+        private MainFormModel formData;
 
         private string filePath;
-        public Controller(MainFormModel date, string filePath)
+        public Controller(MainFormModel formData, string filePath)
         {
-            //this.startDate = date.Replace("/", "");
-            //DateTime dTime = DateTime.Parse(date);
+            this.formData = formData;
+            this.startDate = formData.date.Replace("/", "");
+            DateTime dTime = DateTime.Parse(formData.date);
 
-            //this.date = new List<string>();
+            this.date = new List<string>();
 
-            //for (int i = 0; i < 7; i++)
-            //{
-            //    this.date.Add(dTime.AddMonths(i).ToString("yyyyMM"));
-            //}
+            for (int i = 0; i < 7; i++)
+            {
+                this.date.Add(dTime.AddMonths(i).ToString("yyyyMM"));
+            }
 
-            //this.filePath = filePath;
+            this.filePath = filePath;
         }
 
         public List<string> GetDate()
@@ -60,7 +62,7 @@ namespace RyoeiSystem.Database.Controllers
             {
                 connection.Open();
 
-                // 項目名をMACから取得する
+                // 項目名をMAC(共通マスタ)から取得する
                 sql = @"SELECT MACNAIBU, MACNNAME  
                         FROM MAC
                         WHERE MACKUBUN = @KUBUN
@@ -84,97 +86,118 @@ namespace RyoeiSystem.Database.Controllers
                     }
                 }
 
-                // 入金データをTECから取得する
-                sql = @"SELECT TECSEICOD, TECMEISYO, TECNYUSYU, TECTEGDAT, SUM(TECKINGAK) AS summary, TECBANKCD 
-                        FROM TEC
-                        WHERE TECTEGDAT >= @Date
-                        AND (TECNYUSYU = 3
+                sql = @"SELECT TECSEICOD, TECMEISYO, TECNYUSYU, TECTEGDAT, TECKINGAK, TECBANKCD 
+                        FROM TEC 
+                        WHERE TECTEGDAT >= @Date 
+                        AND ";
+                if (formData.paymentAll)
+                {
+                    sql += @"(TECNYUSYU = 3
                         OR TECNYUSYU = 5
                         OR TECNYUSYU = 6
-                        OR TECNYUSYU = 7)
-                        GROUP BY TECSEICOD, TECMEISYO, TECNYUSYU, TECTEGDAT, TECBANKCD
+                        OR TECNYUSYU = 7)";
+                }
+                else
+                {
+                    sql += @"(TECNYUSYU <> 0 AND TECNYUSYU <> 1 AND TECNYUSYU <> 2 AND TECNYUSYU <> 4) AND (";
+                    foreach (var dic in formData.selectedPayment)
+                    {
+
+                    }
+                }
+
+                sql += @"ORDER BY TECSEICOD, TECTEGDAT, TECNYUSYU
                         ;";
 
-                using (var command = new SqlCommand(sql, connection))
-                {
-                    command.Parameters.Clear();
-                    DatabaseCommon.AddSqlParameter(command, "@Date", SqlDbType.Int, (Object)startDate);
+                // ↓修正対象↓
+                //// 入金データをTECから取得する
+                //sql = @"SELECT TECSEICOD, TECMEISYO, TECNYUSYU, TECTEGDAT, SUM(TECKINGAK) AS summary, TECBANKCD 
+                //        FROM TEC
+                //        WHERE TECTEGDAT >= @Date
+                //        AND (TECNYUSYU = 3
+                //        OR TECNYUSYU = 5
+                //        OR TECNYUSYU = 6
+                //        OR TECNYUSYU = 7)
+                //        GROUP BY TECSEICOD, TECMEISYO, TECNYUSYU, TECTEGDAT, TECBANKCD
+                //        ;";
 
-                    using (var dataReader = command.ExecuteReader())
-                    {
-                        TEC = new List<TECModel>();
+                //using (var command = new SqlCommand(sql, connection))
+                //{
+                //    command.Parameters.Clear();
+                //    DatabaseCommon.AddSqlParameter(command, "@Date", SqlDbType.Int, (Object)startDate);
 
-                        while (dataReader.Read())
-                        {
-                            TEC.Add(new TECModel() { TECSEICOD = (Int16)dataReader["TECSEICOD"], TECMEISYO = (string)dataReader["TECMEISYO"],
-                                TECNYUSYU = (string)dataReader["TECNYUSYU"], TECTEGDAT = (Int32)dataReader["TECTEGDAT"],
-                                TECKINGAK = (double)dataReader["summary"], TECBANKCD = (Int16)dataReader["TECBANKCD"] });
-                        }
-                    }
-                }
+                //    using (var dataReader = command.ExecuteReader())
+                //    {
+                //        TEC = new List<TECModel>();
 
-                foreach (var value in TEC)
-                {
-                    // 計上日のデータをyyyyMMに変換
-                    value.TECTEGDAT = (int)(value.TECTEGDAT / 100) > int.Parse(date.Last()) ? 
-                                            int.Parse(date.Last()): (int)(value.TECTEGDAT / 100);
-                }
+                //        while (dataReader.Read())
+                //        {
+                //            TEC.Add(new TECModel() { TECSEICOD = (Int16)dataReader["TECSEICOD"], TECMEISYO = (string)dataReader["TECMEISYO"],
+                //                TECNYUSYU = (string)dataReader["TECNYUSYU"], TECTEGDAT = (Int32)dataReader["TECTEGDAT"],
+                //                TECKINGAK = (double)dataReader["summary"], TECBANKCD = (Int16)dataReader["TECBANKCD"] });
+                //        }
+                //    }
+                //}
 
-                var query = TEC.OrderBy(x => x.TECSEICOD).ThenBy(x => x.TECNYUSYU)
-                            .GroupBy(x => new { TECSEICOD = x.TECSEICOD, TECMEISYO = x.TECMEISYO, TECNYUSYU = x.TECNYUSYU, TECTEGDAT = x.TECTEGDAT })
-                            .Select(x => new { Key = x.Key, Sum = x.Sum(y => y.TECKINGAK) });
+                //foreach (var value in TEC)
+                //{
+                //    // 計上日のデータをyyyyMMに変換
+                //    value.TECTEGDAT = (int)(value.TECTEGDAT / 100) > int.Parse(date.Last()) ? 
+                //                            int.Parse(date.Last()): (int)(value.TECTEGDAT / 100);
+                //}
 
-                int seicod = 0;
-                string meisyo = "";
-                string nyusyu = "";                
-                foreach (var value in query)
-                {                    
-                    if (seicod == 0 || meisyo == "" || nyusyu == "")
-                    {
-                        seicod = value.Key.TECSEICOD;
-                        meisyo = value.Key.TECMEISYO;
-                        nyusyu = value.Key.TECNYUSYU;
-                    }
-                    else
-                    {
-                        if (seicod == value.Key.TECSEICOD && meisyo == value.Key.TECMEISYO && nyusyu == value.Key.TECNYUSYU)
-                        {
-                            continue;
-                        }
-                        else
-                        {
-                            seicod = value.Key.TECSEICOD;
-                            meisyo = value.Key.TECMEISYO;
-                            nyusyu = value.Key.TECNYUSYU;
-                        }
-                    }
+                //var query = TEC.OrderBy(x => x.TECSEICOD).ThenBy(x => x.TECNYUSYU)
+                //            .GroupBy(x => new { TECSEICOD = x.TECSEICOD, TECMEISYO = x.TECMEISYO, TECNYUSYU = x.TECNYUSYU, TECTEGDAT = x.TECTEGDAT })
+                //            .Select(x => new { Key = x.Key, Sum = x.Sum(y => y.TECKINGAK) });
 
-                    var data = query
-                                .OrderBy(x => x.Key.TECTEGDAT)
-                                .Where(x => x.Key.TECSEICOD == seicod && x.Key.TECNYUSYU == nyusyu)
-                                .ToList();
+                //int seicod = 0;
+                //string meisyo = "";
+                //string nyusyu = "";                
+                //foreach (var value in query)
+                //{                    
+                //    if (seicod == 0 || meisyo == "" || nyusyu == "")
+                //    {
+                //        seicod = value.Key.TECSEICOD;
+                //        meisyo = value.Key.TECMEISYO;
+                //        nyusyu = value.Key.TECNYUSYU;
+                //    }
+                //    else
+                //    {
+                //        if (seicod == value.Key.TECSEICOD && meisyo == value.Key.TECMEISYO && nyusyu == value.Key.TECNYUSYU)
+                //        {
+                //            continue;
+                //        }
+                //        else
+                //        {
+                //            seicod = value.Key.TECSEICOD;
+                //            meisyo = value.Key.TECMEISYO;
+                //            nyusyu = value.Key.TECNYUSYU;
+                //        }
+                //    }
 
-                    StreamWriter file = new StreamWriter(filePath, true, Encoding.UTF8);
-                    file.Write("{0},{1},", seicod.ToString() + ":" + meisyo, nyusyu + ":" +
-                                            MAC.First(x => x.MACNAIBU == nyusyu).MACNNAME);
+                //    var data = query
+                //                .OrderBy(x => x.Key.TECTEGDAT)
+                //                .Where(x => x.Key.TECSEICOD == seicod && x.Key.TECNYUSYU == nyusyu)
+                //                .ToList();
 
-                    foreach (var d in date)
-                    {
-                        // csvファイルに金額を書き込む
-                        file.Write("{0},", data.Any(x => x.Key.TECTEGDAT == long.Parse(d)) ? 
-                                        data.First(x => x.Key.TECTEGDAT == long.Parse(d)).Sum : 0);
-                    }
+                //    StreamWriter file = new StreamWriter(filePath, true, Encoding.UTF8);
+                //    file.Write("{0},{1},", seicod.ToString() + ":" + meisyo, nyusyu + ":" +
+                //                            MAC.First(x => x.MACNAIBU == nyusyu).MACNNAME);
 
+                //    foreach (var d in date)
+                //    {
+                //        // csvファイルに金額を書き込む
+                //        file.Write("{0},", data.Any(x => x.Key.TECTEGDAT == long.Parse(d)) ? 
+                //                        data.First(x => x.Key.TECTEGDAT == long.Parse(d)).Sum : 0);
+                //    }
 
-                    file.Write("{0},", data.Sum(x => x.Sum));
-                    file.WriteLine();
-                    file.Close();
-                }
-
-                // 会社ごとの入金金額生成終了
+                //    file.Write("{0},", data.Sum(x => x.Sum));
+                //    file.WriteLine();
+                //    file.Close();
+                //}
+                //// 会社ごとの入金金額生成終了
 
                 // 銀行の各月データ生成
-
                 sql = @"SELECT MALGNCODE, MALGNNAMK 
                         FROM MAL 
                         ;";

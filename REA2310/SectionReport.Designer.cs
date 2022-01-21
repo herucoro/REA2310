@@ -238,6 +238,7 @@ namespace REA2310
             textBox28.Left = 2.719F;
             textBox28.Name = "textBox28";
             textBox28.OutputFormat = resources.GetString("textBox28.OutputFormat");
+            textBox28.Padding = ((GrapeCity.ActiveReports.PaddingEx)(new GrapeCity.ActiveReports.PaddingEx(0, 0, 0, 0)));
             textBox28.Style = "color: Black; font-family: ＭＳ Ｐ明朝; font-size: 11.25pt; font-weight: normal; text-" +
     "align: right; ddo-char-set: 128";
             textBox28.SummaryType = GrapeCity.ActiveReports.SectionReportModel.SummaryType.GrandTotal;
@@ -252,6 +253,7 @@ namespace REA2310
             textBox29.Left = 3.688F;
             textBox29.Name = "textBox29";
             textBox29.OutputFormat = resources.GetString("textBox29.OutputFormat");
+            textBox29.Padding = ((GrapeCity.ActiveReports.PaddingEx)(new GrapeCity.ActiveReports.PaddingEx(0, 0, 0, 0)));
             textBox29.Style = "color: Black; font-family: ＭＳ Ｐ明朝; font-size: 11.25pt; font-weight: normal; text-" +
     "align: right; ddo-char-set: 128";
             textBox29.SummaryType = GrapeCity.ActiveReports.SectionReportModel.SummaryType.GrandTotal;
@@ -266,6 +268,7 @@ namespace REA2310
             textBox30.Left = 5.636002F;
             textBox30.Name = "textBox30";
             textBox30.OutputFormat = resources.GetString("textBox30.OutputFormat");
+            textBox30.Padding = ((GrapeCity.ActiveReports.PaddingEx)(new GrapeCity.ActiveReports.PaddingEx(0, 0, 0, 0)));
             textBox30.Style = "color: Black; font-family: ＭＳ Ｐ明朝; font-size: 11.25pt; font-weight: normal; text-" +
     "align: right; ddo-char-set: 128";
             textBox30.SummaryType = GrapeCity.ActiveReports.SectionReportModel.SummaryType.GrandTotal;
@@ -280,6 +283,7 @@ namespace REA2310
             textBox31.Left = 6.583F;
             textBox31.Name = "textBox31";
             textBox31.OutputFormat = resources.GetString("textBox31.OutputFormat");
+            textBox31.Padding = ((GrapeCity.ActiveReports.PaddingEx)(new GrapeCity.ActiveReports.PaddingEx(0, 0, 0, 0)));
             textBox31.Style = "color: Black; font-family: ＭＳ Ｐ明朝; font-size: 11.25pt; font-weight: normal; text-" +
     "align: right; ddo-char-set: 128";
             textBox31.SummaryType = GrapeCity.ActiveReports.SectionReportModel.SummaryType.GrandTotal;
@@ -294,6 +298,7 @@ namespace REA2310
             textBox32.Left = 7.562999F;
             textBox32.Name = "textBox32";
             textBox32.OutputFormat = resources.GetString("textBox32.OutputFormat");
+            textBox32.Padding = ((GrapeCity.ActiveReports.PaddingEx)(new GrapeCity.ActiveReports.PaddingEx(0, 0, 0, 0)));
             textBox32.Style = "color: Black; font-family: ＭＳ Ｐ明朝; font-size: 11.25pt; font-weight: normal; text-" +
     "align: right; ddo-char-set: 128";
             textBox32.SummaryType = GrapeCity.ActiveReports.SectionReportModel.SummaryType.GrandTotal;
@@ -308,6 +313,7 @@ namespace REA2310
             textBox33.Left = 8.552F;
             textBox33.Name = "textBox33";
             textBox33.OutputFormat = resources.GetString("textBox33.OutputFormat");
+            textBox33.Padding = ((GrapeCity.ActiveReports.PaddingEx)(new GrapeCity.ActiveReports.PaddingEx(0, 0, 0, 0)));
             textBox33.Style = "color: Black; font-family: ＭＳ Ｐ明朝; font-size: 11.25pt; font-weight: normal; text-" +
     "align: right; ddo-char-set: 128";
             textBox33.SummaryType = GrapeCity.ActiveReports.SectionReportModel.SummaryType.GrandTotal;
@@ -322,6 +328,7 @@ namespace REA2310
             textBox34.Left = 4.651F;
             textBox34.Name = "textBox34";
             textBox34.OutputFormat = resources.GetString("textBox34.OutputFormat");
+            textBox34.Padding = ((GrapeCity.ActiveReports.PaddingEx)(new GrapeCity.ActiveReports.PaddingEx(0, 0, 0, 0)));
             textBox34.Style = "color: Black; font-family: ＭＳ Ｐ明朝; font-size: 11.25pt; font-weight: normal; text-" +
     "align: right; ddo-char-set: 128";
             textBox34.SummaryType = GrapeCity.ActiveReports.SectionReportModel.SummaryType.GrandTotal;
@@ -336,6 +343,7 @@ namespace REA2310
             textBox21.Left = 2.719F;
             textBox21.Name = "textBox21";
             textBox21.OutputFormat = resources.GetString("textBox21.OutputFormat");
+            textBox21.Padding = ((GrapeCity.ActiveReports.PaddingEx)(new GrapeCity.ActiveReports.PaddingEx(0, 0, 0, 0)));
             textBox21.Style = "color: Black; font-family: ＭＳ Ｐ明朝; font-size: 11.25pt; font-weight: normal; text-" +
     "align: right; ddo-char-set: 128";
             textBox21.SummaryGroup = "groupHeader1";
@@ -352,6 +360,7 @@ namespace REA2310
             textBox22.Left = 3.688F;
             textBox22.Name = "textBox22";
             textBox22.OutputFormat = resources.GetString("textBox22.OutputFormat");
+            textBox22.Padding = ((GrapeCity.ActiveReports.PaddingEx)(new GrapeCity.ActiveReports.PaddingEx(0, 0, 0, 0)));
             textBox22.Style = "color: Black; font-family: ＭＳ Ｐ明朝; font-size: 11.25pt; font-weight: normal; text-" +
     "align: right; ddo-char-set: 128";
             textBox22.SummaryGroup = "groupHeader1";
@@ -368,6 +377,7 @@ namespace REA2310
             textBox23.Left = 5.636002F;
             textBox23.Name = "textBox23";
             textBox23.OutputFormat = resources.GetString("textBox23.OutputFormat");
+            textBox23.Padding = ((GrapeCity.ActiveReports.PaddingEx)(new GrapeCity.ActiveReports.PaddingEx(0, 0, 0, 0)));
             textBox23.Style = "color: Black; font-family: ＭＳ Ｐ明朝; font-size: 11.25pt; font-weight: normal; text-" +
     "align: right; ddo-char-set: 128";
             textBox23.SummaryGroup = "groupHeader1";
@@ -384,6 +394,7 @@ namespace REA2310
             textBox24.Left = 6.583F;
             textBox24.Name = "textBox24";
             textBox24.OutputFormat = resources.GetString("textBox24.OutputFormat");
+            textBox24.Padding = ((GrapeCity.ActiveReports.PaddingEx)(new GrapeCity.ActiveReports.PaddingEx(0, 0, 0, 0)));
             textBox24.Style = "color: Black; font-family: ＭＳ Ｐ明朝; font-size: 11.25pt; font-weight: normal; text-" +
     "align: right; ddo-char-set: 128";
             textBox24.SummaryGroup = "groupHeader1";
@@ -400,6 +411,7 @@ namespace REA2310
             textBox25.Left = 7.562999F;
             textBox25.Name = "textBox25";
             textBox25.OutputFormat = resources.GetString("textBox25.OutputFormat");
+            textBox25.Padding = ((GrapeCity.ActiveReports.PaddingEx)(new GrapeCity.ActiveReports.PaddingEx(0, 0, 0, 0)));
             textBox25.Style = "color: Black; font-family: ＭＳ Ｐ明朝; font-size: 11.25pt; font-weight: normal; text-" +
     "align: right; ddo-char-set: 128";
             textBox25.SummaryGroup = "groupHeader1";
@@ -417,6 +429,7 @@ namespace REA2310
             textBox26.Left = 8.551999F;
             textBox26.Name = "textBox26";
             textBox26.OutputFormat = resources.GetString("textBox26.OutputFormat");
+            textBox26.Padding = ((GrapeCity.ActiveReports.PaddingEx)(new GrapeCity.ActiveReports.PaddingEx(0, 0, 0, 0)));
             textBox26.Style = "color: Black; font-family: ＭＳ Ｐ明朝; font-size: 11.25pt; font-weight: normal; text-" +
     "align: right; ddo-char-set: 128";
             textBox26.SummaryGroup = "groupHeader1";
@@ -433,6 +446,7 @@ namespace REA2310
             textBox27.Left = 4.650999F;
             textBox27.Name = "textBox27";
             textBox27.OutputFormat = resources.GetString("textBox27.OutputFormat");
+            textBox27.Padding = ((GrapeCity.ActiveReports.PaddingEx)(new GrapeCity.ActiveReports.PaddingEx(0, 0, 0, 0)));
             textBox27.Style = "color: Black; font-family: ＭＳ Ｐ明朝; font-size: 11.25pt; font-weight: normal; text-" +
     "align: right; ddo-char-set: 128";
             textBox27.SummaryGroup = "groupHeader1";
@@ -470,6 +484,7 @@ namespace REA2310
             this.label1.HyperLink = null;
             this.label1.Left = 0.166F;
             this.label1.Name = "label1";
+            this.label1.Padding = ((GrapeCity.ActiveReports.PaddingEx)(new GrapeCity.ActiveReports.PaddingEx(0, 0, 0, 0)));
             this.label1.Style = "font-size: 7pt; ddo-char-set: 1";
             this.label1.Text = "REA2300";
             this.label1.Top = 0.07300001F;
@@ -481,6 +496,7 @@ namespace REA2310
             this.label2.HyperLink = null;
             this.label2.Left = 4.276F;
             this.label2.Name = "label2";
+            this.label2.Padding = ((GrapeCity.ActiveReports.PaddingEx)(new GrapeCity.ActiveReports.PaddingEx(0, 0, 0, 0)));
             this.label2.Style = "font-size: 14pt; ddo-char-set: 1";
             this.label2.Text = "** 入金予定表 **";
             this.label2.Top = 0.07300001F;
@@ -493,6 +509,7 @@ namespace REA2310
             this.textBox5.Height = 0.2F;
             this.textBox5.Left = 0.166F;
             this.textBox5.Name = "textBox5";
+            this.textBox5.Padding = ((GrapeCity.ActiveReports.PaddingEx)(new GrapeCity.ActiveReports.PaddingEx(0, 0, 0, 0)));
             this.textBox5.Style = "color: Black; text-align: center";
             this.textBox5.SummaryGroup = "";
             this.textBox5.Text = "取引先";
@@ -504,6 +521,7 @@ namespace REA2310
             this.textBox6.Height = 0.2F;
             this.textBox6.Left = 1.927001F;
             this.textBox6.Name = "textBox6";
+            this.textBox6.Padding = ((GrapeCity.ActiveReports.PaddingEx)(new GrapeCity.ActiveReports.PaddingEx(0, 0, 0, 0)));
             this.textBox6.Text = "種別";
             this.textBox6.Top = 0.488F;
             this.textBox6.Width = 0.7920001F;
@@ -513,6 +531,7 @@ namespace REA2310
             this.dateHeader0.Height = 0.2F;
             this.dateHeader0.Left = 2.749001F;
             this.dateHeader0.Name = "dateHeader0";
+            this.dateHeader0.Padding = ((GrapeCity.ActiveReports.PaddingEx)(new GrapeCity.ActiveReports.PaddingEx(0, 0, 0, 0)));
             this.dateHeader0.Style = "color: Black; text-align: center";
             this.dateHeader0.Text = "YY/MM";
             this.dateHeader0.Top = 0.488F;
@@ -523,6 +542,7 @@ namespace REA2310
             this.dateHeader1.Height = 0.2F;
             this.dateHeader1.Left = 3.718001F;
             this.dateHeader1.Name = "dateHeader1";
+            this.dateHeader1.Padding = ((GrapeCity.ActiveReports.PaddingEx)(new GrapeCity.ActiveReports.PaddingEx(0, 0, 0, 0)));
             this.dateHeader1.Style = "color: Black; text-align: center";
             this.dateHeader1.Text = "YY/MM";
             this.dateHeader1.Top = 0.488F;
@@ -533,6 +553,7 @@ namespace REA2310
             this.dateHeader2.Height = 0.2F;
             this.dateHeader2.Left = 4.681001F;
             this.dateHeader2.Name = "dateHeader2";
+            this.dateHeader2.Padding = ((GrapeCity.ActiveReports.PaddingEx)(new GrapeCity.ActiveReports.PaddingEx(0, 0, 0, 0)));
             this.dateHeader2.Style = "color: Black; text-align: center";
             this.dateHeader2.Text = "YY/MM";
             this.dateHeader2.Top = 0.488F;
@@ -543,6 +564,7 @@ namespace REA2310
             this.dateHeader3.Height = 0.2F;
             this.dateHeader3.Left = 5.666001F;
             this.dateHeader3.Name = "dateHeader3";
+            this.dateHeader3.Padding = ((GrapeCity.ActiveReports.PaddingEx)(new GrapeCity.ActiveReports.PaddingEx(0, 0, 0, 0)));
             this.dateHeader3.Style = "color: Black; text-align: center";
             this.dateHeader3.Text = "YY/MM";
             this.dateHeader3.Top = 0.488F;
@@ -553,6 +575,7 @@ namespace REA2310
             this.dateHeader4.Height = 0.2F;
             this.dateHeader4.Left = 6.613001F;
             this.dateHeader4.Name = "dateHeader4";
+            this.dateHeader4.Padding = ((GrapeCity.ActiveReports.PaddingEx)(new GrapeCity.ActiveReports.PaddingEx(0, 0, 0, 0)));
             this.dateHeader4.Style = "color: Black; text-align: center";
             this.dateHeader4.Text = "YY/MM";
             this.dateHeader4.Top = 0.488F;
@@ -563,6 +586,7 @@ namespace REA2310
             this.dateHeader5.Height = 0.2F;
             this.dateHeader5.Left = 7.593001F;
             this.dateHeader5.Name = "dateHeader5";
+            this.dateHeader5.Padding = ((GrapeCity.ActiveReports.PaddingEx)(new GrapeCity.ActiveReports.PaddingEx(0, 0, 0, 0)));
             this.dateHeader5.Style = "color: Black; text-align: center";
             this.dateHeader5.Text = "YY/MM";
             this.dateHeader5.Top = 0.488F;
@@ -575,6 +599,7 @@ namespace REA2310
             this.dateHeader6.Height = 0.2F;
             this.dateHeader6.Left = 8.582001F;
             this.dateHeader6.Name = "dateHeader6";
+            this.dateHeader6.Padding = ((GrapeCity.ActiveReports.PaddingEx)(new GrapeCity.ActiveReports.PaddingEx(0, 0, 0, 0)));
             this.dateHeader6.Style = "color: Black; text-align: center";
             this.dateHeader6.SummaryGroup = "";
             this.dateHeader6.Text = "YY/MM";
@@ -633,6 +658,7 @@ namespace REA2310
             this.detailRowSum.Height = 0.2F;
             this.detailRowSum.Left = 9.541F;
             this.detailRowSum.Name = "detailRowSum";
+            this.detailRowSum.Padding = ((GrapeCity.ActiveReports.PaddingEx)(new GrapeCity.ActiveReports.PaddingEx(0, 0, 0, 0)));
             this.detailRowSum.Style = "color: Black; text-align: center";
             this.detailRowSum.SummaryGroup = "";
             this.detailRowSum.Text = "計";
@@ -660,6 +686,7 @@ namespace REA2310
             this.textBox14.Height = 0.169F;
             this.textBox14.Left = 1.927F;
             this.textBox14.Name = "textBox14";
+            this.textBox14.Padding = ((GrapeCity.ActiveReports.PaddingEx)(new GrapeCity.ActiveReports.PaddingEx(0, 0, 0, 0)));
             this.textBox14.Style = "font-family: ＭＳ Ｐ明朝";
             this.textBox14.Text = "種別";
             this.textBox14.Top = 0F;
@@ -672,6 +699,7 @@ namespace REA2310
             this.textBox4.Left = 2.719F;
             this.textBox4.Name = "textBox4";
             this.textBox4.OutputFormat = resources.GetString("textBox4.OutputFormat");
+            this.textBox4.Padding = ((GrapeCity.ActiveReports.PaddingEx)(new GrapeCity.ActiveReports.PaddingEx(0, 0, 0, 0)));
             this.textBox4.Style = "color: Black; font-family: ＭＳ Ｐ明朝; text-align: right; vertical-align: top";
             this.textBox4.Text = "num0";
             this.textBox4.Top = 0F;
@@ -684,6 +712,7 @@ namespace REA2310
             this.textBox15.Left = 3.688F;
             this.textBox15.Name = "textBox15";
             this.textBox15.OutputFormat = resources.GetString("textBox15.OutputFormat");
+            this.textBox15.Padding = ((GrapeCity.ActiveReports.PaddingEx)(new GrapeCity.ActiveReports.PaddingEx(0, 0, 0, 0)));
             this.textBox15.Style = "color: Black; font-family: ＭＳ Ｐ明朝; text-align: right; vertical-align: top";
             this.textBox15.Text = "num1";
             this.textBox15.Top = 0F;
@@ -696,6 +725,7 @@ namespace REA2310
             this.textBox17.Left = 5.636002F;
             this.textBox17.Name = "textBox17";
             this.textBox17.OutputFormat = resources.GetString("textBox17.OutputFormat");
+            this.textBox17.Padding = ((GrapeCity.ActiveReports.PaddingEx)(new GrapeCity.ActiveReports.PaddingEx(0, 0, 0, 0)));
             this.textBox17.Style = "color: Black; font-family: ＭＳ Ｐ明朝; text-align: right; vertical-align: top";
             this.textBox17.Text = "num3";
             this.textBox17.Top = 0F;
@@ -709,6 +739,7 @@ namespace REA2310
             this.textBox18.Left = 6.583F;
             this.textBox18.Name = "textBox18";
             this.textBox18.OutputFormat = resources.GetString("textBox18.OutputFormat");
+            this.textBox18.Padding = ((GrapeCity.ActiveReports.PaddingEx)(new GrapeCity.ActiveReports.PaddingEx(0, 0, 0, 0)));
             this.textBox18.Style = "color: Black; font-family: ＭＳ Ｐ明朝; text-align: right; vertical-align: top";
             this.textBox18.SummaryGroup = "";
             this.textBox18.Text = "num4";
@@ -723,6 +754,7 @@ namespace REA2310
             this.textBox19.Left = 7.562999F;
             this.textBox19.Name = "textBox19";
             this.textBox19.OutputFormat = resources.GetString("textBox19.OutputFormat");
+            this.textBox19.Padding = ((GrapeCity.ActiveReports.PaddingEx)(new GrapeCity.ActiveReports.PaddingEx(0, 0, 0, 0)));
             this.textBox19.Style = "color: Black; font-family: ＭＳ Ｐ明朝; text-align: right; vertical-align: top";
             this.textBox19.SummaryGroup = "";
             this.textBox19.Text = "num5";
@@ -737,6 +769,7 @@ namespace REA2310
             this.textBox20.Left = 8.551999F;
             this.textBox20.Name = "textBox20";
             this.textBox20.OutputFormat = resources.GetString("textBox20.OutputFormat");
+            this.textBox20.Padding = ((GrapeCity.ActiveReports.PaddingEx)(new GrapeCity.ActiveReports.PaddingEx(0, 0, 0, 0)));
             this.textBox20.Style = "color: Black; font-family: ＭＳ Ｐ明朝; text-align: right; vertical-align: top";
             this.textBox20.SummaryGroup = "";
             this.textBox20.Text = "num6";
@@ -750,6 +783,7 @@ namespace REA2310
             this.textBox16.Left = 4.650999F;
             this.textBox16.Name = "textBox16";
             this.textBox16.OutputFormat = resources.GetString("textBox16.OutputFormat");
+            this.textBox16.Padding = ((GrapeCity.ActiveReports.PaddingEx)(new GrapeCity.ActiveReports.PaddingEx(0, 0, 0, 0)));
             this.textBox16.Style = "color: Black; font-family: ＭＳ Ｐ明朝; text-align: right; vertical-align: top";
             this.textBox16.Text = "num2";
             this.textBox16.Top = 0F;
@@ -779,6 +813,7 @@ namespace REA2310
             this.textBox36.Height = 0.2F;
             this.textBox36.Left = 1.897F;
             this.textBox36.Name = "textBox36";
+            this.textBox36.Padding = ((GrapeCity.ActiveReports.PaddingEx)(new GrapeCity.ActiveReports.PaddingEx(0, 0, 0, 0)));
             this.textBox36.Text = "合計";
             this.textBox36.Top = 0F;
             this.textBox36.Width = 0.7920001F;
@@ -790,6 +825,7 @@ namespace REA2310
             this.textBox38.Left = 9.541F;
             this.textBox38.Name = "textBox38";
             this.textBox38.OutputFormat = resources.GetString("textBox38.OutputFormat");
+            this.textBox38.Padding = ((GrapeCity.ActiveReports.PaddingEx)(new GrapeCity.ActiveReports.PaddingEx(0, 0, 0, 0)));
             this.textBox38.Style = "color: Black; font-family: ＭＳ Ｐ明朝; font-size: 11.25pt; font-weight: normal; text-" +
     "align: right; ddo-char-set: 128";
             this.textBox38.SummaryType = GrapeCity.ActiveReports.SectionReportModel.SummaryType.GrandTotal;
@@ -812,6 +848,7 @@ namespace REA2310
             this.textBox3.Height = 0.2F;
             this.textBox3.Left = 0.1659999F;
             this.textBox3.Name = "textBox3";
+            this.textBox3.Padding = ((GrapeCity.ActiveReports.PaddingEx)(new GrapeCity.ActiveReports.PaddingEx(0, 0, 0, 0)));
             this.textBox3.Text = "取引先";
             this.textBox3.Top = 0F;
             this.textBox3.Width = 1.692F;
@@ -837,6 +874,7 @@ namespace REA2310
             this.textBox35.Height = 0.2F;
             this.textBox35.Left = 1.927F;
             this.textBox35.Name = "textBox35";
+            this.textBox35.Padding = ((GrapeCity.ActiveReports.PaddingEx)(new GrapeCity.ActiveReports.PaddingEx(0, 0, 0, 0)));
             this.textBox35.Text = "計";
             this.textBox35.Top = 0F;
             this.textBox35.Width = 0.7619998F;
@@ -863,6 +901,7 @@ namespace REA2310
             this.textBox37.Left = 9.540999F;
             this.textBox37.Name = "textBox37";
             this.textBox37.OutputFormat = resources.GetString("textBox37.OutputFormat");
+            this.textBox37.Padding = ((GrapeCity.ActiveReports.PaddingEx)(new GrapeCity.ActiveReports.PaddingEx(0, 0, 0, 0)));
             this.textBox37.Style = "color: Black; font-family: ＭＳ Ｐ明朝; font-size: 11.25pt; font-weight: normal; text-" +
     "align: right; ddo-char-set: 128";
             this.textBox37.SummaryGroup = "groupHeader1";
@@ -945,6 +984,7 @@ namespace REA2310
             this.bankName0.Height = 0.2F;
             this.bankName0.Left = 0.186F;
             this.bankName0.Name = "bankName0";
+            this.bankName0.Padding = ((GrapeCity.ActiveReports.PaddingEx)(new GrapeCity.ActiveReports.PaddingEx(0, 0, 0, 0)));
             this.bankName0.Style = "color: Black; text-align: left";
             this.bankName0.SummaryGroup = "";
             this.bankName0.Text = "取引先";
@@ -957,6 +997,7 @@ namespace REA2310
             this.amount00.Left = 2.718998F;
             this.amount00.Name = "amount00";
             this.amount00.OutputFormat = resources.GetString("amount00.OutputFormat");
+            this.amount00.Padding = ((GrapeCity.ActiveReports.PaddingEx)(new GrapeCity.ActiveReports.PaddingEx(0, 0, 0, 0)));
             this.amount00.Style = "color: Black; font-family: ＭＳ Ｐ明朝; text-align: right; ddo-char-set: 1";
             this.amount00.Text = "YY/MM";
             this.amount00.Top = 0.353F;
@@ -968,6 +1009,7 @@ namespace REA2310
             this.amount01.Left = 3.687999F;
             this.amount01.Name = "amount01";
             this.amount01.OutputFormat = resources.GetString("amount01.OutputFormat");
+            this.amount01.Padding = ((GrapeCity.ActiveReports.PaddingEx)(new GrapeCity.ActiveReports.PaddingEx(0, 0, 0, 0)));
             this.amount01.Style = "color: Black; font-family: ＭＳ Ｐ明朝; text-align: right; ddo-char-set: 1";
             this.amount01.Text = "YY/MM";
             this.amount01.Top = 0.353F;
@@ -979,6 +1021,7 @@ namespace REA2310
             this.amount02.Left = 4.650999F;
             this.amount02.Name = "amount02";
             this.amount02.OutputFormat = resources.GetString("amount02.OutputFormat");
+            this.amount02.Padding = ((GrapeCity.ActiveReports.PaddingEx)(new GrapeCity.ActiveReports.PaddingEx(0, 0, 0, 0)));
             this.amount02.Style = "color: Black; font-family: ＭＳ Ｐ明朝; text-align: right; ddo-char-set: 1";
             this.amount02.Text = "YY/MM";
             this.amount02.Top = 0.353F;
@@ -990,6 +1033,7 @@ namespace REA2310
             this.amount03.Left = 5.635999F;
             this.amount03.Name = "amount03";
             this.amount03.OutputFormat = resources.GetString("amount03.OutputFormat");
+            this.amount03.Padding = ((GrapeCity.ActiveReports.PaddingEx)(new GrapeCity.ActiveReports.PaddingEx(0, 0, 0, 0)));
             this.amount03.Style = "color: Black; font-family: ＭＳ Ｐ明朝; text-align: right; ddo-char-set: 1";
             this.amount03.Text = "YY/MM";
             this.amount03.Top = 0.353F;
@@ -1001,6 +1045,7 @@ namespace REA2310
             this.amount04.Left = 6.582999F;
             this.amount04.Name = "amount04";
             this.amount04.OutputFormat = resources.GetString("amount04.OutputFormat");
+            this.amount04.Padding = ((GrapeCity.ActiveReports.PaddingEx)(new GrapeCity.ActiveReports.PaddingEx(0, 0, 0, 0)));
             this.amount04.Style = "color: Black; font-family: ＭＳ Ｐ明朝; text-align: right; ddo-char-set: 1";
             this.amount04.Text = "YY/MM";
             this.amount04.Top = 0.353F;
@@ -1012,6 +1057,7 @@ namespace REA2310
             this.amount05.Left = 7.562998F;
             this.amount05.Name = "amount05";
             this.amount05.OutputFormat = resources.GetString("amount05.OutputFormat");
+            this.amount05.Padding = ((GrapeCity.ActiveReports.PaddingEx)(new GrapeCity.ActiveReports.PaddingEx(0, 0, 0, 0)));
             this.amount05.Style = "color: Black; font-family: ＭＳ Ｐ明朝; text-align: right; ddo-char-set: 1";
             this.amount05.Text = "YY/MM";
             this.amount05.Top = 0.353F;
@@ -1024,6 +1070,7 @@ namespace REA2310
             this.amount06.Left = 8.551999F;
             this.amount06.Name = "amount06";
             this.amount06.OutputFormat = resources.GetString("amount06.OutputFormat");
+            this.amount06.Padding = ((GrapeCity.ActiveReports.PaddingEx)(new GrapeCity.ActiveReports.PaddingEx(0, 0, 0, 0)));
             this.amount06.Style = "color: Black; font-family: ＭＳ Ｐ明朝; text-align: right; ddo-char-set: 1";
             this.amount06.SummaryGroup = "";
             this.amount06.Text = "YY/MM";
@@ -1037,6 +1084,7 @@ namespace REA2310
             this.rowSum0.Left = 9.541F;
             this.rowSum0.Name = "rowSum0";
             this.rowSum0.OutputFormat = resources.GetString("rowSum0.OutputFormat");
+            this.rowSum0.Padding = ((GrapeCity.ActiveReports.PaddingEx)(new GrapeCity.ActiveReports.PaddingEx(0, 0, 0, 0)));
             this.rowSum0.Style = "color: Black; font-family: ＭＳ Ｐ明朝; text-align: right; ddo-char-set: 1";
             this.rowSum0.SummaryGroup = "";
             this.rowSum0.Text = "計";
@@ -1049,6 +1097,7 @@ namespace REA2310
             this.bankName1.Height = 0.2F;
             this.bankName1.Left = 0.1860011F;
             this.bankName1.Name = "bankName1";
+            this.bankName1.Padding = ((GrapeCity.ActiveReports.PaddingEx)(new GrapeCity.ActiveReports.PaddingEx(0, 0, 0, 0)));
             this.bankName1.Style = "color: Black; text-align: left";
             this.bankName1.SummaryGroup = "";
             this.bankName1.Text = "取引先";
@@ -1061,6 +1110,7 @@ namespace REA2310
             this.amount10.Left = 2.719F;
             this.amount10.Name = "amount10";
             this.amount10.OutputFormat = resources.GetString("amount10.OutputFormat");
+            this.amount10.Padding = ((GrapeCity.ActiveReports.PaddingEx)(new GrapeCity.ActiveReports.PaddingEx(0, 0, 0, 0)));
             this.amount10.Style = "color: Black; font-family: ＭＳ Ｐ明朝; text-align: right; ddo-char-set: 1";
             this.amount10.Text = "YY/MM";
             this.amount10.Top = 0.608F;
@@ -1072,6 +1122,7 @@ namespace REA2310
             this.amount11.Left = 3.688F;
             this.amount11.Name = "amount11";
             this.amount11.OutputFormat = resources.GetString("amount11.OutputFormat");
+            this.amount11.Padding = ((GrapeCity.ActiveReports.PaddingEx)(new GrapeCity.ActiveReports.PaddingEx(0, 0, 0, 0)));
             this.amount11.Style = "color: Black; font-family: ＭＳ Ｐ明朝; text-align: right; ddo-char-set: 1";
             this.amount11.Text = "YY/MM";
             this.amount11.Top = 0.608F;
@@ -1083,6 +1134,7 @@ namespace REA2310
             this.amount12.Left = 4.651F;
             this.amount12.Name = "amount12";
             this.amount12.OutputFormat = resources.GetString("amount12.OutputFormat");
+            this.amount12.Padding = ((GrapeCity.ActiveReports.PaddingEx)(new GrapeCity.ActiveReports.PaddingEx(0, 0, 0, 0)));
             this.amount12.Style = "color: Black; font-family: ＭＳ Ｐ明朝; text-align: right; ddo-char-set: 1";
             this.amount12.Text = "YY/MM";
             this.amount12.Top = 0.608F;
@@ -1094,6 +1146,7 @@ namespace REA2310
             this.amount13.Left = 5.636F;
             this.amount13.Name = "amount13";
             this.amount13.OutputFormat = resources.GetString("amount13.OutputFormat");
+            this.amount13.Padding = ((GrapeCity.ActiveReports.PaddingEx)(new GrapeCity.ActiveReports.PaddingEx(0, 0, 0, 0)));
             this.amount13.Style = "color: Black; font-family: ＭＳ Ｐ明朝; text-align: right; ddo-char-set: 1";
             this.amount13.Text = "YY/MM";
             this.amount13.Top = 0.608F;
@@ -1105,6 +1158,7 @@ namespace REA2310
             this.amount14.Left = 6.583F;
             this.amount14.Name = "amount14";
             this.amount14.OutputFormat = resources.GetString("amount14.OutputFormat");
+            this.amount14.Padding = ((GrapeCity.ActiveReports.PaddingEx)(new GrapeCity.ActiveReports.PaddingEx(0, 0, 0, 0)));
             this.amount14.Style = "color: Black; font-family: ＭＳ Ｐ明朝; text-align: right; ddo-char-set: 1";
             this.amount14.Text = "YY/MM";
             this.amount14.Top = 0.608F;
@@ -1116,6 +1170,7 @@ namespace REA2310
             this.amount15.Left = 7.562999F;
             this.amount15.Name = "amount15";
             this.amount15.OutputFormat = resources.GetString("amount15.OutputFormat");
+            this.amount15.Padding = ((GrapeCity.ActiveReports.PaddingEx)(new GrapeCity.ActiveReports.PaddingEx(0, 0, 0, 0)));
             this.amount15.Style = "color: Black; font-family: ＭＳ Ｐ明朝; text-align: right; ddo-char-set: 1";
             this.amount15.Text = "YY/MM";
             this.amount15.Top = 0.608F;
@@ -1128,6 +1183,7 @@ namespace REA2310
             this.amount16.Left = 8.552F;
             this.amount16.Name = "amount16";
             this.amount16.OutputFormat = resources.GetString("amount16.OutputFormat");
+            this.amount16.Padding = ((GrapeCity.ActiveReports.PaddingEx)(new GrapeCity.ActiveReports.PaddingEx(0, 0, 0, 0)));
             this.amount16.Style = "color: Black; font-family: ＭＳ Ｐ明朝; text-align: right; ddo-char-set: 1";
             this.amount16.SummaryGroup = "";
             this.amount16.Text = "YY/MM";
@@ -1141,6 +1197,7 @@ namespace REA2310
             this.rowSum1.Left = 9.541001F;
             this.rowSum1.Name = "rowSum1";
             this.rowSum1.OutputFormat = resources.GetString("rowSum1.OutputFormat");
+            this.rowSum1.Padding = ((GrapeCity.ActiveReports.PaddingEx)(new GrapeCity.ActiveReports.PaddingEx(0, 0, 0, 0)));
             this.rowSum1.Style = "color: Black; font-family: ＭＳ Ｐ明朝; text-align: right; ddo-char-set: 1";
             this.rowSum1.SummaryGroup = "";
             this.rowSum1.Text = "計";
@@ -1153,6 +1210,7 @@ namespace REA2310
             this.bankName2.Height = 0.2F;
             this.bankName2.Left = 0.1860001F;
             this.bankName2.Name = "bankName2";
+            this.bankName2.Padding = ((GrapeCity.ActiveReports.PaddingEx)(new GrapeCity.ActiveReports.PaddingEx(0, 0, 0, 0)));
             this.bankName2.Style = "color: Black; text-align: left";
             this.bankName2.SummaryGroup = "";
             this.bankName2.Text = "取引先";
@@ -1165,6 +1223,7 @@ namespace REA2310
             this.amount20.Left = 2.718999F;
             this.amount20.Name = "amount20";
             this.amount20.OutputFormat = resources.GetString("amount20.OutputFormat");
+            this.amount20.Padding = ((GrapeCity.ActiveReports.PaddingEx)(new GrapeCity.ActiveReports.PaddingEx(0, 0, 0, 0)));
             this.amount20.Style = "color: Black; font-family: ＭＳ Ｐ明朝; text-align: right; ddo-char-set: 1";
             this.amount20.Text = "YY/MM";
             this.amount20.Top = 0.866F;
@@ -1176,6 +1235,7 @@ namespace REA2310
             this.amount21.Left = 3.687999F;
             this.amount21.Name = "amount21";
             this.amount21.OutputFormat = resources.GetString("amount21.OutputFormat");
+            this.amount21.Padding = ((GrapeCity.ActiveReports.PaddingEx)(new GrapeCity.ActiveReports.PaddingEx(0, 0, 0, 0)));
             this.amount21.Style = "color: Black; font-family: ＭＳ Ｐ明朝; text-align: right; ddo-char-set: 1";
             this.amount21.Text = "YY/MM";
             this.amount21.Top = 0.866F;
@@ -1187,6 +1247,7 @@ namespace REA2310
             this.amount22.Left = 4.650999F;
             this.amount22.Name = "amount22";
             this.amount22.OutputFormat = resources.GetString("amount22.OutputFormat");
+            this.amount22.Padding = ((GrapeCity.ActiveReports.PaddingEx)(new GrapeCity.ActiveReports.PaddingEx(0, 0, 0, 0)));
             this.amount22.Style = "color: Black; font-family: ＭＳ Ｐ明朝; text-align: right; ddo-char-set: 1";
             this.amount22.Text = "YY/MM";
             this.amount22.Top = 0.866F;
@@ -1198,6 +1259,7 @@ namespace REA2310
             this.amount23.Left = 5.635999F;
             this.amount23.Name = "amount23";
             this.amount23.OutputFormat = resources.GetString("amount23.OutputFormat");
+            this.amount23.Padding = ((GrapeCity.ActiveReports.PaddingEx)(new GrapeCity.ActiveReports.PaddingEx(0, 0, 0, 0)));
             this.amount23.Style = "color: Black; font-family: ＭＳ Ｐ明朝; text-align: right; ddo-char-set: 1";
             this.amount23.Text = "YY/MM";
             this.amount23.Top = 0.866F;
@@ -1209,6 +1271,7 @@ namespace REA2310
             this.amount24.Left = 6.582999F;
             this.amount24.Name = "amount24";
             this.amount24.OutputFormat = resources.GetString("amount24.OutputFormat");
+            this.amount24.Padding = ((GrapeCity.ActiveReports.PaddingEx)(new GrapeCity.ActiveReports.PaddingEx(0, 0, 0, 0)));
             this.amount24.Style = "color: Black; font-family: ＭＳ Ｐ明朝; text-align: right; ddo-char-set: 1";
             this.amount24.Text = "YY/MM";
             this.amount24.Top = 0.866F;
@@ -1220,6 +1283,7 @@ namespace REA2310
             this.amount25.Left = 7.562998F;
             this.amount25.Name = "amount25";
             this.amount25.OutputFormat = resources.GetString("amount25.OutputFormat");
+            this.amount25.Padding = ((GrapeCity.ActiveReports.PaddingEx)(new GrapeCity.ActiveReports.PaddingEx(0, 0, 0, 0)));
             this.amount25.Style = "color: Black; font-family: ＭＳ Ｐ明朝; text-align: right; ddo-char-set: 1";
             this.amount25.Text = "YY/MM";
             this.amount25.Top = 0.866F;
@@ -1232,6 +1296,7 @@ namespace REA2310
             this.amount26.Left = 8.551999F;
             this.amount26.Name = "amount26";
             this.amount26.OutputFormat = resources.GetString("amount26.OutputFormat");
+            this.amount26.Padding = ((GrapeCity.ActiveReports.PaddingEx)(new GrapeCity.ActiveReports.PaddingEx(0, 0, 0, 0)));
             this.amount26.Style = "color: Black; font-family: ＭＳ Ｐ明朝; text-align: right; ddo-char-set: 1";
             this.amount26.SummaryGroup = "";
             this.amount26.Text = "YY/MM";
@@ -1245,6 +1310,7 @@ namespace REA2310
             this.rowSum2.Left = 9.541F;
             this.rowSum2.Name = "rowSum2";
             this.rowSum2.OutputFormat = resources.GetString("rowSum2.OutputFormat");
+            this.rowSum2.Padding = ((GrapeCity.ActiveReports.PaddingEx)(new GrapeCity.ActiveReports.PaddingEx(0, 0, 0, 0)));
             this.rowSum2.Style = "color: Black; font-family: ＭＳ Ｐ明朝; text-align: right; ddo-char-set: 1";
             this.rowSum2.SummaryGroup = "";
             this.rowSum2.Text = "計";
@@ -1257,6 +1323,7 @@ namespace REA2310
             this.bankName3.Height = 0.2F;
             this.bankName3.Left = 0.1860012F;
             this.bankName3.Name = "bankName3";
+            this.bankName3.Padding = ((GrapeCity.ActiveReports.PaddingEx)(new GrapeCity.ActiveReports.PaddingEx(0, 0, 0, 0)));
             this.bankName3.Style = "color: Black; text-align: left";
             this.bankName3.SummaryGroup = "";
             this.bankName3.Text = "取引先";
@@ -1269,6 +1336,7 @@ namespace REA2310
             this.amount30.Left = 2.718999F;
             this.amount30.Name = "amount30";
             this.amount30.OutputFormat = resources.GetString("amount30.OutputFormat");
+            this.amount30.Padding = ((GrapeCity.ActiveReports.PaddingEx)(new GrapeCity.ActiveReports.PaddingEx(0, 0, 0, 0)));
             this.amount30.Style = "color: Black; font-family: ＭＳ Ｐ明朝; text-align: right; ddo-char-set: 1";
             this.amount30.Text = "YY/MM";
             this.amount30.Top = 1.121F;
@@ -1280,6 +1348,7 @@ namespace REA2310
             this.amount31.Left = 3.688F;
             this.amount31.Name = "amount31";
             this.amount31.OutputFormat = resources.GetString("amount31.OutputFormat");
+            this.amount31.Padding = ((GrapeCity.ActiveReports.PaddingEx)(new GrapeCity.ActiveReports.PaddingEx(0, 0, 0, 0)));
             this.amount31.Style = "color: Black; font-family: ＭＳ Ｐ明朝; text-align: right; ddo-char-set: 1";
             this.amount31.Text = "YY/MM";
             this.amount31.Top = 1.121F;
@@ -1291,6 +1360,7 @@ namespace REA2310
             this.amount32.Left = 4.651F;
             this.amount32.Name = "amount32";
             this.amount32.OutputFormat = resources.GetString("amount32.OutputFormat");
+            this.amount32.Padding = ((GrapeCity.ActiveReports.PaddingEx)(new GrapeCity.ActiveReports.PaddingEx(0, 0, 0, 0)));
             this.amount32.Style = "color: Black; font-family: ＭＳ Ｐ明朝; text-align: right; ddo-char-set: 1";
             this.amount32.Text = "YY/MM";
             this.amount32.Top = 1.121F;
@@ -1302,6 +1372,7 @@ namespace REA2310
             this.amount33.Left = 5.636F;
             this.amount33.Name = "amount33";
             this.amount33.OutputFormat = resources.GetString("amount33.OutputFormat");
+            this.amount33.Padding = ((GrapeCity.ActiveReports.PaddingEx)(new GrapeCity.ActiveReports.PaddingEx(0, 0, 0, 0)));
             this.amount33.Style = "color: Black; font-family: ＭＳ Ｐ明朝; text-align: right; ddo-char-set: 1";
             this.amount33.Text = "YY/MM";
             this.amount33.Top = 1.121F;
@@ -1313,6 +1384,7 @@ namespace REA2310
             this.amount34.Left = 6.583F;
             this.amount34.Name = "amount34";
             this.amount34.OutputFormat = resources.GetString("amount34.OutputFormat");
+            this.amount34.Padding = ((GrapeCity.ActiveReports.PaddingEx)(new GrapeCity.ActiveReports.PaddingEx(0, 0, 0, 0)));
             this.amount34.Style = "color: Black; font-family: ＭＳ Ｐ明朝; text-align: right; ddo-char-set: 1";
             this.amount34.Text = "YY/MM";
             this.amount34.Top = 1.121F;
@@ -1324,6 +1396,7 @@ namespace REA2310
             this.amount35.Left = 7.562998F;
             this.amount35.Name = "amount35";
             this.amount35.OutputFormat = resources.GetString("amount35.OutputFormat");
+            this.amount35.Padding = ((GrapeCity.ActiveReports.PaddingEx)(new GrapeCity.ActiveReports.PaddingEx(0, 0, 0, 0)));
             this.amount35.Style = "color: Black; font-family: ＭＳ Ｐ明朝; text-align: right; ddo-char-set: 1";
             this.amount35.Text = "YY/MM";
             this.amount35.Top = 1.121F;
@@ -1336,6 +1409,7 @@ namespace REA2310
             this.amount36.Left = 8.551999F;
             this.amount36.Name = "amount36";
             this.amount36.OutputFormat = resources.GetString("amount36.OutputFormat");
+            this.amount36.Padding = ((GrapeCity.ActiveReports.PaddingEx)(new GrapeCity.ActiveReports.PaddingEx(0, 0, 0, 0)));
             this.amount36.Style = "color: Black; font-family: ＭＳ Ｐ明朝; text-align: right; ddo-char-set: 1";
             this.amount36.SummaryGroup = "";
             this.amount36.Text = "YY/MM";
@@ -1349,6 +1423,7 @@ namespace REA2310
             this.rowSum3.Left = 9.541F;
             this.rowSum3.Name = "rowSum3";
             this.rowSum3.OutputFormat = resources.GetString("rowSum3.OutputFormat");
+            this.rowSum3.Padding = ((GrapeCity.ActiveReports.PaddingEx)(new GrapeCity.ActiveReports.PaddingEx(0, 0, 0, 0)));
             this.rowSum3.Style = "color: Black; font-family: ＭＳ Ｐ明朝; text-align: right; ddo-char-set: 1";
             this.rowSum3.SummaryGroup = "";
             this.rowSum3.Text = "計";
@@ -1361,6 +1436,7 @@ namespace REA2310
             this.colSum0.Left = 2.719002F;
             this.colSum0.Name = "colSum0";
             this.colSum0.OutputFormat = resources.GetString("colSum0.OutputFormat");
+            this.colSum0.Padding = ((GrapeCity.ActiveReports.PaddingEx)(new GrapeCity.ActiveReports.PaddingEx(0, 0, 0, 0)));
             this.colSum0.Style = "color: Black; font-family: ＭＳ Ｐ明朝; font-size: 11.25pt; text-align: right; ddo-cha" +
     "r-set: 1";
             this.colSum0.Text = "bankSum0";
@@ -1373,6 +1449,7 @@ namespace REA2310
             this.colSum1.Left = 3.688004F;
             this.colSum1.Name = "colSum1";
             this.colSum1.OutputFormat = resources.GetString("colSum1.OutputFormat");
+            this.colSum1.Padding = ((GrapeCity.ActiveReports.PaddingEx)(new GrapeCity.ActiveReports.PaddingEx(0, 0, 0, 0)));
             this.colSum1.Style = "color: Black; font-family: ＭＳ Ｐ明朝; font-size: 11.25pt; text-align: right; ddo-cha" +
     "r-set: 1";
             this.colSum1.Text = "bankSum1";
@@ -1385,6 +1462,7 @@ namespace REA2310
             this.colSum2.Left = 4.651002F;
             this.colSum2.Name = "colSum2";
             this.colSum2.OutputFormat = resources.GetString("colSum2.OutputFormat");
+            this.colSum2.Padding = ((GrapeCity.ActiveReports.PaddingEx)(new GrapeCity.ActiveReports.PaddingEx(0, 0, 0, 0)));
             this.colSum2.Style = "color: Black; font-family: ＭＳ Ｐ明朝; font-size: 11.25pt; text-align: right; ddo-cha" +
     "r-set: 1";
             this.colSum2.Text = "bankSum2";
@@ -1397,6 +1475,7 @@ namespace REA2310
             this.colSum3.Left = 5.636003F;
             this.colSum3.Name = "colSum3";
             this.colSum3.OutputFormat = resources.GetString("colSum3.OutputFormat");
+            this.colSum3.Padding = ((GrapeCity.ActiveReports.PaddingEx)(new GrapeCity.ActiveReports.PaddingEx(0, 0, 0, 0)));
             this.colSum3.Style = "color: Black; font-family: ＭＳ Ｐ明朝; font-size: 11.25pt; text-align: right; ddo-cha" +
     "r-set: 1";
             this.colSum3.Text = "bankSum3";
@@ -1409,6 +1488,7 @@ namespace REA2310
             this.colSum4.Left = 6.583003F;
             this.colSum4.Name = "colSum4";
             this.colSum4.OutputFormat = resources.GetString("colSum4.OutputFormat");
+            this.colSum4.Padding = ((GrapeCity.ActiveReports.PaddingEx)(new GrapeCity.ActiveReports.PaddingEx(0, 0, 0, 0)));
             this.colSum4.Style = "color: Black; font-family: ＭＳ Ｐ明朝; font-size: 11.25pt; text-align: right; ddo-cha" +
     "r-set: 1";
             this.colSum4.Text = "bankSum4";
@@ -1421,6 +1501,7 @@ namespace REA2310
             this.colSum5.Left = 7.563001F;
             this.colSum5.Name = "colSum5";
             this.colSum5.OutputFormat = resources.GetString("colSum5.OutputFormat");
+            this.colSum5.Padding = ((GrapeCity.ActiveReports.PaddingEx)(new GrapeCity.ActiveReports.PaddingEx(0, 0, 0, 0)));
             this.colSum5.Style = "color: Black; font-family: ＭＳ Ｐ明朝; font-size: 11.25pt; text-align: right; ddo-cha" +
     "r-set: 1";
             this.colSum5.Text = "bankSum5";
@@ -1434,6 +1515,7 @@ namespace REA2310
             this.colSum6.Left = 8.552F;
             this.colSum6.Name = "colSum6";
             this.colSum6.OutputFormat = resources.GetString("colSum6.OutputFormat");
+            this.colSum6.Padding = ((GrapeCity.ActiveReports.PaddingEx)(new GrapeCity.ActiveReports.PaddingEx(0, 0, 0, 0)));
             this.colSum6.Style = "color: Black; font-family: ＭＳ Ｐ明朝; font-size: 11.25pt; text-align: right; ddo-cha" +
     "r-set: 1";
             this.colSum6.SummaryGroup = "";
@@ -1448,6 +1530,7 @@ namespace REA2310
             this.colSum7.Left = 9.541F;
             this.colSum7.Name = "colSum7";
             this.colSum7.OutputFormat = resources.GetString("colSum7.OutputFormat");
+            this.colSum7.Padding = ((GrapeCity.ActiveReports.PaddingEx)(new GrapeCity.ActiveReports.PaddingEx(0, 0, 0, 0)));
             this.colSum7.Style = "color: Black; font-family: ＭＳ Ｐ明朝; font-size: 11.25pt; text-align: right; ddo-cha" +
     "r-set: 1";
             this.colSum7.SummaryGroup = "";
@@ -1487,6 +1570,7 @@ namespace REA2310
             this.textBox1.Height = 0.2F;
             this.textBox1.Left = 1.897F;
             this.textBox1.Name = "textBox1";
+            this.textBox1.Padding = ((GrapeCity.ActiveReports.PaddingEx)(new GrapeCity.ActiveReports.PaddingEx(0, 0, 0, 0)));
             this.textBox1.Text = "合計";
             this.textBox1.Top = 1.513F;
             this.textBox1.Width = 0.792F;
@@ -1511,13 +1595,13 @@ namespace REA2310
             this.Sections.Add(this.groupFooter1);
             this.Sections.Add(this.pageFooter);
             this.Sections.Add(this.reportFooter1);
-            this.StyleSheet.Add(new DDCssLib.StyleSheetRule("font-style: normal; text-decoration: none; font-weight: normal; font-size: 10pt; " +
-            "color: Black; font-family: \"MS UI Gothic\"; ddo-char-set: 128", "Normal"));
-            this.StyleSheet.Add(new DDCssLib.StyleSheetRule("font-size: 16pt; font-weight: bold; font-family: \"MS UI Gothic\"; ddo-char-set: 12" +
-            "8", "Heading1", "Normal"));
-            this.StyleSheet.Add(new DDCssLib.StyleSheetRule("font-size: 14pt; font-weight: bold; font-style: inherit; font-family: \"MS UI Goth" +
-            "ic\"; ddo-char-set: 128", "Heading2", "Normal"));
-            this.StyleSheet.Add(new DDCssLib.StyleSheetRule("font-size: 13pt; font-weight: bold; ddo-char-set: 128", "Heading3", "Normal"));
+            this.StyleSheet.Add(((DDCssLib.StyleSheetRule)(new DDCssLib.StyleSheetRule("font-style: normal; text-decoration: none; font-weight: normal; font-size: 10pt; " +
+            "color: Black; font-family: \"MS UI Gothic\"; ddo-char-set: 128", "Normal"))));
+            this.StyleSheet.Add(((DDCssLib.StyleSheetRule)(new DDCssLib.StyleSheetRule("font-size: 16pt; font-weight: bold; font-family: \"MS UI Gothic\"; ddo-char-set: 12" +
+            "8", "Heading1", "Normal"))));
+            this.StyleSheet.Add(((DDCssLib.StyleSheetRule)(new DDCssLib.StyleSheetRule("font-size: 14pt; font-weight: bold; font-style: inherit; font-family: \"MS UI Goth" +
+            "ic\"; ddo-char-set: 128", "Heading2", "Normal"))));
+            this.StyleSheet.Add(((DDCssLib.StyleSheetRule)(new DDCssLib.StyleSheetRule("font-size: 13pt; font-weight: bold; ddo-char-set: 128", "Heading3", "Normal"))));
             ((System.ComponentModel.ISupportInitialize)(textBox28)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(textBox29)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(textBox30)).EndInit();
