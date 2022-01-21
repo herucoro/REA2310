@@ -21,7 +21,7 @@ namespace REA2310
             this.formData = formData;
 
             this.appData = appData;
-            filePath = this.appData.GetRootDirectoryPath() + @"\REA2300.csv";
+            filePath = this.appData.GetRootDirectoryPath() + @"\REA2310.csv";
 
             if (File.Exists(filePath))
             {
