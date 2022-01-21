@@ -222,9 +222,6 @@
   <data name="textBox16.OutputFormat" xml:space="preserve">
     <value>#,##0</value>
   </data>
-  <data name="textBox2.OutputFormat" xml:space="preserve">
-    <value>#,##0</value>
-  </data>
   <data name="textBox38.OutputFormat" xml:space="preserve">
     <value>#,##0</value>
   </data>

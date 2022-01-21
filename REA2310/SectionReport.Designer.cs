@@ -85,7 +85,6 @@ namespace REA2300
             this.textBox20 = new GrapeCity.ActiveReports.SectionReportModel.TextBox();
             this.textBox16 = new GrapeCity.ActiveReports.SectionReportModel.TextBox();
             this.line1 = new GrapeCity.ActiveReports.SectionReportModel.Line();
-            this.textBox2 = new GrapeCity.ActiveReports.SectionReportModel.TextBox();
             this.pageFooter = new GrapeCity.ActiveReports.SectionReportModel.PageFooter();
             this.textBox36 = new GrapeCity.ActiveReports.SectionReportModel.TextBox();
             this.textBox38 = new GrapeCity.ActiveReports.SectionReportModel.TextBox();
@@ -180,7 +179,6 @@ namespace REA2300
             ((System.ComponentModel.ISupportInitialize)(this.textBox19)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.textBox20)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.textBox16)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.textBox2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.textBox36)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.textBox38)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.textBox3)).BeginInit();
@@ -243,7 +241,7 @@ namespace REA2300
             textBox28.Style = "color: Black; font-family: ＭＳ Ｐ明朝; font-size: 11.25pt; font-weight: normal; text-" +
     "align: right; ddo-char-set: 128";
             textBox28.SummaryType = GrapeCity.ActiveReports.SectionReportModel.SummaryType.GrandTotal;
-            textBox28.Text = "999,999,999";
+            textBox28.Text = "allSum0";
             textBox28.Top = 0F;
             textBox28.Width = 0.8970003F;
             // 
@@ -257,7 +255,7 @@ namespace REA2300
             textBox29.Style = "color: Black; font-family: ＭＳ Ｐ明朝; font-size: 11.25pt; font-weight: normal; text-" +
     "align: right; ddo-char-set: 128";
             textBox29.SummaryType = GrapeCity.ActiveReports.SectionReportModel.SummaryType.GrandTotal;
-            textBox29.Text = "YY/MM";
+            textBox29.Text = "allSum1";
             textBox29.Top = 0F;
             textBox29.Width = 0.8760004F;
             // 
@@ -271,7 +269,7 @@ namespace REA2300
             textBox30.Style = "color: Black; font-family: ＭＳ Ｐ明朝; font-size: 11.25pt; font-weight: normal; text-" +
     "align: right; ddo-char-set: 128";
             textBox30.SummaryType = GrapeCity.ActiveReports.SectionReportModel.SummaryType.GrandTotal;
-            textBox30.Text = "YY/MM";
+            textBox30.Text = "allSum3";
             textBox30.Top = 0F;
             textBox30.Width = 0.8970003F;
             // 
@@ -285,7 +283,7 @@ namespace REA2300
             textBox31.Style = "color: Black; font-family: ＭＳ Ｐ明朝; font-size: 11.25pt; font-weight: normal; text-" +
     "align: right; ddo-char-set: 128";
             textBox31.SummaryType = GrapeCity.ActiveReports.SectionReportModel.SummaryType.GrandTotal;
-            textBox31.Text = "YY/MM";
+            textBox31.Text = "allSum4";
             textBox31.Top = 0F;
             textBox31.Width = 0.8970003F;
             // 
@@ -299,7 +297,7 @@ namespace REA2300
             textBox32.Style = "color: Black; font-family: ＭＳ Ｐ明朝; font-size: 11.25pt; font-weight: normal; text-" +
     "align: right; ddo-char-set: 128";
             textBox32.SummaryType = GrapeCity.ActiveReports.SectionReportModel.SummaryType.GrandTotal;
-            textBox32.Text = "YY/MM";
+            textBox32.Text = "allSum5";
             textBox32.Top = 0F;
             textBox32.Width = 0.8970003F;
             // 
@@ -313,7 +311,7 @@ namespace REA2300
             textBox33.Style = "color: Black; font-family: ＭＳ Ｐ明朝; font-size: 11.25pt; font-weight: normal; text-" +
     "align: right; ddo-char-set: 128";
             textBox33.SummaryType = GrapeCity.ActiveReports.SectionReportModel.SummaryType.GrandTotal;
-            textBox33.Text = "YY/MM";
+            textBox33.Text = "allSum6";
             textBox33.Top = 0F;
             textBox33.Width = 0.8970003F;
             // 
@@ -327,7 +325,7 @@ namespace REA2300
             textBox34.Style = "color: Black; font-family: ＭＳ Ｐ明朝; font-size: 11.25pt; font-weight: normal; text-" +
     "align: right; ddo-char-set: 128";
             textBox34.SummaryType = GrapeCity.ActiveReports.SectionReportModel.SummaryType.GrandTotal;
-            textBox34.Text = "YY/MM";
+            textBox34.Text = "allSum2";
             textBox34.Top = 0F;
             textBox34.Width = 0.8970003F;
             // 
@@ -343,7 +341,7 @@ namespace REA2300
             textBox21.SummaryGroup = "groupHeader1";
             textBox21.SummaryRunning = GrapeCity.ActiveReports.SectionReportModel.SummaryRunning.Group;
             textBox21.SummaryType = GrapeCity.ActiveReports.SectionReportModel.SummaryType.SubTotal;
-            textBox21.Text = "YY/MM";
+            textBox21.Text = "groupSum0";
             textBox21.Top = 0F;
             textBox21.Width = 0.8970003F;
             // 
@@ -359,7 +357,7 @@ namespace REA2300
             textBox22.SummaryGroup = "groupHeader1";
             textBox22.SummaryRunning = GrapeCity.ActiveReports.SectionReportModel.SummaryRunning.Group;
             textBox22.SummaryType = GrapeCity.ActiveReports.SectionReportModel.SummaryType.SubTotal;
-            textBox22.Text = "YY/MM";
+            textBox22.Text = "groupSum1";
             textBox22.Top = 0F;
             textBox22.Width = 0.8760004F;
             // 
@@ -375,7 +373,7 @@ namespace REA2300
             textBox23.SummaryGroup = "groupHeader1";
             textBox23.SummaryRunning = GrapeCity.ActiveReports.SectionReportModel.SummaryRunning.Group;
             textBox23.SummaryType = GrapeCity.ActiveReports.SectionReportModel.SummaryType.SubTotal;
-            textBox23.Text = "YY/MM";
+            textBox23.Text = "groupSum3";
             textBox23.Top = 0F;
             textBox23.Width = 0.8970003F;
             // 
@@ -391,7 +389,7 @@ namespace REA2300
             textBox24.SummaryGroup = "groupHeader1";
             textBox24.SummaryRunning = GrapeCity.ActiveReports.SectionReportModel.SummaryRunning.Group;
             textBox24.SummaryType = GrapeCity.ActiveReports.SectionReportModel.SummaryType.SubTotal;
-            textBox24.Text = "YY/MM";
+            textBox24.Text = "groupSum4";
             textBox24.Top = 0F;
             textBox24.Width = 0.8970003F;
             // 
@@ -407,7 +405,7 @@ namespace REA2300
             textBox25.SummaryGroup = "groupHeader1";
             textBox25.SummaryRunning = GrapeCity.ActiveReports.SectionReportModel.SummaryRunning.Group;
             textBox25.SummaryType = GrapeCity.ActiveReports.SectionReportModel.SummaryType.SubTotal;
-            textBox25.Text = "YY/MM";
+            textBox25.Text = "groupSum5";
             textBox25.Top = 0F;
             textBox25.Width = 0.8970003F;
             // 
@@ -424,7 +422,7 @@ namespace REA2300
             textBox26.SummaryGroup = "groupHeader1";
             textBox26.SummaryRunning = GrapeCity.ActiveReports.SectionReportModel.SummaryRunning.Group;
             textBox26.SummaryType = GrapeCity.ActiveReports.SectionReportModel.SummaryType.SubTotal;
-            textBox26.Text = "YY/MM";
+            textBox26.Text = "groupSum6";
             textBox26.Top = 1.862645E-09F;
             textBox26.Width = 0.8970003F;
             // 
@@ -440,7 +438,7 @@ namespace REA2300
             textBox27.SummaryGroup = "groupHeader1";
             textBox27.SummaryRunning = GrapeCity.ActiveReports.SectionReportModel.SummaryRunning.Group;
             textBox27.SummaryType = GrapeCity.ActiveReports.SectionReportModel.SummaryType.SubTotal;
-            textBox27.Text = "YY/MM";
+            textBox27.Text = "groupSum2";
             textBox27.Top = 0F;
             textBox27.Width = 0.8970003F;
             // 
@@ -652,8 +650,7 @@ namespace REA2300
             this.textBox19,
             this.textBox20,
             this.textBox16,
-            this.line1,
-            this.textBox2});
+            this.line1});
             this.detail.Height = 0.260417F;
             this.detail.Name = "detail";
             // 
@@ -676,7 +673,7 @@ namespace REA2300
             this.textBox4.Name = "textBox4";
             this.textBox4.OutputFormat = resources.GetString("textBox4.OutputFormat");
             this.textBox4.Style = "color: Black; font-family: ＭＳ Ｐ明朝; text-align: right; vertical-align: top";
-            this.textBox4.Text = "YY/MM";
+            this.textBox4.Text = "num0";
             this.textBox4.Top = 0F;
             this.textBox4.Width = 0.8970003F;
             // 
@@ -688,7 +685,7 @@ namespace REA2300
             this.textBox15.Name = "textBox15";
             this.textBox15.OutputFormat = resources.GetString("textBox15.OutputFormat");
             this.textBox15.Style = "color: Black; font-family: ＭＳ Ｐ明朝; text-align: right; vertical-align: top";
-            this.textBox15.Text = "YY/MM";
+            this.textBox15.Text = "num1";
             this.textBox15.Top = 0F;
             this.textBox15.Width = 0.8760004F;
             // 
@@ -700,7 +697,7 @@ namespace REA2300
             this.textBox17.Name = "textBox17";
             this.textBox17.OutputFormat = resources.GetString("textBox17.OutputFormat");
             this.textBox17.Style = "color: Black; font-family: ＭＳ Ｐ明朝; text-align: right; vertical-align: top";
-            this.textBox17.Text = "YY/MM";
+            this.textBox17.Text = "num3";
             this.textBox17.Top = 0F;
             this.textBox17.Width = 0.8970003F;
             // 
@@ -714,7 +711,7 @@ namespace REA2300
             this.textBox18.OutputFormat = resources.GetString("textBox18.OutputFormat");
             this.textBox18.Style = "color: Black; font-family: ＭＳ Ｐ明朝; text-align: right; vertical-align: top";
             this.textBox18.SummaryGroup = "";
-            this.textBox18.Text = "YY/MM";
+            this.textBox18.Text = "num4";
             this.textBox18.Top = 0F;
             this.textBox18.Width = 0.8970003F;
             // 
@@ -728,7 +725,7 @@ namespace REA2300
             this.textBox19.OutputFormat = resources.GetString("textBox19.OutputFormat");
             this.textBox19.Style = "color: Black; font-family: ＭＳ Ｐ明朝; text-align: right; vertical-align: top";
             this.textBox19.SummaryGroup = "";
-            this.textBox19.Text = "YY/MM";
+            this.textBox19.Text = "num5";
             this.textBox19.Top = 0F;
             this.textBox19.Width = 0.8970003F;
             // 
@@ -742,7 +739,7 @@ namespace REA2300
             this.textBox20.OutputFormat = resources.GetString("textBox20.OutputFormat");
             this.textBox20.Style = "color: Black; font-family: ＭＳ Ｐ明朝; text-align: right; vertical-align: top";
             this.textBox20.SummaryGroup = "";
-            this.textBox20.Text = "YY/MM";
+            this.textBox20.Text = "num6";
             this.textBox20.Top = 0F;
             this.textBox20.Width = 0.8970003F;
             // 
@@ -754,7 +751,7 @@ namespace REA2300
             this.textBox16.Name = "textBox16";
             this.textBox16.OutputFormat = resources.GetString("textBox16.OutputFormat");
             this.textBox16.Style = "color: Black; font-family: ＭＳ Ｐ明朝; text-align: right; vertical-align: top";
-            this.textBox16.Text = "YY/MM";
+            this.textBox16.Text = "num2";
             this.textBox16.Top = 0F;
             this.textBox16.Width = 0.8970003F;
             // 
@@ -771,20 +768,6 @@ namespace REA2300
             this.line1.X2 = 10.594F;
             this.line1.Y1 = 0.221F;
             this.line1.Y2 = 0.221F;
-            // 
-            // textBox2
-            // 
-            this.textBox2.DataField = "7";
-            this.textBox2.DistinctField = "";
-            this.textBox2.Height = 0.169F;
-            this.textBox2.Left = 9.540999F;
-            this.textBox2.Name = "textBox2";
-            this.textBox2.OutputFormat = resources.GetString("textBox2.OutputFormat");
-            this.textBox2.Style = "color: Black; font-family: ＭＳ Ｐ明朝; text-align: right; vertical-align: top";
-            this.textBox2.SummaryGroup = "";
-            this.textBox2.Text = "YY/MM";
-            this.textBox2.Top = 0F;
-            this.textBox2.Width = 1.053001F;
             // 
             // pageFooter
             // 
@@ -810,7 +793,7 @@ namespace REA2300
             this.textBox38.Style = "color: Black; font-family: ＭＳ Ｐ明朝; font-size: 11.25pt; font-weight: normal; text-" +
     "align: right; ddo-char-set: 128";
             this.textBox38.SummaryType = GrapeCity.ActiveReports.SectionReportModel.SummaryType.GrandTotal;
-            this.textBox38.Text = "YY/MM";
+            this.textBox38.Text = "allSum7";
             this.textBox38.Top = 0F;
             this.textBox38.Width = 1.083001F;
             // 
@@ -885,7 +868,7 @@ namespace REA2300
             this.textBox37.SummaryGroup = "groupHeader1";
             this.textBox37.SummaryRunning = GrapeCity.ActiveReports.SectionReportModel.SummaryRunning.Group;
             this.textBox37.SummaryType = GrapeCity.ActiveReports.SectionReportModel.SummaryType.SubTotal;
-            this.textBox37.Text = "YY/MM";
+            this.textBox37.Text = "groupSum7";
             this.textBox37.Top = 1.862645E-09F;
             this.textBox37.Width = 1.053001F;
             // 
@@ -1380,7 +1363,7 @@ namespace REA2300
             this.colSum0.OutputFormat = resources.GetString("colSum0.OutputFormat");
             this.colSum0.Style = "color: Black; font-family: ＭＳ Ｐ明朝; font-size: 11.25pt; text-align: right; ddo-cha" +
     "r-set: 1";
-            this.colSum0.Text = "YY/MM";
+            this.colSum0.Text = "bankSum0";
             this.colSum0.Top = 1.513F;
             this.colSum0.Width = 0.897F;
             // 
@@ -1392,7 +1375,7 @@ namespace REA2300
             this.colSum1.OutputFormat = resources.GetString("colSum1.OutputFormat");
             this.colSum1.Style = "color: Black; font-family: ＭＳ Ｐ明朝; font-size: 11.25pt; text-align: right; ddo-cha" +
     "r-set: 1";
-            this.colSum1.Text = "YY/MM";
+            this.colSum1.Text = "bankSum1";
             this.colSum1.Top = 1.513F;
             this.colSum1.Width = 0.8760007F;
             // 
@@ -1404,7 +1387,7 @@ namespace REA2300
             this.colSum2.OutputFormat = resources.GetString("colSum2.OutputFormat");
             this.colSum2.Style = "color: Black; font-family: ＭＳ Ｐ明朝; font-size: 11.25pt; text-align: right; ddo-cha" +
     "r-set: 1";
-            this.colSum2.Text = "YY/MM";
+            this.colSum2.Text = "bankSum2";
             this.colSum2.Top = 1.513F;
             this.colSum2.Width = 0.897F;
             // 
@@ -1416,7 +1399,7 @@ namespace REA2300
             this.colSum3.OutputFormat = resources.GetString("colSum3.OutputFormat");
             this.colSum3.Style = "color: Black; font-family: ＭＳ Ｐ明朝; font-size: 11.25pt; text-align: right; ddo-cha" +
     "r-set: 1";
-            this.colSum3.Text = "YY/MM";
+            this.colSum3.Text = "bankSum3";
             this.colSum3.Top = 1.513F;
             this.colSum3.Width = 0.897F;
             // 
@@ -1428,7 +1411,7 @@ namespace REA2300
             this.colSum4.OutputFormat = resources.GetString("colSum4.OutputFormat");
             this.colSum4.Style = "color: Black; font-family: ＭＳ Ｐ明朝; font-size: 11.25pt; text-align: right; ddo-cha" +
     "r-set: 1";
-            this.colSum4.Text = "YY/MM";
+            this.colSum4.Text = "bankSum4";
             this.colSum4.Top = 1.513F;
             this.colSum4.Width = 0.897F;
             // 
@@ -1440,7 +1423,7 @@ namespace REA2300
             this.colSum5.OutputFormat = resources.GetString("colSum5.OutputFormat");
             this.colSum5.Style = "color: Black; font-family: ＭＳ Ｐ明朝; font-size: 11.25pt; text-align: right; ddo-cha" +
     "r-set: 1";
-            this.colSum5.Text = "YY/MM";
+            this.colSum5.Text = "bankSum5";
             this.colSum5.Top = 1.513F;
             this.colSum5.Width = 0.897F;
             // 
@@ -1454,7 +1437,7 @@ namespace REA2300
             this.colSum6.Style = "color: Black; font-family: ＭＳ Ｐ明朝; font-size: 11.25pt; text-align: right; ddo-cha" +
     "r-set: 1";
             this.colSum6.SummaryGroup = "";
-            this.colSum6.Text = "YY/MM";
+            this.colSum6.Text = "bankSum6";
             this.colSum6.Top = 1.513F;
             this.colSum6.Width = 0.897F;
             // 
@@ -1468,7 +1451,7 @@ namespace REA2300
             this.colSum7.Style = "color: Black; font-family: ＭＳ Ｐ明朝; font-size: 11.25pt; text-align: right; ddo-cha" +
     "r-set: 1";
             this.colSum7.SummaryGroup = "";
-            this.colSum7.Text = "計";
+            this.colSum7.Text = "bankSum7";
             this.colSum7.Top = 1.513F;
             this.colSum7.Width = 1.073F;
             // 
@@ -1488,7 +1471,7 @@ namespace REA2300
             // 
             // line6
             // 
-            this.line6.Height = 0.003000021F;
+            this.line6.Height = 0.002999991F;
             this.line6.Left = 0.186F;
             this.line6.LineWeight = 2F;
             this.line6.Name = "line6";
@@ -1571,7 +1554,6 @@ namespace REA2300
             ((System.ComponentModel.ISupportInitialize)(this.textBox19)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.textBox20)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.textBox16)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.textBox2)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.textBox36)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.textBox38)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.textBox3)).EndInit();
@@ -1658,7 +1640,6 @@ namespace REA2300
         private GrapeCity.ActiveReports.SectionReportModel.Line line3;
         private GrapeCity.ActiveReports.SectionReportModel.Line line4;
         private GrapeCity.ActiveReports.SectionReportModel.TextBox detailRowSum;
-        private GrapeCity.ActiveReports.SectionReportModel.TextBox textBox2;
         private GrapeCity.ActiveReports.SectionReportModel.TextBox textBox38;
         private GrapeCity.ActiveReports.SectionReportModel.TextBox textBox37;
         private GrapeCity.ActiveReports.SectionReportModel.ReportHeader reportHeader1;
