@@ -20,11 +20,11 @@ namespace REA2310
             InitializeComponent();
 
             // 入金種別ControlsEventHandler
-            this.allDepositCbx.Click += AllDepositClicked;
-            this.depositCbx0.Click += DepositStateCheck;
-            this.depositCbx1.Click += DepositStateCheck;
-            this.depositCbx2.Click += DepositStateCheck;
-            this.depositCbx3.Click += DepositStateCheck;
+            this.allPaymentCbx.Click += AllDepositClicked;
+            this.paymentCbx0.Click += DepositStateCheck;
+            this.paymentCbx1.Click += DepositStateCheck;
+            this.paymentCbx2.Click += DepositStateCheck;
+            this.paymentCbx3.Click += DepositStateCheck;
 
             // 銀行ControlsEventHandler
             this.allBankCbx.Click += AllBankClicked;
@@ -62,30 +62,17 @@ namespace REA2310
             }
 
             formData.date = date;
-            formData.approvalType = ((RadioButton) this.approvalPanel.Controls[0]).Checked == true ? true : false;
-            formData.paymentType[0] = this.allDepositCbx.Checked;
-            if (this.allDepositCbx.Checked)
-            {
-                for (int i = 0; i < 4; i++)
-                    formData.paymentType[i + 1] = true;
-            }
-            else
-            {
-                for (int i = 0; i < 4; i++)
-                    formData.paymentType[i + 1] = ((CheckBox)this.selectDepositPanel.Controls[i]).Checked;
-            }
+            formData.approvalType = ((RadioButton) this.approvalPanel.Controls[0]).Checked;
 
-            formData.bankType[0] = this.allBankCbx.Checked;
-            if (this.allBankCbx.Checked)
-            {
-                for (int i = 0; i < 4; i++)
-                    formData.bankType[i + 1] = true;
-            }
-            else
-            {
-                for (int i = 0; i < 4; i++)
-                    formData.bankType[i + 1] = ((CheckBox)this.selectBankPanel.Controls[i]).Checked;
-            }
+            // 入金種別選択の取得
+            formData.paymentAll = this.allPaymentCbx.Checked;
+            foreach (CheckBox payment in this.selectPaymentPanel.Controls)
+                formData.selectedPayment[formData.kindsPayment[payment.Text]] = payment.Checked;
+
+            // 銀行選択の取得
+            formData.bankAll = this.allBankCbx.Checked;
+            foreach (CheckBox bank in this.selectBankPanel.Controls)
+                formData.selectedBank[formData.kindsBank[bank.Text]] = bank.Checked;
 
             var printForm = new PrintForm(formData, appData);
             printForm.ShowDialog();
@@ -121,7 +108,7 @@ namespace REA2310
 
         private void allDepositCbx_CheckedChanged(object sender, EventArgs e)
         {
-            CheckBox_Checked(this.allDepositCbx.Checked, this.selectDepositPanel.Controls);
+            CheckBox_Checked(this.allPaymentCbx.Checked, this.selectPaymentPanel.Controls);
         }
 
         private void allBankCbx_CheckedChanged(object sender, EventArgs e)
@@ -131,9 +118,9 @@ namespace REA2310
 
         private void AllDepositClicked(object sender, EventArgs e)
         {
-            foreach (CheckBox c in this.selectDepositPanel.Controls)
+            foreach (CheckBox c in this.selectPaymentPanel.Controls)
             {
-                c.Checked = this.allDepositCbx.Checked;
+                c.Checked = this.allPaymentCbx.Checked;
             }
         }
 
@@ -149,12 +136,12 @@ namespace REA2310
         {
             bool check = true;
 
-            foreach (CheckBox c in this.selectDepositPanel.Controls)
+            foreach (CheckBox c in this.selectPaymentPanel.Controls)
             {
                 check = check && c.Checked;
             }
 
-            this.allDepositCbx.Checked = check;
+            this.allPaymentCbx.Checked = check;
         }
 
         private void BankStateCheck(object sender, EventArgs e)
@@ -167,6 +154,5 @@ namespace REA2310
 
             this.allBankCbx.Checked = check;
         }
-
     }
 }
