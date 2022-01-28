@@ -129,6 +129,23 @@ namespace RyoeiSystem.Database.Controllers
                     // " OR "を除去
                     sql = sql.Substring(0, sql.Length - 4);
                 sql += ")";
+                sql += " AND (";
+
+                if (!formData.bankAll)
+                {
+                    foreach (var dic in MainFormModel.kindsBank)
+                    {
+                        if (!formData.selectedBank[dic.Value])
+                        {
+                            sql += @"TECBANKCD <> " + dic.Value;
+                            sql += " AND ";
+                        }
+                    }
+                }
+                if (sql.Substring(sql.Length - 5, 5) == " AND ")
+                    // " OR "を除去
+                    sql = sql.Substring(0, sql.Length - 5);
+                sql += ")";
 
                 sql += @"ORDER BY TECSEICOD, TECTEGDAT, TECNYUSYU
                         ;";
