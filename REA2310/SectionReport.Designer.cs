@@ -85,7 +85,6 @@ namespace REA2310
             this.line1 = new GrapeCity.ActiveReports.SectionReportModel.Line();
             this.textBox2 = new GrapeCity.ActiveReports.SectionReportModel.TextBox();
             this.textBox6 = new GrapeCity.ActiveReports.SectionReportModel.TextBox();
-            this.textBox7 = new GrapeCity.ActiveReports.SectionReportModel.TextBox();
             this.textBox8 = new GrapeCity.ActiveReports.SectionReportModel.TextBox();
             this.textBox9 = new GrapeCity.ActiveReports.SectionReportModel.TextBox();
             this.textBox10 = new GrapeCity.ActiveReports.SectionReportModel.TextBox();
@@ -105,6 +104,7 @@ namespace REA2310
             this.textBox48 = new GrapeCity.ActiveReports.SectionReportModel.TextBox();
             this.textBox49 = new GrapeCity.ActiveReports.SectionReportModel.TextBox();
             this.textBox15 = new GrapeCity.ActiveReports.SectionReportModel.TextBox();
+            this.textBox7 = new GrapeCity.ActiveReports.SectionReportModel.TextBox();
             this.pageFooter = new GrapeCity.ActiveReports.SectionReportModel.PageFooter();
             this.textBox36 = new GrapeCity.ActiveReports.SectionReportModel.TextBox();
             this.textBox38 = new GrapeCity.ActiveReports.SectionReportModel.TextBox();
@@ -199,7 +199,6 @@ namespace REA2310
             ((System.ComponentModel.ISupportInitialize)(this.textBox16)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.textBox2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.textBox6)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.textBox7)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.textBox8)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.textBox9)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.textBox10)).BeginInit();
@@ -219,6 +218,7 @@ namespace REA2310
             ((System.ComponentModel.ISupportInitialize)(this.textBox48)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.textBox49)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.textBox15)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.textBox7)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.textBox36)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.textBox38)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.textBox3)).BeginInit();
@@ -823,11 +823,11 @@ namespace REA2310
             this.textBox2.Left = 10.222F;
             this.textBox2.Name = "textBox2";
             this.textBox2.OutputFormat = resources.GetString("textBox2.OutputFormat");
-            this.textBox2.Style = "color: Black; font-family: ＭＳ Ｐ明朝; font-size: 9pt; text-align: right; vertical-al" +
+            this.textBox2.Style = "color: Black; font-family: ＭＳ Ｐ明朝; font-size: 8pt; text-align: right; vertical-al" +
     "ign: top; ddo-char-set: 1";
             this.textBox2.SummaryGroup = "";
             this.textBox2.Text = "碧";
-            this.textBox2.Top = 1.97906E-09F;
+            this.textBox2.Top = 0.02F;
             this.textBox2.Width = 0.1370077F;
             // 
             // textBox6
@@ -838,41 +838,26 @@ namespace REA2310
             this.textBox6.Left = 10.085F;
             this.textBox6.Name = "textBox6";
             this.textBox6.OutputFormat = resources.GetString("textBox6.OutputFormat");
-            this.textBox6.Style = "color: Black; font-family: ＭＳ Ｐ明朝; font-size: 9pt; text-align: right; vertical-al" +
+            this.textBox6.Style = "color: Black; font-family: ＭＳ Ｐ明朝; font-size: 8pt; text-align: right; vertical-al" +
     "ign: top; ddo-char-set: 1";
             this.textBox6.SummaryGroup = "";
             this.textBox6.Text = "フ";
-            this.textBox6.Top = 0F;
+            this.textBox6.Top = 0.02F;
             this.textBox6.Width = 0.1370078F;
-            // 
-            // textBox7
-            // 
-            this.textBox7.DataField = "month";
-            this.textBox7.DistinctField = "";
-            this.textBox7.Height = 0.169F;
-            this.textBox7.Left = 9.927F;
-            this.textBox7.Name = "textBox7";
-            this.textBox7.OutputFormat = resources.GetString("textBox7.OutputFormat");
-            this.textBox7.Style = "color: Black; font-family: ＭＳ Ｐ明朝; font-size: 9pt; text-align: right; vertical-al" +
-    "ign: top; ddo-char-set: 1";
-            this.textBox7.SummaryGroup = "";
-            this.textBox7.Text = "12";
-            this.textBox7.Top = 2.328306E-10F;
-            this.textBox7.Width = 0.158001F;
             // 
             // textBox8
             // 
             this.textBox8.DataField = "bank5";
             this.textBox8.DistinctField = "";
             this.textBox8.Height = 0.169F;
-            this.textBox8.Left = 8.94F;
+            this.textBox8.Left = 8.940001F;
             this.textBox8.Name = "textBox8";
             this.textBox8.OutputFormat = resources.GetString("textBox8.OutputFormat");
-            this.textBox8.Style = "color: Black; font-family: ＭＳ Ｐ明朝; font-size: 9pt; text-align: right; vertical-al" +
+            this.textBox8.Style = "color: Black; font-family: ＭＳ Ｐ明朝; font-size: 8pt; text-align: right; vertical-al" +
     "ign: top; ddo-char-set: 1";
             this.textBox8.SummaryGroup = "";
             this.textBox8.Text = "s";
-            this.textBox8.Top = 2.328306E-10F;
+            this.textBox8.Top = 0.02F;
             this.textBox8.Width = 0.1370078F;
             // 
             // textBox9
@@ -880,14 +865,14 @@ namespace REA2310
             this.textBox9.DataField = "payment5";
             this.textBox9.DistinctField = "";
             this.textBox9.Height = 0.169F;
-            this.textBox9.Left = 8.802999F;
+            this.textBox9.Left = 8.803F;
             this.textBox9.Name = "textBox9";
             this.textBox9.OutputFormat = resources.GetString("textBox9.OutputFormat");
-            this.textBox9.Style = "color: Black; font-family: ＭＳ Ｐ明朝; font-size: 9pt; text-align: right; vertical-al" +
+            this.textBox9.Style = "color: Black; font-family: ＭＳ Ｐ明朝; font-size: 8pt; text-align: right; vertical-al" +
     "ign: top; ddo-char-set: 1";
             this.textBox9.SummaryGroup = "";
             this.textBox9.Text = "s";
-            this.textBox9.Top = 0.002F;
+            this.textBox9.Top = 0.022F;
             this.textBox9.Width = 0.1370078F;
             // 
             // textBox10
@@ -895,14 +880,14 @@ namespace REA2310
             this.textBox10.DataField = "day5";
             this.textBox10.DistinctField = "";
             this.textBox10.Height = 0.169F;
-            this.textBox10.Left = 8.645F;
+            this.textBox10.Left = 8.645002F;
             this.textBox10.Name = "textBox10";
             this.textBox10.OutputFormat = resources.GetString("textBox10.OutputFormat");
-            this.textBox10.Style = "color: Black; font-family: ＭＳ Ｐ明朝; font-size: 9pt; text-align: right; vertical-al" +
+            this.textBox10.Style = "color: Black; font-family: ＭＳ Ｐ明朝; font-size: 8pt; text-align: right; vertical-al" +
     "ign: top; ddo-char-set: 1";
             this.textBox10.SummaryGroup = "";
             this.textBox10.Text = "dd";
-            this.textBox10.Top = 2.328306E-10F;
+            this.textBox10.Top = 0.02F;
             this.textBox10.Width = 0.1580076F;
             // 
             // textBox11
@@ -910,14 +895,14 @@ namespace REA2310
             this.textBox11.DataField = "bank4";
             this.textBox11.DistinctField = "";
             this.textBox11.Height = 0.169F;
-            this.textBox11.Left = 7.658F;
+            this.textBox11.Left = 7.658009F;
             this.textBox11.Name = "textBox11";
             this.textBox11.OutputFormat = resources.GetString("textBox11.OutputFormat");
-            this.textBox11.Style = "color: Black; font-family: ＭＳ Ｐ明朝; font-size: 9pt; text-align: right; vertical-al" +
+            this.textBox11.Style = "color: Black; font-family: ＭＳ Ｐ明朝; font-size: 8pt; text-align: right; vertical-al" +
     "ign: top; ddo-char-set: 1";
             this.textBox11.SummaryGroup = "";
             this.textBox11.Text = "s";
-            this.textBox11.Top = 3.72529E-09F;
+            this.textBox11.Top = 0.02F;
             this.textBox11.Width = 0.1370078F;
             // 
             // textBox12
@@ -925,14 +910,14 @@ namespace REA2310
             this.textBox12.DataField = "payment4";
             this.textBox12.DistinctField = "";
             this.textBox12.Height = 0.169F;
-            this.textBox12.Left = 7.520999F;
+            this.textBox12.Left = 7.521008F;
             this.textBox12.Name = "textBox12";
             this.textBox12.OutputFormat = resources.GetString("textBox12.OutputFormat");
-            this.textBox12.Style = "color: Black; font-family: ＭＳ Ｐ明朝; font-size: 9pt; text-align: right; vertical-al" +
+            this.textBox12.Style = "color: Black; font-family: ＭＳ Ｐ明朝; font-size: 8pt; text-align: right; vertical-al" +
     "ign: top; ddo-char-set: 1";
             this.textBox12.SummaryGroup = "";
             this.textBox12.Text = "s";
-            this.textBox12.Top = 3.72529E-09F;
+            this.textBox12.Top = 0.02F;
             this.textBox12.Width = 0.1370078F;
             // 
             // textBox13
@@ -940,104 +925,104 @@ namespace REA2310
             this.textBox13.DataField = "day4";
             this.textBox13.DistinctField = "";
             this.textBox13.Height = 0.169F;
-            this.textBox13.Left = 7.362992F;
+            this.textBox13.Left = 7.363F;
             this.textBox13.Name = "textBox13";
             this.textBox13.OutputFormat = resources.GetString("textBox13.OutputFormat");
-            this.textBox13.Style = "color: Black; font-family: ＭＳ Ｐ明朝; font-size: 9pt; text-align: right; vertical-al" +
+            this.textBox13.Style = "color: Black; font-family: ＭＳ Ｐ明朝; font-size: 8pt; text-align: right; vertical-al" +
     "ign: top; ddo-char-set: 1";
             this.textBox13.SummaryGroup = "";
             this.textBox13.Text = "dd";
-            this.textBox13.Top = 3.72529E-09F;
+            this.textBox13.Top = 0.02F;
             this.textBox13.Width = 0.1580076F;
             // 
             // textBox14
             // 
             this.textBox14.DataField = "bank0";
             this.textBox14.DistinctField = "";
-            this.textBox14.Height = 0.169F;
-            this.textBox14.Left = 2.550999F;
+            this.textBox14.Height = 0.167F;
+            this.textBox14.Left = 2.551F;
             this.textBox14.Name = "textBox14";
             this.textBox14.OutputFormat = resources.GetString("textBox14.OutputFormat");
-            this.textBox14.Style = "color: Black; font-family: ＭＳ Ｐ明朝; font-size: 9pt; text-align: right; vertical-al" +
+            this.textBox14.Style = "color: Black; font-family: ＭＳ Ｐ明朝; font-size: 8pt; text-align: right; vertical-al" +
     "ign: top; ddo-char-set: 1";
             this.textBox14.SummaryGroup = "";
             this.textBox14.Text = "s";
-            this.textBox14.Top = 2.328306E-10F;
+            this.textBox14.Top = 0.02F;
             this.textBox14.Width = 0.1370078F;
             // 
             // textBox39
             // 
             this.textBox39.DataField = "payment0";
             this.textBox39.DistinctField = "";
-            this.textBox39.Height = 0.169F;
-            this.textBox39.Left = 2.413999F;
+            this.textBox39.Height = 0.167F;
+            this.textBox39.Left = 2.414F;
             this.textBox39.Name = "textBox39";
             this.textBox39.OutputFormat = resources.GetString("textBox39.OutputFormat");
-            this.textBox39.Style = "color: Black; font-family: ＭＳ Ｐ明朝; font-size: 9pt; text-align: right; vertical-al" +
+            this.textBox39.Style = "color: Black; font-family: ＭＳ Ｐ明朝; font-size: 8pt; text-align: right; vertical-al" +
     "ign: top; ddo-char-set: 1";
             this.textBox39.SummaryGroup = "";
             this.textBox39.Text = "s";
-            this.textBox39.Top = 2.328306E-10F;
-            this.textBox39.Width = 0.1370078F;
+            this.textBox39.Top = 0.02F;
+            this.textBox39.Width = 0.1370077F;
             // 
             // textBox40
             // 
             this.textBox40.DataField = "day0";
             this.textBox40.DistinctField = "";
-            this.textBox40.Height = 0.169F;
-            this.textBox40.Left = 2.255999F;
+            this.textBox40.Height = 0.167F;
+            this.textBox40.Left = 2.256F;
             this.textBox40.Name = "textBox40";
             this.textBox40.OutputFormat = resources.GetString("textBox40.OutputFormat");
-            this.textBox40.Style = "color: Black; font-family: ＭＳ Ｐ明朝; font-size: 9pt; text-align: right; vertical-al" +
+            this.textBox40.Style = "color: Black; font-family: ＭＳ Ｐ明朝; font-size: 8pt; text-align: right; vertical-al" +
     "ign: top; ddo-char-set: 1";
             this.textBox40.SummaryGroup = "";
             this.textBox40.Text = "12";
-            this.textBox40.Top = 2.328306E-10F;
+            this.textBox40.Top = 0.02F;
             this.textBox40.Width = 0.1580076F;
             // 
             // textBox41
             // 
             this.textBox41.DataField = "bank1";
             this.textBox41.DistinctField = "";
-            this.textBox41.Height = 0.169F;
-            this.textBox41.Left = 3.811999F;
+            this.textBox41.Height = 0.167F;
+            this.textBox41.Left = 3.812F;
             this.textBox41.Name = "textBox41";
             this.textBox41.OutputFormat = resources.GetString("textBox41.OutputFormat");
-            this.textBox41.Style = "color: Black; font-family: ＭＳ Ｐ明朝; font-size: 9pt; text-align: right; vertical-al" +
+            this.textBox41.Style = "color: Black; font-family: ＭＳ Ｐ明朝; font-size: 8pt; text-align: right; vertical-al" +
     "ign: top; ddo-char-set: 1";
             this.textBox41.SummaryGroup = "";
             this.textBox41.Text = "s";
-            this.textBox41.Top = 1.164153E-10F;
+            this.textBox41.Top = 0.02F;
             this.textBox41.Width = 0.1370078F;
             // 
             // textBox42
             // 
             this.textBox42.DataField = "payment1";
             this.textBox42.DistinctField = "";
-            this.textBox42.Height = 0.169F;
-            this.textBox42.Left = 3.674999F;
+            this.textBox42.Height = 0.167F;
+            this.textBox42.Left = 3.675F;
             this.textBox42.Name = "textBox42";
             this.textBox42.OutputFormat = resources.GetString("textBox42.OutputFormat");
-            this.textBox42.Style = "color: Black; font-family: ＭＳ Ｐ明朝; font-size: 9pt; text-align: right; vertical-al" +
+            this.textBox42.Style = "color: Black; font-family: ＭＳ Ｐ明朝; font-size: 8pt; text-align: right; vertical-al" +
     "ign: top; ddo-char-set: 1";
             this.textBox42.SummaryGroup = "";
             this.textBox42.Text = "s";
-            this.textBox42.Top = 2.328306E-10F;
+            this.textBox42.Top = 0.02F;
             this.textBox42.Width = 0.1370078F;
             // 
             // textBox43
             // 
             this.textBox43.DataField = "day1";
             this.textBox43.DistinctField = "";
-            this.textBox43.Height = 0.169F;
-            this.textBox43.Left = 3.516999F;
+            this.textBox43.Height = 0.167F;
+            this.textBox43.Left = 3.517F;
             this.textBox43.Name = "textBox43";
             this.textBox43.OutputFormat = resources.GetString("textBox43.OutputFormat");
-            this.textBox43.Style = "color: Black; font-family: ＭＳ Ｐ明朝; font-size: 9pt; text-align: right; vertical-al" +
+            this.textBox43.Style = "color: Black; font-family: ＭＳ Ｐ明朝; font-size: 8pt; text-align: right; vertical-al" +
     "ign: top; ddo-char-set: 1";
             this.textBox43.SummaryGroup = "";
             this.textBox43.Text = "dd";
-            this.textBox43.Top = 0.002F;
+            this.textBox43.Top = 0.022F;
             this.textBox43.Width = 0.1580076F;
             // 
             // textBox44
@@ -1045,14 +1030,14 @@ namespace REA2310
             this.textBox44.DataField = "bank2";
             this.textBox44.DistinctField = "";
             this.textBox44.Height = 0.169F;
-            this.textBox44.Left = 5.093999F;
+            this.textBox44.Left = 5.094F;
             this.textBox44.Name = "textBox44";
             this.textBox44.OutputFormat = resources.GetString("textBox44.OutputFormat");
-            this.textBox44.Style = "color: Black; font-family: ＭＳ Ｐ明朝; font-size: 9pt; text-align: right; vertical-al" +
+            this.textBox44.Style = "color: Black; font-family: ＭＳ Ｐ明朝; font-size: 8pt; text-align: right; vertical-al" +
     "ign: top; ddo-char-set: 1";
             this.textBox44.SummaryGroup = "";
             this.textBox44.Text = "s";
-            this.textBox44.Top = 0.002F;
+            this.textBox44.Top = 0.022F;
             this.textBox44.Width = 0.1370078F;
             // 
             // textBox45
@@ -1060,14 +1045,14 @@ namespace REA2310
             this.textBox45.DataField = "payment2";
             this.textBox45.DistinctField = "";
             this.textBox45.Height = 0.169F;
-            this.textBox45.Left = 4.956999F;
+            this.textBox45.Left = 4.957F;
             this.textBox45.Name = "textBox45";
             this.textBox45.OutputFormat = resources.GetString("textBox45.OutputFormat");
-            this.textBox45.Style = "color: Black; font-family: ＭＳ Ｐ明朝; font-size: 9pt; text-align: right; vertical-al" +
+            this.textBox45.Style = "color: Black; font-family: ＭＳ Ｐ明朝; font-size: 8pt; text-align: right; vertical-al" +
     "ign: top; ddo-char-set: 1";
             this.textBox45.SummaryGroup = "";
             this.textBox45.Text = "s";
-            this.textBox45.Top = 2.328306E-10F;
+            this.textBox45.Top = 0.02F;
             this.textBox45.Width = 0.1370078F;
             // 
             // textBox46
@@ -1075,14 +1060,14 @@ namespace REA2310
             this.textBox46.DataField = "day2";
             this.textBox46.DistinctField = "";
             this.textBox46.Height = 0.169F;
-            this.textBox46.Left = 4.798999F;
+            this.textBox46.Left = 4.799F;
             this.textBox46.Name = "textBox46";
             this.textBox46.OutputFormat = resources.GetString("textBox46.OutputFormat");
-            this.textBox46.Style = "color: Black; font-family: ＭＳ Ｐ明朝; font-size: 9pt; text-align: right; vertical-al" +
+            this.textBox46.Style = "color: Black; font-family: ＭＳ Ｐ明朝; font-size: 8pt; text-align: right; vertical-al" +
     "ign: top; ddo-char-set: 1";
             this.textBox46.SummaryGroup = "";
             this.textBox46.Text = "dd";
-            this.textBox46.Top = 0.002F;
+            this.textBox46.Top = 0.022F;
             this.textBox46.Width = 0.1580076F;
             // 
             // textBox47
@@ -1090,14 +1075,14 @@ namespace REA2310
             this.textBox47.DataField = "bank3";
             this.textBox47.DistinctField = "";
             this.textBox47.Height = 0.169F;
-            this.textBox47.Left = 6.375999F;
+            this.textBox47.Left = 6.376F;
             this.textBox47.Name = "textBox47";
             this.textBox47.OutputFormat = resources.GetString("textBox47.OutputFormat");
-            this.textBox47.Style = "color: Black; font-family: ＭＳ Ｐ明朝; font-size: 9pt; text-align: right; vertical-al" +
+            this.textBox47.Style = "color: Black; font-family: ＭＳ Ｐ明朝; font-size: 8pt; text-align: right; vertical-al" +
     "ign: top; ddo-char-set: 1";
             this.textBox47.SummaryGroup = "";
             this.textBox47.Text = "s";
-            this.textBox47.Top = 2.095476E-09F;
+            this.textBox47.Top = 0.02F;
             this.textBox47.Width = 0.1370078F;
             // 
             // textBox48
@@ -1105,14 +1090,14 @@ namespace REA2310
             this.textBox48.DataField = "payment3";
             this.textBox48.DistinctField = "";
             this.textBox48.Height = 0.169F;
-            this.textBox48.Left = 6.238999F;
+            this.textBox48.Left = 6.239F;
             this.textBox48.Name = "textBox48";
             this.textBox48.OutputFormat = resources.GetString("textBox48.OutputFormat");
-            this.textBox48.Style = "color: Black; font-family: ＭＳ Ｐ明朝; font-size: 9pt; text-align: right; vertical-al" +
+            this.textBox48.Style = "color: Black; font-family: ＭＳ Ｐ明朝; font-size: 8pt; text-align: right; vertical-al" +
     "ign: top; ddo-char-set: 1";
             this.textBox48.SummaryGroup = "";
             this.textBox48.Text = "s";
-            this.textBox48.Top = 2.328306E-10F;
+            this.textBox48.Top = 0.02F;
             this.textBox48.Width = 0.1370078F;
             // 
             // textBox49
@@ -1120,14 +1105,14 @@ namespace REA2310
             this.textBox49.DataField = "day3";
             this.textBox49.DistinctField = "";
             this.textBox49.Height = 0.169F;
-            this.textBox49.Left = 6.080999F;
+            this.textBox49.Left = 6.081F;
             this.textBox49.Name = "textBox49";
             this.textBox49.OutputFormat = resources.GetString("textBox49.OutputFormat");
-            this.textBox49.Style = "color: Black; font-family: ＭＳ Ｐ明朝; font-size: 9pt; text-align: right; vertical-al" +
+            this.textBox49.Style = "color: Black; font-family: ＭＳ Ｐ明朝; font-size: 8pt; text-align: right; vertical-al" +
     "ign: top; ddo-char-set: 1";
             this.textBox49.SummaryGroup = "";
             this.textBox49.Text = "dd";
-            this.textBox49.Top = 1.862645E-09F;
+            this.textBox49.Top = 0.02F;
             this.textBox49.Width = 0.1580076F;
             // 
             // textBox15
@@ -1141,7 +1126,22 @@ namespace REA2310
     "ign: top; ddo-char-set: 1";
             this.textBox15.Text = "num1";
             this.textBox15.Top = 0.002000001F;
-            this.textBox15.Width = 0.8289987F;
+            this.textBox15.Width = 0.8289988F;
+            // 
+            // textBox7
+            // 
+            this.textBox7.DataField = "month";
+            this.textBox7.DistinctField = "";
+            this.textBox7.Height = 0.169F;
+            this.textBox7.Left = 9.927F;
+            this.textBox7.Name = "textBox7";
+            this.textBox7.OutputFormat = resources.GetString("textBox7.OutputFormat");
+            this.textBox7.Style = "color: Black; font-family: ＭＳ Ｐ明朝; font-size: 8pt; text-align: right; vertical-al" +
+    "ign: top; ddo-char-set: 1";
+            this.textBox7.SummaryGroup = "";
+            this.textBox7.Text = "12";
+            this.textBox7.Top = 0.02F;
+            this.textBox7.Width = 0.158001F;
             // 
             // pageFooter
             // 
@@ -1964,7 +1964,6 @@ namespace REA2310
             ((System.ComponentModel.ISupportInitialize)(this.textBox16)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.textBox2)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.textBox6)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.textBox7)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.textBox8)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.textBox9)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.textBox10)).EndInit();
@@ -1984,6 +1983,7 @@ namespace REA2310
             ((System.ComponentModel.ISupportInitialize)(this.textBox48)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.textBox49)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.textBox15)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.textBox7)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.textBox36)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.textBox38)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.textBox3)).EndInit();
