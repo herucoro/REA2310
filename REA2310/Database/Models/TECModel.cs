@@ -14,6 +14,8 @@ namespace RyoeiSystem.Database.Models
         public long TECTEGDAT;
         public double TECKINGAK;
         public int TECBANKCD;
+        public string yyyyMM;
+        public string dd;
 
         public TECModel()
         {
@@ -23,6 +25,8 @@ namespace RyoeiSystem.Database.Models
             TECTEGDAT = 0;
             TECKINGAK = 0.0;
             TECBANKCD = 0;
+            yyyyMM = "";
+            dd = "";
         }
     }
 }

@@ -157,6 +157,8 @@ namespace REA2310
             // allPaymentCbx
             // 
             this.allPaymentCbx.AutoSize = true;
+            this.allPaymentCbx.Checked = true;
+            this.allPaymentCbx.CheckState = System.Windows.Forms.CheckState.Checked;
             this.allPaymentCbx.Font = new System.Drawing.Font("MS UI Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(128)));
             this.allPaymentCbx.Location = new System.Drawing.Point(202, 122);
             this.allPaymentCbx.Name = "allPaymentCbx";
@@ -168,6 +170,8 @@ namespace REA2310
             // paymentCbx0
             // 
             this.paymentCbx0.AutoSize = true;
+            this.paymentCbx0.Checked = true;
+            this.paymentCbx0.CheckState = System.Windows.Forms.CheckState.Checked;
             this.paymentCbx0.Location = new System.Drawing.Point(17, 4);
             this.paymentCbx0.Name = "paymentCbx0";
             this.paymentCbx0.Size = new System.Drawing.Size(59, 20);
@@ -178,6 +182,8 @@ namespace REA2310
             // paymentCbx1
             // 
             this.paymentCbx1.AutoSize = true;
+            this.paymentCbx1.Checked = true;
+            this.paymentCbx1.CheckState = System.Windows.Forms.CheckState.Checked;
             this.paymentCbx1.Location = new System.Drawing.Point(103, 3);
             this.paymentCbx1.Name = "paymentCbx1";
             this.paymentCbx1.Size = new System.Drawing.Size(59, 20);
@@ -188,6 +194,8 @@ namespace REA2310
             // paymentCbx2
             // 
             this.paymentCbx2.AutoSize = true;
+            this.paymentCbx2.Checked = true;
+            this.paymentCbx2.CheckState = System.Windows.Forms.CheckState.Checked;
             this.paymentCbx2.Location = new System.Drawing.Point(178, 3);
             this.paymentCbx2.Name = "paymentCbx2";
             this.paymentCbx2.Size = new System.Drawing.Size(91, 20);
@@ -198,6 +206,8 @@ namespace REA2310
             // paymentCbx3
             // 
             this.paymentCbx3.AutoSize = true;
+            this.paymentCbx3.Checked = true;
+            this.paymentCbx3.CheckState = System.Windows.Forms.CheckState.Checked;
             this.paymentCbx3.Location = new System.Drawing.Point(285, 4);
             this.paymentCbx3.Name = "paymentCbx3";
             this.paymentCbx3.Size = new System.Drawing.Size(102, 20);
@@ -208,6 +218,8 @@ namespace REA2310
             // allBankCbx
             // 
             this.allBankCbx.AutoSize = true;
+            this.allBankCbx.Checked = true;
+            this.allBankCbx.CheckState = System.Windows.Forms.CheckState.Checked;
             this.allBankCbx.Font = new System.Drawing.Font("MS UI Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(128)));
             this.allBankCbx.Location = new System.Drawing.Point(202, 186);
             this.allBankCbx.Name = "allBankCbx";
@@ -243,6 +255,8 @@ namespace REA2310
             // bankCbx0
             // 
             this.bankCbx0.AutoSize = true;
+            this.bankCbx0.Checked = true;
+            this.bankCbx0.CheckState = System.Windows.Forms.CheckState.Checked;
             this.bankCbx0.Location = new System.Drawing.Point(17, 4);
             this.bankCbx0.Name = "bankCbx0";
             this.bankCbx0.Size = new System.Drawing.Size(59, 20);
@@ -253,6 +267,8 @@ namespace REA2310
             // bankCbx1
             // 
             this.bankCbx1.AutoSize = true;
+            this.bankCbx1.Checked = true;
+            this.bankCbx1.CheckState = System.Windows.Forms.CheckState.Checked;
             this.bankCbx1.Location = new System.Drawing.Point(103, 4);
             this.bankCbx1.Name = "bankCbx1";
             this.bankCbx1.Size = new System.Drawing.Size(55, 20);
@@ -263,6 +279,8 @@ namespace REA2310
             // bankCbx2
             // 
             this.bankCbx2.AutoSize = true;
+            this.bankCbx2.Checked = true;
+            this.bankCbx2.CheckState = System.Windows.Forms.CheckState.Checked;
             this.bankCbx2.Location = new System.Drawing.Point(178, 4);
             this.bankCbx2.Name = "bankCbx2";
             this.bankCbx2.Size = new System.Drawing.Size(59, 20);
@@ -273,6 +291,8 @@ namespace REA2310
             // bankCbx3
             // 
             this.bankCbx3.AutoSize = true;
+            this.bankCbx3.Checked = true;
+            this.bankCbx3.CheckState = System.Windows.Forms.CheckState.Checked;
             this.bankCbx3.Location = new System.Drawing.Point(259, 4);
             this.bankCbx3.Name = "bankCbx3";
             this.bankCbx3.Size = new System.Drawing.Size(91, 20);

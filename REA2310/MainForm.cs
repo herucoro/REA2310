@@ -49,6 +49,7 @@ namespace REA2310
             // フォーム情報を保持
             var formData = new MainFormModel();
 
+            // アプリケーション設定情報を保持
             IData appData = new AppData();
 
             // 日付チェック
@@ -61,18 +62,63 @@ namespace REA2310
                 return;
             }
 
+            // 入金種別が個別選択の場合は確認
+            if (!this.allPaymentCbx.Checked)
+            {
+                bool checkPayment = false;
+
+                foreach (CheckBox cbx in this.selectPaymentPanel.Controls)
+                {
+                    if (cbx.Checked)
+                    {
+                        checkPayment = cbx.Checked;
+                        break;
+                    }                    
+                }
+
+                if (!checkPayment)
+                {
+                    MessageBox.Show("入金種別を選択してください", "エラー", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                    return;
+                }
+            }
+
+            // 銀行が個別選択の場合は確認
+            if (!this.allBankCbx.Checked)
+            {
+                bool checkBank = false;
+
+                foreach (CheckBox cbx in this.selectBankPanel.Controls)
+                {
+                    if (cbx.Checked)
+                    {
+                        checkBank = cbx.Checked;
+                        break;
+                    }
+                }
+
+                if (!checkBank)
+                {
+                    MessageBox.Show("銀行を選択してください", "エラー", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                    return;
+                }
+            }
+
+            // 20yy/MM/01
             formData.date = date;
-            formData.approvalType = ((RadioButton) this.approvalPanel.Controls[0]).Checked;
+
+            // 決裁選択の取得
+            formData.approvalState = ((RadioButton) this.approvalPanel.Controls[0]).Checked;
 
             // 入金種別選択の取得
             formData.paymentAll = this.allPaymentCbx.Checked;
             foreach (CheckBox payment in this.selectPaymentPanel.Controls)
-                formData.selectedPayment[formData.kindsPayment[payment.Text]] = payment.Checked;
+                formData.selectedPayment[MainFormModel.kindsPayment[payment.Text]] = payment.Checked;
 
             // 銀行選択の取得
             formData.bankAll = this.allBankCbx.Checked;
             foreach (CheckBox bank in this.selectBankPanel.Controls)
-                formData.selectedBank[formData.kindsBank[bank.Text]] = bank.Checked;
+                formData.selectedBank[MainFormModel.kindsBank[bank.Text]] = bank.Checked;
 
             var printForm = new PrintForm(formData, appData);
             printForm.ShowDialog();
