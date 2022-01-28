@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 using System.IO;
 using RyoeiSystem.Common;
 
-namespace REA2300
+namespace REA2310
 {
     class AppData: BaseData
     {

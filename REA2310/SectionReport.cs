@@ -7,16 +7,16 @@ using System.Linq;
 
 using GrapeCity.ActiveReports.SectionReportModel;
 using RyoeiSystem.Database.Models;
+using REA2310.Models;
 
-namespace REA2300
+namespace REA2310
 {
-
     /// <summary>
     /// SectionReport の概要の説明です。
     /// </summary>
     public partial class SectionReport : GrapeCity.ActiveReports.SectionReport
     {
-        public SectionReport(List<string> date, List<BankModel> banks)
+        public SectionReport(List<string> date, List<BankModel> banks, MainFormModel formModel)
         {
             //
             // デザイナー サポートに必要なメソッドです。
@@ -26,6 +26,7 @@ namespace REA2300
             int count = 0;
             int[] colSum = new int[8];
 
+            this.approvalStateTbx.Text = "【決裁状態:" + (formModel.approvalState ? "決裁" : "未決裁") + "】";
             foreach (var d in date)
             {
                 ((TextBox)this.pageHeader.Controls["dateHeader" + count.ToString()]).Text = 

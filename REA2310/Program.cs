@@ -6,7 +6,7 @@ using System.Windows.Forms;
 using System.Threading;
 using RyoeiSystem.Database.Common;
 
-namespace REA2300
+namespace REA2310
 {
     static class Program
     {

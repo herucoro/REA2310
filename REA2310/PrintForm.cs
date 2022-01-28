@@ -1,44 +1,41 @@
-﻿using System;
-using System.Collections.Generic;
-using System.ComponentModel;
-using System.Data;
-using System.Drawing;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-using System.Windows.Forms;
-using System.Data.SqlClient;
-using System.IO;
-using RyoeiSystem.Common;
+﻿using RyoeiSystem.Common;
 using RyoeiSystem.Database.Controllers;
+using System;
+using System.IO;
+using System.Windows.Forms;
 
-namespace REA2300
+using REA2310.Models;
+
+namespace REA2310
 {
     public partial class PrintForm : Form
     {
-        private string date;
+        private MainFormModel formData;
         private IData appData;
         private string filePath;
 
-        public PrintForm(string date, IData appData)
+        public PrintForm(MainFormModel formData, IData appData)
         {
             InitializeComponent();
-            this.date = date;
-            this.appData = appData;
-            filePath = this.appData.GetRootDirectoryPath() + @"\REA2300.csv";
+            this.formData = formData;
 
-            if (File.Exists(filePath))
-            {
-                File.Delete(filePath);
-            }
-        }        
+            this.appData = appData;
+
+            // SectionReport.csで必要なデータの参照先を設定
+            filePath = this.appData.GetRootDirectoryPath() + @"\REA2310.csv";
+
+            // 重複するため、存在していた場合は削除
+            if (File.Exists(filePath)) File.Delete(filePath);
+        }
 
         private void viewer1_Load(object sender, EventArgs e)
         {
-            var control = new Controller(date, filePath);
+            // コンストラクタで設定したMainFormのデータとfileのパスをController.csへ渡す
+            var control = new Controller(formData, filePath);
             control.CreateData();
 
-            SectionReport sectionReport = new SectionReport(control.GetDate(), control.GetBank());
+            // control.CreateDate()で生成したデータをSectionReport.csへ渡す
+            SectionReport sectionReport = new SectionReport(control.GetDate(), control.GetBank(), formData);
             viewer1.LoadDocument(sectionReport);
         }
     }

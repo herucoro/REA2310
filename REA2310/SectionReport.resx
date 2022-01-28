@@ -165,22 +165,16 @@
   <data name="textBox21.OutputFormat" xml:space="preserve">
     <value>#,##0</value>
   </data>
+  <metadata name="textBox27.GenerateMember" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>False</value>
+  </metadata>
+  <data name="textBox27.OutputFormat" xml:space="preserve">
+    <value>#,##0</value>
+  </data>
   <metadata name="textBox22.GenerateMember" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
     <value>False</value>
   </metadata>
   <data name="textBox22.OutputFormat" xml:space="preserve">
-    <value>#,##0</value>
-  </data>
-  <metadata name="textBox23.GenerateMember" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
-    <value>False</value>
-  </metadata>
-  <data name="textBox23.OutputFormat" xml:space="preserve">
-    <value>#,##0</value>
-  </data>
-  <metadata name="textBox24.GenerateMember" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
-    <value>False</value>
-  </metadata>
-  <data name="textBox24.OutputFormat" xml:space="preserve">
     <value>#,##0</value>
   </data>
   <metadata name="textBox25.GenerateMember" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
@@ -189,22 +183,25 @@
   <data name="textBox25.OutputFormat" xml:space="preserve">
     <value>#,##0</value>
   </data>
+  <metadata name="textBox24.GenerateMember" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>False</value>
+  </metadata>
+  <data name="textBox24.OutputFormat" xml:space="preserve">
+    <value>#,##0</value>
+  </data>
+  <metadata name="textBox23.GenerateMember" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>False</value>
+  </metadata>
+  <data name="textBox23.OutputFormat" xml:space="preserve">
+    <value>#,##0</value>
+  </data>
   <metadata name="textBox26.GenerateMember" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
     <value>False</value>
   </metadata>
   <data name="textBox26.OutputFormat" xml:space="preserve">
     <value>#,##0</value>
   </data>
-  <metadata name="textBox27.GenerateMember" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
-    <value>False</value>
-  </metadata>
-  <data name="textBox27.OutputFormat" xml:space="preserve">
-    <value>#,##0</value>
-  </data>
   <data name="textBox4.OutputFormat" xml:space="preserve">
-    <value>#,##0</value>
-  </data>
-  <data name="textBox15.OutputFormat" xml:space="preserve">
     <value>#,##0</value>
   </data>
   <data name="textBox17.OutputFormat" xml:space="preserve">
@@ -223,6 +220,69 @@
     <value>#,##0</value>
   </data>
   <data name="textBox2.OutputFormat" xml:space="preserve">
+    <value>#,##0</value>
+  </data>
+  <data name="textBox6.OutputFormat" xml:space="preserve">
+    <value>#,##0</value>
+  </data>
+  <data name="textBox8.OutputFormat" xml:space="preserve">
+    <value>#,##0</value>
+  </data>
+  <data name="textBox9.OutputFormat" xml:space="preserve">
+    <value>#,##0</value>
+  </data>
+  <data name="textBox10.OutputFormat" xml:space="preserve">
+    <value>#,##0</value>
+  </data>
+  <data name="textBox11.OutputFormat" xml:space="preserve">
+    <value>#,##0</value>
+  </data>
+  <data name="textBox12.OutputFormat" xml:space="preserve">
+    <value>#,##0</value>
+  </data>
+  <data name="textBox13.OutputFormat" xml:space="preserve">
+    <value>#,##0</value>
+  </data>
+  <data name="textBox14.OutputFormat" xml:space="preserve">
+    <value>#,##0</value>
+  </data>
+  <data name="textBox39.OutputFormat" xml:space="preserve">
+    <value>#,##0</value>
+  </data>
+  <data name="textBox40.OutputFormat" xml:space="preserve">
+    <value>#,##0</value>
+  </data>
+  <data name="textBox41.OutputFormat" xml:space="preserve">
+    <value>#,##0</value>
+  </data>
+  <data name="textBox42.OutputFormat" xml:space="preserve">
+    <value>#,##0</value>
+  </data>
+  <data name="textBox43.OutputFormat" xml:space="preserve">
+    <value>#,##0</value>
+  </data>
+  <data name="textBox44.OutputFormat" xml:space="preserve">
+    <value>#,##0</value>
+  </data>
+  <data name="textBox45.OutputFormat" xml:space="preserve">
+    <value>#,##0</value>
+  </data>
+  <data name="textBox46.OutputFormat" xml:space="preserve">
+    <value>#,##0</value>
+  </data>
+  <data name="textBox47.OutputFormat" xml:space="preserve">
+    <value>#,##0</value>
+  </data>
+  <data name="textBox48.OutputFormat" xml:space="preserve">
+    <value>#,##0</value>
+  </data>
+  <data name="textBox49.OutputFormat" xml:space="preserve">
+    <value>#,##0</value>
+  </data>
+  <data name="textBox15.OutputFormat" xml:space="preserve">
+    <value>#,##0</value>
+  </data>
+  <data name="textBox7.OutputFormat" xml:space="preserve">
     <value>#,##0</value>
   </data>
   <data name="textBox38.OutputFormat" xml:space="preserve">
@@ -358,6 +418,6 @@
     <value>0, 0</value>
   </metadata>
   <data name="csvDataSource1.ConnectionString" xml:space="preserve">
-    <value>Path=C:\\ryoei\\REA2300.csv;Locale=ja-JP;TextQualifier=";ColumnsSeparator=,;RowsSeparator=\r\n;Columns=supplier,kinds,0(Integer),1(Integer),2(Integer),3(Integer),4(Integer),5(Integer),6(Integer),7(Integer);HasHeaders=False</value>
+    <value>Path=C:\\ryoei\\REA2310.csv;Locale=ja-JP;TextQualifier=";ColumnsSeparator=,;RowsSeparator=\r\n;Columns=Supplier,amount0,day0,payment0,bank0,amount1,day1,payment1,bank1,amount2,day2,payment2,bank2,amount3,day3,payment3,bank3,amount4,day4,payment4,bank4,amount5,day5,payment5,bank5,amount6,month,payment6,bank6,sumvalue</value>
   </data>
 </root>
